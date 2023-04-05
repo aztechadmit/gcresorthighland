@@ -1,21 +1,19 @@
-.headerLink {color:white;font-weight:normal;font-size:16px;transition:0.2s;}
+.headerLink {color:white;font-weight:normal;font-size:17px;text-decoration:none;vertical-align:middle;display:inline-block;float:right;margin-right:20px;margin-top:15px;}
 
-.headerLink:hover {font-weight:bold;text-decoration:underline;text-decoration-color:white;}
+.headerLink:hover {font-weight:bold;cursor:pointer;}
 
 .headerBar {
             position:fixed;
             top:0;left:0;
-            text-align-vertical:center;
             margin:0;
-            width:100vw;
-            min-height:65px;
-            text-align:right;
+            width:100%;
+            min-height:50px;
             background:#07039D;
             padding:5px;
-            transition:0.4s;
+            transition:0.1s;
             z-index:5;
  }
 
-.headerLogo {width:150px;height:auto;float:left;margin-left:20px;}
+.headerLogo {width:150px;height:auto;float:left;margin-left:20px;margin-top:10px;display:inline-block;}
 
 
