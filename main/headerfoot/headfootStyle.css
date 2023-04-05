@@ -1,4 +1,4 @@
-.headerLink {font-style:normal;color:white;font-weight:normal;font-size:17px;text-decoration:none;vertical-align:middle;display:inline-block;float:right;margin-right:20px;margin-top:15px;}
+.headerLink {font-style:normal;color:white;font-weight:normal;font-size:17px;text-decoration:none;vertical-align:middle;display:inline-block;float:right;margin-right:20px;margin-top:20px;}
 
 .headerLink:hover {font-weight:bold;cursor:pointer;}
 
@@ -14,6 +14,6 @@
             z-index:5;
  }
 
-.headerLogo {width:200px;height:auto;float:left;margin-left:20px;margin-top:10px;display:inline-block;}
+.headerLogo {width:230px;height:auto;float:left;margin-left:20px;margin-top:5px;margin-bottom:5px;display:inline-block;}
 
 
