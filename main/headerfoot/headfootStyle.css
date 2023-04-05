@@ -16,6 +16,6 @@
 
 .headerLogo {width:230px;height:auto;margin-left:20px;margin-top:5px;margin-bottom:10px;display:inline-block;}
 
-.headerMenuButton {width:40px;height:40px;border:none;background:none;font-size:20px;color:white;}
+.headerMenuButton {width:30px;height:30px;border:none;background:none;font-size:20px;color:white;float:left;}
 
 
