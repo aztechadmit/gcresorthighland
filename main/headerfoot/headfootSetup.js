@@ -1,8 +1,6 @@
 const headerHTML = document.getElementById('headerDiv');
 const footerHTML = document.getElementById('footerDiv');
 
-var typ = 0;
-
 function initiateHeadFoot(pgNum) {
   
   //Step 1: Create the header
@@ -28,7 +26,9 @@ function initiateHeadFoot(pgNum) {
 function createHeader(typ) {
   if(typ == 0){ //normal desktop header
     //remember to put in order of first item will be the right most, last item will be the left most
-    headerHTML.innerHTML = "<a class='headerLink' href='places-to-stay.html' id='head.pts'>PLACES TO STAY</a>\
+    headerHTML.innerHTML = "<a href='../../index.html'><img class='headerLogo' src='../images/gcresortlogo.png'></a>"
+    
+    headerHTML.innerHTML += "<a class='headerLink' href='places-to-stay.html' id='head.pts'>PLACES TO STAY</a>\
                             <a class='headerLink'>THINGS TO DO ↓</a>\
                             <a class='headerLink' href='index.html' id='head.home'>HOME</a>";
     
@@ -45,8 +45,8 @@ function createFooter() {
 
 function resizeHeader() {
   if (window.innerWidth < 600){
-    createHeader(1);
-  }else{createHeader(2);}
+    createHeader(2);
+  }else{createHeader(1);}
 }//end of resizeHeader
   
 
