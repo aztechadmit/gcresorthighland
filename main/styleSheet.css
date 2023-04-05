@@ -15,7 +15,7 @@ body{font-family:Arial;font-size:15px;margin:0;padding:0;color:black;line-height
 
 .container {width:90vw;margin:auto;max-width:900px;padding:10px;margin-top:10px;}
 
-.fullContainer {width:100vw;margin:0;padding:10px;margin-top:10px;}
+.fullContainer {width:100vw;margin:0;padding:0;}
 
 
 /* Buttons */
