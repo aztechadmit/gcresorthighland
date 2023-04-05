@@ -34,7 +34,7 @@ function createHeader(typ) {
     
   }else if(typ==1){ //mobile view header
     
-    headerHTML.innerHTML = "<button class='headerMenuButton'>=</button> \
+    headerHTML.innerHTML = "<button class='headerMenuButton'>☰</button> \
                             <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
     
   }
