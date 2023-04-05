@@ -46,7 +46,7 @@ function createFooter() {
 function resizeHeader() {
   if (window.innerWidth < 600){
     createHeader(2);
-  }else{createHeader(1);}
+  }else{createHeader(0);}
 }//end of resizeHeader
   
 
