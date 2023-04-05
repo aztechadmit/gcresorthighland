@@ -1,1 +1,7 @@
-body{}
+/* HEADINGS AND PARAGRAPH STYLES */
+h1 {font-size:20px;color:#073763;font-weight:bold;}
+h2 {font-size:18px;color:#073763;}
+h3 {font-size:16px;font-weight:bold;}
+
+
+body{font-family:Arial;font-size:15px;margin:0;padding:0;color:black;line-height:1.6;}
