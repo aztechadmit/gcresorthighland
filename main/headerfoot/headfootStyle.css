@@ -1,0 +1,21 @@
+.headerLink {color:white;font-weight:normal;font-size:16px;transition:0.2s;}
+
+.headerLink:hover {font-weight:bold;text-decoration:underline;text-decoration-color:white;}
+
+.headerBar {
+            position:fixed;
+            top:0;left:0;
+            text-align-vertical:center;
+            margin:0;
+            width:100vw;
+            min-height:65px;
+            text-align:right;
+            background:#07039D;
+            padding:5px;
+            transition:0.4s;
+            z-index:5;
+ }
+
+.headerLogo {width:150px;height:auto;float:left;margin-left:20px;}
+
+
