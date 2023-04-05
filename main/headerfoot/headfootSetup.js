@@ -28,7 +28,7 @@ function createHeader(typ) {
     //remember to put in order of first item will be the right most, last item will be the left most
     headerHTML.innerHTML = "<a href='index.html'><img class='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>"
     
-    headerHTML.innerHTML += "<a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay.html' id='head.pts'>PLACES TO STAY</a>\
+    headerHTML.innerHTML += "<a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
                             <a class='headerLink'>THINGS TO DO ↓</a>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>HOME</a>";
     
