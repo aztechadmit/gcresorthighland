@@ -17,6 +17,9 @@ body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height
 
 .fullContainer {width:full;margin:0;padding:0;}
 
+/* Dividers */
+.lineBreak {width:90vw; margin:auto;max-width:900px;margin-top:15px;margin-bottom:5px;background:lightgray;height:4px;}
+
 
 /* Buttons */
 
