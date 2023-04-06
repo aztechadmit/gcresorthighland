@@ -15,10 +15,10 @@ body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height
 
 .container {width:90vw;margin:auto;max-width:900px;padding:10px;margin-top:10px;}
 
-.fullContainer {width:full;margin:0;padding:0;margin-top:10px;}
+.fullContainer {width:full;margin:0;padding:0;margin-top:40px;}
 
 /* Dividers */
-.lineBreak {width:95vw; margin:auto;max-width:950px;margin-top:15px;margin-bottom:5px;background:lightgray;height:3px;border-radius:2px;}
+.lineBreak {width:95vw; margin:auto;max-width:1000px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
 
 
 /* Buttons */
