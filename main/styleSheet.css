@@ -13,18 +13,20 @@ body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height
 
 /* Containers */
 
-.container {width:90vw;margin:auto;max-width:900px;padding:10px;margin-top:10px;}
+.container {width:90vw;margin:auto;max-width:900px;padding:10px;margin-top:50px;}
 
-.fullContainer {width:full;margin:0;padding:0;margin-top:40px;}
+.fullContainer {width:full;margin:0;padding:0;margin-top:50px;}
 
 /* Dividers */
-.lineBreak {width:95vw; margin:auto;max-width:1000px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
+.lineBreak {width:95vw; margin:auto;max-width:1000px;margin-top:50px;background:lightgray;height:3px;border-radius:2px;}
 
 
 /* Buttons */
 
-button {border:2px solid #07039D;border-radius:4px;color:#07039D;min-width:100px;margin:10px;min-height:40px;background:none;}
+button {border:2px solid #07039D;border-radius:8px;color:#07039D;min-width:150px;margin:10px;min-height:40px;background:none;padding:15px;}
 button:hover {background:lightgray;cursor:pointer;}
 
-.btnFull {border:2px solid #07039D;border-radius:4px;color:white;background:#07039D;min-width:100px;}
+.btnFull {border:2px solid #07039D;border-radius:8px;color:white;background:#07039D;min-width:100px;}
 .btnFull:hover {background:#073763;cursor:pointer;}
+
+.btnWhite {border:2px solid white;border-radius:8px;color:white;background:none;min-width:150px;padding:15px;min-height:40px;}
