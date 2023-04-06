@@ -15,15 +15,15 @@ body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height
 
 .container {width:90vw;margin:auto;max-width:900px;padding:10px;margin-top:10px;}
 
-.fullContainer {width:full;margin:0;padding:0;}
+.fullContainer {width:full;margin:0;padding:0;margin-top:10px;}
 
 /* Dividers */
-.lineBreak {width:90vw; margin:auto;max-width:900px;margin-top:15px;margin-bottom:5px;background:lightgray;height:4px;}
+.lineBreak {width:95vw; margin:auto;max-width:950px;margin-top:15px;margin-bottom:5px;background:lightgray;height:3px;border-radius:2px;}
 
 
 /* Buttons */
 
-button {border:2px solid #07039D;border-radius:4px;color:#07039D;min-width:100px;margin:10px;}
+button {border:2px solid #07039D;border-radius:4px;color:#07039D;min-width:100px;margin:10px;min-height:40px;}
 button:hover {background:lightgray;cursor:pointer;}
 
 .btnFull {border:2px solid #07039D;border-radius:4px;color:white;background:#07039D;min-width:100px;}
