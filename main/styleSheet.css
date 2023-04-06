@@ -1,14 +1,14 @@
 /* HEADINGS AND PARAGRAPH STYLES */
-h1 {font-size:20px;color:#073763;font-weight:bold;}
-h2 {font-size:18px;color:#073763;}
-h3 {font-size:16px;font-weight:bold;}
+h1 {font-size:25px;color:#073763;font-weight:bold;}
+h2 {font-size:22px;color:#073763;}
+h3 {font-size:20px;font-weight:bold;}
 
 a {font-style:italic;text-decoration:none;color:blue;}
 .txtLink {font-weight:bold;color:blue;}
 .txtLink:hover {cursor:pointer;color:darkblue;}
 
 
-body{font-family:Arial;font-size:15px;margin:0;padding:0;color:black;line-height:1.6;}
+body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height:1.6;}
 
 
 /* Containers */
