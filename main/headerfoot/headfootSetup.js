@@ -6,16 +6,16 @@ var bOp = 0;
 
 function initiateHeadFoot(pgNum) {
   
-  //Step 1: Create the header
-  resizeHeader();
-  createFooter();
+  head_pgNum=pgNum;
   
-  alert('initiated');
+  //Step 1: Create the header
+  createFooter();
+  resizeHeader();
   
   //step 2, get the page number 0 is the index. Null means no page will be highlighted
   //This function is to display the page the viewer is currently on as bold in the header
   
-  head_pgNum=pgNum;
+  
   
 }//end of initiateHeadFoot
 
