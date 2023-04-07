@@ -1,5 +1,6 @@
 const headerHTML = document.getElementById('headerDiv');
 const footerHTML = document.getElementById('footerDiv');
+const sideBarHTML = document.getElementById('sideBarDiv');
 
 function initiateHeadFoot(pgNum) {
   
@@ -34,7 +35,7 @@ function createHeader(typ) {
     
   }else if(typ==1){ //mobile view header
     headerHTML.style.height = 60;
-    headerHTML.innerHTML = "<button class='headerMenuButton'>☰</button>\
+    headerHTML.innerHTML = "<button class='headerMenuButton' onclick='openSideBar()'>☰</button>\
                             <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' style='width:200px;height:auto;float:right;' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
     
   }
@@ -51,7 +52,10 @@ function resizeHeader() {
   }else{createHeader(0);}
 }//end of resizeHeader
   
-
+//Open header sidebar (for small screen width)
+function openSideBar() {
+  sideBarHTML.style.display = 'block';
+}
 
 // Adjust the header if the window is resized
 window.onresize = resizeHeader;
