@@ -64,5 +64,5 @@
 .headerMenuLinks {font-size:24px;color:white;font-style:normal;display:block;}
 .headerMenuLinks:hover {font-weight:bold;}
 
-#head.tknpsbtn {width:200px;height:40px;float:right;display:inline-block; color:#07039D; background:white; border:none; transition:0.4s;}
-#head.tknpsbtn:hover {background:white;color:#07039D;box-shadow: 4px 4px 3px lightgray;}
+#headtknpsbtn {width:200px;height:40px;float:right;display:inline-block; color:#07039D; background:white; border:none; transition:0.4s;}
+#headtknpsbtn:hover {background:white;color:#07039D;box-shadow: 4px 4px 3px lightgray;}
