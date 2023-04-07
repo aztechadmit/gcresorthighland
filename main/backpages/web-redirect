@@ -1,0 +1,41 @@
+<html>
+  
+ <head> <!-- Basic HTML Page Setup -->
+    <title>Website Redirect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="main/images/webfavicon1.ico">
+    <link rel="stylesheet" href="main/styleSheet.css">
+    <link rel="stylesheet" href="main/headerfoot/headfootStyle.css">
+ </head>
+ 
+ 
+ <body>
+  <!-- Place the header -->
+  <div id="headerDiv" class="headerBar"></div>
+  <div id="headerMenuBar"></div>
+   
+   
+   <br><br><br>
+   
+   <div class='lineBreak'></div>
+   
+   <div class='container'>
+     <h2>404 Error</h2>
+     <p>The page you requested is unavailable. Please navigate back to the previous page.<br>Contact the server administrator for further details.</p>
+   </div>
+   
+    <div class='lineBreak'></div>
+   
+   <br><br>
+   
+   
+   
+ <!-- Place the Footer -->
+  <br><div id="footerDiv"></div>
+ </body>
+ 
+ <!-- Call the function to create the header and footer -->
+ <script src="main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeadFoot(0);</script>
+
+</html>
