@@ -64,16 +64,19 @@ function openSideBar() {
     
     document.getElementById('headerMenuButton').innerHTML = 'X';
 
-    setTimeout(openHeadElem, 500);
+    setTimeout(openHeadElem, 400);
     
     bOp=1;
     
   }else if(bOp==1){
     
-    document.getElementById('headerElements').style.opacity=0;
+    //document.getElementById('headerElements').style.opacity=0;
     
     sideBarHTML.style.width = 0;
-    setTimeout(function(){ sideBarHTML.style.display = 'none';  }, 500);
+    document.getElementById('headerElements').style.display = 'none';
+    sideBarHTML.style.display = 'none';
+    
+    //setTimeout(function(){ sideBarHTML.style.display = 'none';  }, 500);
     
     document.getElementById('headerMenuButton').innerHTML = '☰';
     
