@@ -12,6 +12,12 @@ function initiateHeadFoot(pgNum) {
   
   //step 2, get the page number 0 is the index. Null means no page will be highlighted
   //This function is to display the page the viewer is currently on as bold in the header
+  
+  head_pgNum=pgNum;
+  
+}//end of initiateHeadFoot
+
+function headerboldPageButton(pgNum){
   var idToSet = 'null';
   
   switch(pgNum){
@@ -23,8 +29,7 @@ function initiateHeadFoot(pgNum) {
   if(idToSet != 'null'){
   document.getElementById(idToSet).style.fontWeight = "bold";
   }
-  
-}//end of initiateHeadFoot
+}
 
 function createHeader(typ) {
   if(typ == 0){ //normal desktop header
@@ -35,6 +40,8 @@ function createHeader(typ) {
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
                             <a class='headerLink'>THINGS TO DO &#9660;</a>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>HOME</a>";
+    
+    headerboldPageButton(head_pgNum);
     
   }else if(typ==1){ //mobile view header
     headerHTML.style.height = 60;
@@ -96,6 +103,7 @@ function openHeadElem(){
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>";
   
   headElemHTML.style.opacity = 1;
+  headerboldPageButton(head_pgNum);
 }
 
 // Adjust the header if the window is resized
