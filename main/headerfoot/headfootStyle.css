@@ -11,7 +11,7 @@
             background:#07039D;
             padding:5px;
             transition:0.1s;
-            z-index:5;
+            z-index:999;
  }
 
 .headerLogo {width:230px;height:auto;margin-left:20px;margin-top:5px;margin-bottom:10px;display:inline-block; margin-right:20px;}
