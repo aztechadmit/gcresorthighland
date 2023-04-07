@@ -1,29 +1,29 @@
 /* HEADINGS AND PARAGRAPH STYLES */
 h1 {font-size:25px;color:#073763;font-weight:bold;}
-h2 {font-size:22px;color:#073763;}
-h3 {font-size:20px;font-weight:bold;}
+h2 {font-size:24px;color:#073763;}
+h3 {font-size:22px;font-weight:bold;}
 
 a {font-style:italic;text-decoration:none;color:blue;}
 .txtLink {font-weight:bold;color:blue;}
 .txtLink:hover {cursor:pointer;color:darkblue;}
 
 
-body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height:1.6;}
+body{font-family:Arial;font-size:20px;margin:0;padding:0;color:black;line-height:1.6;}
 
 
 /* Containers */
 
-.container {width:90vw;margin:auto;max-width:900px;padding:10px;margin-top:50px;}
+.container {width:90vw;margin:auto;max-width:1100px;padding:10px;margin-top:40px;}
 
-.fullContainer {width:full;margin:0;padding:0;margin-top:50px;}
+.fullContainer {width:full;margin:0;padding:0;margin-top:40px;}
 
 /* Dividers */
-.lineBreak {width:95vw; margin:auto;max-width:1000px;margin-top:50px;background:lightgray;height:3px;border-radius:2px;}
+.lineBreak {width:95vw; margin:auto;max-width:1200px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
 
 
 /* Buttons */
 
-button {border:2px solid #07039D;border-radius:8px;color:#07039D;min-width:150px;margin:10px;background:none;padding:10px; font-size:14px;}
+button {border:2px solid #07039D;border-radius:8px;color:#07039D;min-width:150px;margin:10px;background:none;padding:10px;}
 button:hover {background:lightgray;cursor:pointer;}
 
 .btnFull {border:2px solid #07039D;border-radius:8px;color:white;background:#07039D;}
