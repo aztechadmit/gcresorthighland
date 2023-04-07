@@ -23,10 +23,10 @@ body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height
 
 /* Buttons */
 
-button {border:2px solid #07039D;border-radius:8px;color:#07039D;min-width:150px;margin:10px;min-height:40px;background:none;padding:15px;}
+button {border:2px solid #07039D;border-radius:8px;color:#07039D;min-width:150px;margin:10px;background:none;padding:10px; font-size:18px;}
 button:hover {background:lightgray;cursor:pointer;}
 
-.btnFull {border:2px solid #07039D;border-radius:8px;color:white;background:#07039D;min-width:100px;}
+.btnFull {border:2px solid #07039D;border-radius:8px;color:white;background:#07039D;}
 .btnFull:hover {background:#073763;cursor:pointer;}
 
 .btnWhite {border:2px solid white;border-radius:8px;color:white;background:none;min-width:150px;padding:15px;min-height:40px;}
