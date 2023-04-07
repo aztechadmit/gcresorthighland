@@ -18,5 +18,35 @@
 
 .headerMenuButton {font-size:30px; min-width:50px;min-height:50px; max-width:40px;max-height:40px; background:none;border:none;color:white; float:right; margin-top:0; margin-right:20px;display:inline-block;}
 
+#headerMenuBar{
+            position:fixed;
+            top:0;left:0;
+            height:100vh;
+            animation-name:openMenu;
+            animation-duration:0.5s;
+            animation-fill-mode: forwards;
+            z-index:998;
+            
+            background:dimgray;
+            color:white;
+}
+
+#headerElements {
+            margin-left:20px;
+            margin-top:70px;
+            animation-name:openElmnts;
+            animation-duration:0.2s;
+            animation-fill-mode: forwards;
+}
+
+@keyframes openMenu {
+            from {width:0;opacity:0;}
+            to {width:300px;opacity:1;}
+}
+
+@keyframes openElmnts {
+            from{opacity:0;}
+            to{opacity:1;}
+}
 
 
