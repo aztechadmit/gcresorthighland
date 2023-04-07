@@ -29,14 +29,16 @@
             
             background:dimgray;
             color:white;
+            display:none;
 }
 
 #headerElements {
             margin-left:20px;
-            margin-top:70px;
+            margin-top:80px;
             animation-name:openElmnts;
             animation-duration:0.2s;
             animation-fill-mode: forwards;
+            text-align:left;
 }
 
 @keyframes openMenu {
@@ -49,4 +51,4 @@
             to{opacity:1;}
 }
 
-
+.headerMenuLinks {font-size:20px;color:white;font-style:normal;}
