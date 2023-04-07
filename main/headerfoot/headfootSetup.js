@@ -31,8 +31,9 @@ function createHeader(typ) {
     //remember to put in order of first item will be the right most, last item will be the left most
     headerHTML.innerHTML = "<a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>"
     
-    headerHTML.innerHTML += "<a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
-                            <a class='headerLink'>THINGS TO DO ↓</a>\
+    headerHTML.innerHTML += "<button id='head.tknpsbtn'>View Tickets and Passes</button>\
+                            <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
+                            <a class='headerLink'>THINGS TO DO &#9660;</a>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>HOME</a>";
     
   }else if(typ==1){ //mobile view header
@@ -90,8 +91,9 @@ function openHeadElem(){
   sideBarHTML.innerHTML = "<div id='headerElements'></div>";
   const headElemHTML = document.getElementById('headerElements');
   
-  headElemHTML.innerHTML = "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>\
-                            <a class='headerMenuLinks' href=''>Things to Do</a>";
+  headElemHTML.innerHTML = "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
+                            <a class='headerMenuLinks' href=''>Things to Do</a>\
+                            <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>";
   
   headElemHTML.style.opacity = 1;
 }
