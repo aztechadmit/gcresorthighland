@@ -33,9 +33,9 @@ function createHeader(typ) {
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>HOME</a>";
     
   }else if(typ==1){ //mobile view header
-    
+    headerHTML.style.height = 60;
     headerHTML.innerHTML = "<button class='headerMenuButton'>☰</button>\
-                            <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' style='width:150px;height:auto;float:right;' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
+                            <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' style='width:200px;height:auto;float:right;' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
     
   }
   
