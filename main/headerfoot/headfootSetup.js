@@ -98,7 +98,7 @@ function openHeadElem(){
   sideBarHTML.innerHTML = "<div id='headerElements'></div>";
   const headElemHTML = document.getElementById('headerElements');
   
-  headElemHTML.innerHTML = "<button id='headtknpsbtn' style='float:left;margin-left:0;'>Tickets and Passes</button>\
+  headElemHTML.innerHTML = "<button id='headtknpsbtn' style='float:left;margin-left:0;width:260px;'>Tickets and Passes</button>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
                             <a class='headerMenuLinks' href='' id='head.ttd'>Things to Do  &#9660;</a>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>";
