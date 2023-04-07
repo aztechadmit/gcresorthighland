@@ -10,6 +10,8 @@ function initiateHeadFoot(pgNum) {
   resizeHeader();
   createFooter();
   
+  alert('initiated');
+  
   //step 2, get the page number 0 is the index. Null means no page will be highlighted
   //This function is to display the page the viewer is currently on as bold in the header
   
