@@ -54,6 +54,7 @@ function createHeader(typ) {
 
 function createFooter() {
   footerHTML.innerHTML = "This is where the footer will go";
+  alert('footer created');
 }//end of createFooter
 
 function resizeHeader() {
