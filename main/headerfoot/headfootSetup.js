@@ -2,6 +2,8 @@ const headerHTML = document.getElementById('headerDiv');
 const footerHTML = document.getElementById('footerDiv');
 const sideBarHTML = document.getElementById('headerMenuBar');
 
+var bOp = 0;
+
 function initiateHeadFoot(pgNum) {
   
   //Step 1: Create the header
@@ -35,7 +37,7 @@ function createHeader(typ) {
     
   }else if(typ==1){ //mobile view header
     headerHTML.style.height = 60;
-    headerHTML.innerHTML = "<button class='headerMenuButton' onclick='openSideBar()'>☰</button>\
+    headerHTML.innerHTML = "<button id='headerMenuButton' onclick='openSideBar()'>☰</button>\
                             <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' style='width:200px;height:auto;float:left;' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
     
   }
@@ -55,9 +57,22 @@ function resizeHeader() {
 //Open header sidebar (for small screen width)
 function openSideBar() {
   
-  sideBarHTML.style.display = 'block';
+  if(bOp==0){
   
-  setTimeout(openHeadElem, 500);
+    sideBarHTML.style.display = 'block';
+    document.getElementById('headerMenuButton').innerHTML = 'X';
+
+    setTimeout(openHeadElem, 500);
+    
+    bOp=1;
+    
+  }else if(bOp==1){
+    
+    sideBarHTML.style.display = 'none';
+    document.getElementById('headerMenuButton').innerHTML = '☰';
+    bOp=0;
+    
+  }
   
 }
 function openHeadElem(){
