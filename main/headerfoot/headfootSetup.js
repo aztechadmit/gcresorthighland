@@ -1,6 +1,6 @@
 const headerHTML = document.getElementById('headerDiv');
 const footerHTML = document.getElementById('footerDiv');
-const sideBarHTML = document.getElementById('sideBarDiv');
+const sideBarHTML = document.getElementById('headerMenuBar');
 
 function initiateHeadFoot(pgNum) {
   
@@ -54,7 +54,18 @@ function resizeHeader() {
   
 //Open header sidebar (for small screen width)
 function openSideBar() {
+  
   sideBarHTML.style.display = 'block';
+  
+  setTimeout(openHeadElem, 500);
+  
+}
+function openHeadElem(){
+  sideBarHTML.innerHTML = "<div id='headerElements'></div>";
+  const headElemHTML = document.getElementById('headerElements');
+  
+  headElemHTML.innerHTML = "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>\
+                            <a class='headerMenuLinks' href=''>Things to Do</a>";
 }
 
 // Adjust the header if the window is resized
