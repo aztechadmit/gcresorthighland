@@ -27,9 +27,9 @@
             -webkit-transition: width 0.5s;
             transition: width 0.5s;
             
-           /* animation-name:openMenu;
+            animation-name:openMenu;
             animation-duration:0.5s;
-            animation-fill-mode: forwards; */
+            animation-fill-mode: forwards;
             z-index:998;
             
             background:dimgray;
@@ -45,9 +45,9 @@
             -webkit-transition: opacity 0.5s;
             transition: opacity 0.5s;
             
-            /* animation-name:openElmnts;
+            animation-name:openElmnts;
             animation-duration:0.2s;
-            animation-fill-mode: forwards; */
+            animation-fill-mode: forwards; 
             text-align:left;
 }
 
