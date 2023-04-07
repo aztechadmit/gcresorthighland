@@ -60,6 +60,8 @@ function openSideBar() {
   if(bOp==0){
   
     sideBarHTML.style.display = 'block';
+    sideBarHTML.style.width = 300;
+    
     document.getElementById('headerMenuButton').innerHTML = 'X';
 
     setTimeout(openHeadElem, 500);
@@ -68,19 +70,27 @@ function openSideBar() {
     
   }else if(bOp==1){
     
-    sideBarHTML.style.display = 'none';
+    document.getElementById('headerElements').style.opacity=0;
+    
+    sideBarHTML.style.width = 0;
+    setTimeout(function(){ sideBarHTML.style.display = 'none';  }, 500);
+    
     document.getElementById('headerMenuButton').innerHTML = '☰';
+    
     bOp=0;
     
   }
   
 }
+
 function openHeadElem(){
   sideBarHTML.innerHTML = "<div id='headerElements'></div>";
   const headElemHTML = document.getElementById('headerElements');
   
   headElemHTML.innerHTML = "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>\
                             <a class='headerMenuLinks' href=''>Things to Do</a>";
+  
+  headElemHTML.style.opacity = 1;
 }
 
 // Adjust the header if the window is resized
