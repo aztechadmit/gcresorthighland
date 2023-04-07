@@ -36,7 +36,7 @@ function createHeader(typ) {
   }else if(typ==1){ //mobile view header
     headerHTML.style.height = 60;
     headerHTML.innerHTML = "<button class='headerMenuButton' onclick='openSideBar()'>☰</button>\
-                            <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' style='width:200px;height:auto;float:right;' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
+                            <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' style='width:200px;height:auto;float:left;' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
     
   }
   
