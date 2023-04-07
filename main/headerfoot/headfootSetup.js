@@ -36,9 +36,9 @@ function createHeader(typ) {
     //remember to put in order of first item will be the right most, last item will be the left most
     headerHTML.innerHTML = "<a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>"
     
-    headerHTML.innerHTML += "<button id='head.tknpsbtn'>View Tickets and Passes</button>\
+    headerHTML.innerHTML += "<button class='head.tknpsbtn'>View Tickets and Passes</button>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
-                            <a class='headerLink'>THINGS TO DO &#9660;</a>\
+                            <a class='headerLink' id='head.ttd'>THINGS TO DO &#9660;</a>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>HOME</a>";
     
     headerboldPageButton(head_pgNum);
@@ -99,7 +99,7 @@ function openHeadElem(){
   const headElemHTML = document.getElementById('headerElements');
   
   headElemHTML.innerHTML = "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
-                            <a class='headerMenuLinks' href=''>Things to Do</a>\
+                            <a class='headerMenuLinks' href='' id='head.ttd'>Things to Do  &#9660;</a>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>";
   
   headElemHTML.style.opacity = 1;
