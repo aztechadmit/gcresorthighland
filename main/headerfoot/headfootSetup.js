@@ -56,7 +56,7 @@ function createHeader(typ) {
 }//end of createHeader
 
 function resizeHeader() {
-  if (window.innerWidth < 600){
+  if (window.innerWidth < 1010){
     createHeader(1);
   }else{createHeader(0);}
 }//end of resizeHeader
