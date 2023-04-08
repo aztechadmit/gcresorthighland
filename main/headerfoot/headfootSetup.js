@@ -54,10 +54,6 @@ function createHeader(typ) {
   
 }//end of createHeader
 
-function createFooter() {
-  footerHTML.innerHTML = "This is where the footer will go";
-}//end of createFooter
-
 function resizeHeader() {
   if (window.innerWidth < 600){
     createHeader(1);
@@ -111,3 +107,66 @@ function openHeadElem(){
 
 // Adjust the header if the window is resized
 window.onresize = resizeHeader;
+
+function createFooter() {
+  footerHTML.innerHTML = "<div class='footerLineBreak'></div>\
+    
+    <div style='position:relative;margin:auto;'>\
+    <div class='footerGroup'>\
+    <b>Adventure Park</b><br>\
+    <a class='footerLink'>Tickets and Passes</a><br>\
+    <a class='footerLink'>GC-VIP</a><br>\
+    <a class='footerLink'>Annual Passports</a><br>\
+    <a class='footerLink'>Group Admission (10+)</a><br>\
+    <a class='footerLink'>Special Events</a><br>\
+    <a class='footerLink'>Attractions and Entertainment</a><br>\
+    <a class='footerLink'>Places to Eat</a><br>\
+    <a class='footerLink'>Shopping</a><br>\
+    </div>\
+    
+    <div class='footerGroup'>\
+    <b>City Shop</b><br>\
+    <a class='footerLink'>About</a><br>\
+    <a class='footerLink'>Restauraunts and Dining</a><br>\
+    <a class='footerLink'>Shopping and Attractions</a><br>\
+    <a class='footerLink'>City-Shop Parking</a><br>\
+    <a class='footerLink'>Event Venues</a><br>\
+    <a class='footerLink'>Performance Opurtunities</a><br>\
+    <br><b>Other</b><br>\
+    <a class='footerLink'>Corporate Partners</a><br>\
+    <a class='footerLink'>MCPBO Documents</a><br>\
+    </div>\
+    
+    <div class='footerGroup'>\
+    <b>Information</b><br>\
+    <a class='footerLink'>About Us</a><br>\
+    <a class='footerLink'>Resort Information</a><br>\
+    <a class='footerLink'>Guidelines and Rules</a><br>\
+    <a class='footerLink'>News and Updates</a><br>\
+    <a class='footerLink'>Resort Calendar</a><br>\
+    <br><b>Resort Hotels</b><br>\
+    <a class='footerLink'>Lakeside Hotel</a><br>\
+    <a class='footerLink'>The Aztech Resort</a><br>\
+    <a class='footerLink'>Vacation Packages</a><br>\
+    </div>\
+    
+    <div class='footerGroup'>\
+    <b>Resort Services</b><br>\
+    <a class='footerLink'>Contact a Representative</a><br>\
+    <a class='footerLink'>Guest Satisfaction Survey</a><br>\
+    <a class='footerLink'>Accessility Information</a><br>\
+    <a class='footerLink'>Lockers and Rentals</a><br>\
+    <a class='footerLink'>Security</a><br>\
+    <br><b>Jobs</b><br>\
+    <a class='footerLink'>Career Portal</a><br>\
+    </div>\
+    </div>\
+    
+    <div class='footerLineBreak' style='margin-top:0px;'></div>\
+    
+    <p style='text-align:center;'><b>Get in Touch</b><br>(312) 872 2212<br><a href='mailto:guestservices.gcrh@gcpr.net'>guestservices.gcrh@gcpr.net</a></p>\
+    
+    <div class='footerLineBreak' style='margin-top:25px;'></div>\
+    
+    <p style='text-align:center;font-size:12px;color:dimgray;'>&#169; 2023 Globe-City Parks and Resorts LLC.<br>A Division of R and R Industries</p>";
+}//end of createFooter
