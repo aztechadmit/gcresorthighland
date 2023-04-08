@@ -39,7 +39,7 @@ function createHeader(typ) {
     headerHTML.innerHTML = "<a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>"
     
     headerHTML.innerHTML += "<button id='headtknpsbtn'>Tickets and Passes</button>\
-                            <a class='headerLink' id='head.ttd'>MORE &#9660;</a>\
+                            <a class='headerLink' id='head.more'>MORE &#9660;</a>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
                             <a class='headerLink' id='head.ttd'>THINGS TO DO &#9660;</a>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>HOME</a>";
@@ -100,7 +100,8 @@ function openHeadElem(){
   headElemHTML.innerHTML = "<button id='headtknpsbtn' style='float:left;margin-left:0;width:260px;'>Tickets and Passes</button>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
                             <a class='headerMenuLinks' href='' id='head.ttd'>Things to Do  &#9660;</a>\
-                            <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>";
+                            <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
+                            <a class='headerMenuLinks' href='' id='head.more'>More  &#9660;</a>";
   
   headElemHTML.style.opacity = 1;
   headerboldPageButton(head_pgNum);
