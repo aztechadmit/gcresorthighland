@@ -69,7 +69,7 @@
 
 
 
-#footerContainer{width:90%;max-width:1100px;margin:auto;line-height:2;font-family:arial;font-size:15px;}
+#footerDiv{width:90%;max-width:1100px;margin:auto;line-height:2;font-family:arial;font-size:15px;}
 .footerGroup {width:200px;display:inline-block;margin:25px; vertical-align:top;}
 .footerLineBreak{width:95%; margin:auto;max-width:1500px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
 .footerLink {color:dimgray;text-decoration:none;cursor:pointer;}
