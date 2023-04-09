@@ -122,8 +122,8 @@ function openHeadElem(){
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(0)' id='head.ttd'>Things to Do  &#9660;</a>\
                             <div class='headerMenuExtension' id='head.ttdminimen'><div class='headerMenuExtensionLinks' id='head.ttdminimenlnk'>\
-                               <b>Adventure Park</b><br>&emsp;<a class='headerMenuLinks' href=''>Attractions and Entertainment</a><br>&emsp; <a class='headerMenuLinks' href=''>Places to Eat</a><br>&emsp;<a class='headerMenuLinks' href=''>Shopping</a><br>\
-                               <b>City-Shop</b><br>&emsp;<a class='headerMenuLinks' href=''>About</a><br>&emsp;<a class='headerMenuLinks' href=''>Restauraunts and Dining</a><br>&emsp;<a class='headerMenuLinks' href=''>Shopping</a><br></div></div>\
+                               <b>Adventure Park</b>&ensp;<a class='headerMenuLinks' href=''>Attractions and Entertainment</a>&ensp; <a class='headerMenuLinks' href=''>Places to Eat</a>&ensp;<a class='headerMenuLinks' href=''>Shopping</a><br>\
+                               <b>City-Shop</b>&ensp;<a class='headerMenuLinks' href=''>About</a>&ensp;<a class='headerMenuLinks' href=''>Restauraunts and Dining</a>&emsp;<a class='headerMenuLinks' href=''>Shopping</a></div></div>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(1)' id='head.more'>More  &#9660;</a>";
   
@@ -142,8 +142,10 @@ function openHeaderMiniMenu(numToOpn){
     case 0: //Things to Do Menu
       const miniMen = document.getElementById('head.ttdminimen');
       const miniMenLink = document.getElementById('head.ttdminimenlnk');
+      
       miniMen.style.display = 'block';miniMenLink.style.display = 'block';
-      setTimeout(function(){miniMen.style.height='auto';miniMenLink.style.opacity=1;},1);
+      
+      setTimeout(function(){miniMen.style.height='auto';miniMenLink.style.opacity=1;},2);
       break;
   }
 }
