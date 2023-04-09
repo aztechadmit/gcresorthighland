@@ -24,13 +24,9 @@
             height:100vh;
             
             width:0;
-            -webkit-transition: width 0.5s;
-            transition: width 0.5s;
             
-            animation-name:openMenu;
-            animation-duration:0.5s;
-            animation-fill-mode: forwards;
-            z-index:998;
+            transition-property:width;
+            transition-duration:0.5s;
             
             background:dimgray;
             color:white;
@@ -42,23 +38,10 @@
             margin-top:80px;
             
             opacity:0;
-            -webkit-transition: opacity 0.5s;
-            transition: opacity 0.5s;
-            
-            animation-name:openElmnts;
-            animation-duration:0.2s;
-            animation-fill-mode: forwards; 
+            transition-property: opacity;
+            transition-duration: 0.2s;
+          
             text-align:left;
-}
-
-@keyframes openMenu {
-            from {width:0;opacity:0;}
-            to {width:300px;opacity:1;}
-}
-
-@keyframes openElmnts {
-            from{opacity:0;}
-            to{opacity:1;}
 }
 
 .headerMenuLinks {font-size:24px;color:white;font-style:normal;display:block;}
