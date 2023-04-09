@@ -137,20 +137,24 @@ function openHeadElem(){
 // Adjust the header if the window is resized
 window.onresize = resizeHeader;
 
+trueOrFalse = 0;
+
 function openHeaderMiniMenu(numToOpn){
   switch(numToOpn){
     case 0: //Things to Do Menu
       const miniMen = document.getElementById('head.ttdminimen');
       const miniMenLink = document.getElementById('head.ttdminimenlnk');
-      
-      if(miniMen.style.display=='none'){
+      if(trueOrFalse==0){
       
       miniMen.style.display = 'block';miniMenLink.style.display = 'block';
       
       setTimeout(function(){miniMen.style.height='auto';miniMenLink.style.opacity=1;},2);
+        
+         trueOrFalse=1;
       }else{
          miniMen.style.height='0px'; miniMenLink.style.opacity=0;
          setTimeout(function(){miniMen.style.display = 'none';miniMenLink.style.display = 'none';},300);
+         trueOrFalse=0;
       }
       break;
   }//end of switch
