@@ -122,8 +122,8 @@ function openHeadElem(){
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(0)' id='head.ttd'>Things to Do  &#9660;</a>\
                             <div class='headerMenuExtension' id='head.ttdminimen'><div class='headerMenuExtensionLinks' id='head.ttdminimenlnk'>\
-                               <b>Adventure Park</b><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Attractions and Entertainment</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Places to Eat</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Shopping</a><br>\
-                               <b>City-Shop</b><a class='headerMenuLinks' href='' style='font-size:18px;'>&ensp;About</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Restauraunts and Dining</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Shopping</a></div></div>\
+                               <b>Adventure Park</b><a class='headerMenuLinks' style='font-size:18px;' href=''>Attractions and Entertainment</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Places to Eat</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Shopping</a>\
+                               <b>City-Shop</b><a class='headerMenuLinks' href='' style='font-size:18px;'>About</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Restauraunts and Dining</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Shopping</a></div></div>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(1)' id='head.more'>More  &#9660;</a>";
   
@@ -143,11 +143,18 @@ function openHeaderMiniMenu(numToOpn){
       const miniMen = document.getElementById('head.ttdminimen');
       const miniMenLink = document.getElementById('head.ttdminimenlnk');
       
+      if(miniMen.style.display=='none'){
+      
       miniMen.style.display = 'block';miniMenLink.style.display = 'block';
       
       setTimeout(function(){miniMen.style.height='auto';miniMenLink.style.opacity=1;},2);
+      }else{
+         miniMen.style.height='0px'; miniMenLink.style.opacity=0;
+         setTimeout(function(){miniMen.style.display = 'none';miniMenLink.style.display = 'none';},300);
+      }
       break;
-  }
+  }//end of switch
+  
 }
 
 function createFooter() {
