@@ -53,8 +53,8 @@
 #headtknpsbtn {width:200px;height:40px;float:right;display:inline-block; color:#07039D; background:white; border:none; transition:0.4s;}
 #headtknpsbtn:hover {background:white;color:#07039D;box-shadow: 4px 4px 3px lightgray;}
 
-.headerMenuExtension{transition-property:height;transition-duration:0.3s;height:0;display:none;width:250px;margin-left:40px;}
-.headerMenuExtensionLinks{transition-property:opacity;transition-duration:0.3s;opacity:0;display:none;}
+.headerMenuExtension{transition-property:height;transition-duration:0.3s;height:0;display:none;width:200px;margin-left:20px;}
+.headerMenuExtensionLinks{transition-property:opacity;transition-duration:0.3s;opacity:0;display:none;margin:0;}
 
 
 
