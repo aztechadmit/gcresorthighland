@@ -122,8 +122,8 @@ function openHeadElem(){
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(0)' id='head.ttd'>Things to Do  &#9660;</a>\
                             <div class='headerMenuExtension' id='head.ttdminimen'><div class='headerMenuExtensionLinks' id='head.ttdminimenlnk'>\
-                               <b>Adventure Park</b>&ensp;<a class='headerMenuLinks' href=''>Attractions and Entertainment</a>&ensp; <a class='headerMenuLinks' href=''>Places to Eat</a>&ensp;<a class='headerMenuLinks' href=''>Shopping</a><br>\
-                               <b>City-Shop</b>&ensp;<a class='headerMenuLinks' href=''>About</a>&ensp;<a class='headerMenuLinks' href=''>Restauraunts and Dining</a>&emsp;<a class='headerMenuLinks' href=''>Shopping</a></div></div>\
+                               <b>Adventure Park</b><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Attractions and Entertainment</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Places to Eat</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Shopping</a><br>\
+                               <b>City-Shop</b><a class='headerMenuLinks' href='' style='font-size:18px;'>&ensp;About</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Restauraunts and Dining</a><a class='headerMenuLinks' style='font-size:18px;' href=''>&ensp;Shopping</a></div></div>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(1)' id='head.more'>More  &#9660;</a>";
   
