@@ -81,11 +81,11 @@ function openSideBar() {
     bOp=1;
     headMenOpen = 1;
     
-    //headerHideMenuButton.style.display = 'block';
+    headerHideMenuButton.style.display = 'block';
     
   }else if(bOp==1){
     
-   // headerHideMenuButton.style.display = 'none';
+    headerHideMenuButton.style.display = 'none';
     
     document.getElementById('headerElements').style.opacity = 0;
     sideBarHTML.style.width = '0px';
