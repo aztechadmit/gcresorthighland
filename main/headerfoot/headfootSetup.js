@@ -3,6 +3,7 @@ const footerHTML = document.getElementById('footerDiv');
 const sideBarHTML = document.getElementById('headerMenuBar');
 
 var bOp = 0;
+var headMenOpen = 0;
 
 function initiateHeadFoot(pgNum) {
   
@@ -75,6 +76,7 @@ function openSideBar() {
     setTimeout(openHeadElem, 400);
     
     bOp=1;
+    headMenOpen = 1;
     
   }else if(bOp==1){
     
@@ -91,6 +93,7 @@ function openSideBar() {
     document.getElementById('headerMenuButton').innerHTML = '☰';
     
     bOp=0;
+    headMenOpen = 0;
     
   }
   
@@ -106,7 +109,7 @@ function openHeadElem(){
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
                             <a class='headerMenuLinks' href='' id='head.more'>More  &#9660;</a>";
   
-  headElemHTML.style.opacity = 1;
+  setTimeout(function(){headElemHTML.style.opacity = 1;},1);
   headerboldPageButton(head_pgNum);
 }
 
@@ -167,3 +170,21 @@ function createFooter() {
     <div class='footerLineBreak' style='margin-top:25px;'></div>\
     <p style='text-align:center;font-size:12px;color:dimgray;'>&#169; 2023 Globe-City Parks and Resorts LLC.<br>A Division of R and R Industries</p>";
 }//end of createFooter
+
+/*
+
+//this function will check if a user clicked inside of a menu. If not, the menu will hide.
+document.addEventListener('click', (evt) => {
+  if (headMenOpen != 0) {
+    
+    let targetE1 = evt.target;
+    
+    switch(headMenOpen){
+      case 1:
+    }
+       
+  }//end of if
+  
+});
+
+*/
