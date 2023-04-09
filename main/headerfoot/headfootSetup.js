@@ -1,6 +1,7 @@
 const headerHTML = document.getElementById('headerDiv');
 const footerHTML = document.getElementById('footerDiv');
 const sideBarHTML = document.getElementById('headerMenuBar');
+//const headHideBtn = document.getElementById('headerHideMenuButton');
 
 var bOp = 0;
 var headMenOpen = 0;
@@ -80,9 +81,11 @@ function openSideBar() {
     bOp=1;
     headMenOpen = 1;
     
+    //headerHideMenuButton.style.display = 'block';
+    
   }else if(bOp==1){
     
-    //document.getElementById('headerElements').style.opacity=0;
+   // headerHideMenuButton.style.display = 'none';
     
     document.getElementById('headerElements').style.opacity = 0;
     sideBarHTML.style.width = '0px';
@@ -97,6 +100,7 @@ function openSideBar() {
     bOp=0;
     headMenOpen = 0;
     
+
   }
   
 }
@@ -116,7 +120,7 @@ function openHeadElem(){
   headElemCreated = 1;
   }else{document.getElementById('headerElements').style.display = 'block';}
   
-  setTimeout(function(){headElemHTML.style.opacity = 1;},1);
+  setTimeout(function(){document.getElementById('headerElements').style.opacity = 1;},1);
   headerboldPageButton(head_pgNum);
 }
 
