@@ -60,3 +60,4 @@
 .footerLink:hover {color:blue;text-decoration:underline;}
 
 #headerHideMenuButton{position:absolute;z-index:900;top:0;left:0;opacity:0;margin:0;width:99vw;height:99vh;display:none;}
+#headerHideMenuButton:hover {opacity:0;}
