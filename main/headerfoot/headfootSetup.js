@@ -67,7 +67,8 @@ function openSideBar() {
   if(bOp==0){
   
     sideBarHTML.style.display = 'block';
-    sideBarHTML.style.width = 300;
+    setTimeout(function(){sideBarHTML.style.width = '300px';},1);
+    
     
     document.getElementById('headerMenuButton').innerHTML = 'X';
 
@@ -79,9 +80,11 @@ function openSideBar() {
     
     //document.getElementById('headerElements').style.opacity=0;
     
-    sideBarHTML.style.width = 0;
-    document.getElementById('headerElements').style.display = 'none';
-    sideBarHTML.style.display = 'none';
+    document.getElementById('headerElements').style.opacity = 0;
+    sideBarHTML.style.width = '0px';
+    
+    setTimeout(function(){document.getElementById('headerElements').style.display = 'none';},200);
+    setTimeout(function(){sideBarHTML.style.display = 'none';},500);
     
     //setTimeout(function(){ sideBarHTML.style.display = 'none';  }, 500);
     
