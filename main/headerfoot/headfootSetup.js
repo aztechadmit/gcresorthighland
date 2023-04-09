@@ -139,7 +139,7 @@ function createFooter() {
     <div style='position:relative;margin:auto;'>\
     <div class='footerGroup'>\
     <b>Adventure Park</b><br>\
-    <a class='footerLink'>Tickets and Passes</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets'>Tickets and Passes</a><br>\
     <a class='footerLink'>GC-VIP</a><br>\
     <a class='footerLink'>Annual Passports</a><br>\
     <a class='footerLink'>Group Admission (10+)</a><br>\
