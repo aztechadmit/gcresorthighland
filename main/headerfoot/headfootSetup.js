@@ -5,6 +5,8 @@ const sideBarHTML = document.getElementById('headerMenuBar');
 var bOp = 0;
 var headMenOpen = 0;
 
+var headElemCreated = 0;
+
 function initiateHeadFoot(pgNum) {
   
   head_pgNum=pgNum;
@@ -100,6 +102,8 @@ function openSideBar() {
 }
 
 function openHeadElem(){
+  
+  if(headElemCreated == 0){
   sideBarHTML.innerHTML = "<div id='headerElements'></div>";
   const headElemHTML = document.getElementById('headerElements');
   
@@ -108,6 +112,9 @@ function openHeadElem(){
                             <a class='headerMenuLinks' href='' id='head.ttd'>Things to Do  &#9660;</a>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
                             <a class='headerMenuLinks' href='' id='head.more'>More  &#9660;</a>";
+  
+  headElemCreated = 1;
+  }else{document.getElementById('headerElements').style.display = 'block';}
   
   setTimeout(function(){headElemHTML.style.opacity = 1;},1);
   headerboldPageButton(head_pgNum);
