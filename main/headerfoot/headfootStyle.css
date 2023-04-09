@@ -31,6 +31,7 @@
             background:dimgray;
             color:white;
             display:none;
+            z-indez:997;
 }
 
 #headerElements {
@@ -57,3 +58,5 @@
 .footerLineBreak{width:95%; margin:auto;max-width:1500px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
 .footerLink {color:dimgray;text-decoration:none;cursor:pointer;font-style:normal;}
 .footerLink:hover {color:blue;text-decoration:underline;}
+
+#headerHideMenuButton{position:absolute;z-index:900;top:0;left:0;opacity:0;}
