@@ -59,4 +59,4 @@
 .footerLink {color:dimgray;text-decoration:none;cursor:pointer;font-style:normal;}
 .footerLink:hover {color:blue;text-decoration:underline;}
 
-#headerHideMenuButton{position:absolute;z-index:900;top:0;left:0;opacity:0;}
+#headerHideMenuButton{position:absolute;z-index:900;top:0;left:0;opacity:0;margin:0;width:99vw;height:99vh;}
