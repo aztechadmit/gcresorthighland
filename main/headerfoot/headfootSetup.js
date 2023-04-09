@@ -42,7 +42,7 @@ function createHeader(typ) {
     //remember to put in order of first item will be the right most, last item will be the left most
     headerHTML.innerHTML = "<a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>"
     
-    headerHTML.innerHTML += "<button id='headtknpsbtn' onclick='window.open('https://aztechadmit.github.io/gcresorthighland/parktickets');'>Tickets and Passes</button>\
+    headerHTML.innerHTML += "<button id='headtknpsbtn' onclick='openLnkFrmHed(0)'>Tickets and Passes</button>\
                             <a class='headerLink' id='head.more'>MORE &#9660;</a>\
                             <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
                             <a class='headerLink' id='head.ttd'>THINGS TO DO &#9660;</a>\
@@ -58,6 +58,13 @@ function createHeader(typ) {
   }
   
 }//end of createHeader
+
+function openLnkFrmHed(linkNumhead){
+  switch(linkNumhead){
+    case 0:  window.open('https://aztechadmit.github.io/gcresorthighland/parktickets', '_self'); break;
+    case 1:  window.open('https://aztechadmit.github.io/gcresorthighland/parktickets/annualpassports', '_self'); break;
+  }//end of switch
+}
 
 function resizeHeader() {
   if (window.innerWidth < 1010){
@@ -111,7 +118,7 @@ function openHeadElem(){
   sideBarHTML.innerHTML = "<div id='headerElements'></div>";
   const headElemHTML = document.getElementById('headerElements');
   
-  headElemHTML.innerHTML = "<button id='headtknpsbtn' style='float:left;margin-left:0;width:260px;' onclick='window.open('https://aztechadmit.github.io/gcresorthighland/parktickets');'>Tickets and Passes</button>\
+  headElemHTML.innerHTML = "<button id='headtknpsbtn' style='float:left;margin-left:0;width:260px;' onclick='openLnkFrmHed(0)'>Tickets and Passes</button>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
                             <a class='headerMenuLinks' href='' id='head.ttd'>Things to Do  &#9660;</a>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
