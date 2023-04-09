@@ -1,7 +1,7 @@
 const headerHTML = document.getElementById('headerDiv');
 const footerHTML = document.getElementById('footerDiv');
 const sideBarHTML = document.getElementById('headerMenuBar');
-//const headHideBtn = document.getElementById('headerHideMenuButton');
+const headHideBtn = document.getElementById('headerHideMenuButton');
 
 var bOp = 0;
 var headMenOpen = 0;
