@@ -120,9 +120,12 @@ function openHeadElem(){
   
   headElemHTML.innerHTML = "<button id='headtknpsbtn' style='float:left;margin-left:0;width:260px;' onclick='openLnkFrmHed(0)'>Tickets and Passes</button>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
-                            <a class='headerMenuLinks' href='' id='head.ttd'>Things to Do  &#9660;</a>\
+                            <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(0)' id='head.ttd'>Things to Do  &#9660;</a>\
+                            <div class='headerMenuExtension' id='head.ttdminimen'><div class='headerMenuExtensionLinks' id='head.ttdminimenlnk'>\
+                               <b>Adventure Park</b><br>&emsp;<a class='headerMenuLinks' href=''>Attractions and Entertainment</a><br>&emsp; <a class='headerMenuLinks' href=''>Places to Eat</a><br>&emsp;<a class='headerMenuLinks' href=''>Shopping</a><br>\
+                               <b>City-Shop</b><br>&emsp;<a class='headerMenuLinks' href=''>About</a><br>&emsp;<a class='headerMenuLinks' href=''>Restauraunts and Dining</a><br>&emsp;<a class='headerMenuLinks' href=''>Shopping</a><br></div></div>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
-                            <a class='headerMenuLinks' href='' id='head.more'>More  &#9660;</a>";
+                            <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(1)' id='head.more'>More  &#9660;</a>";
   
   headElemCreated = 1;
   }else{document.getElementById('headerElements').style.display = 'block';}
@@ -133,6 +136,17 @@ function openHeadElem(){
 
 // Adjust the header if the window is resized
 window.onresize = resizeHeader;
+
+function openHeaderMiniMenu(numToOpn){
+  switch(numToOpn){
+    case 0: //Things to Do Menu
+      const miniMen = document.getElementById('head.ttdminimen');
+      const miniMenLink = document.getElementById('head.ttdminimenlnk');
+      miniMen.style.display = 'block';miniMenLink.style.display = 'block';
+      setTimeout(function(){miniMen.style.height='auto';miniMenLink.style.opacity=1;},1);
+      break;
+  }
+}
 
 function createFooter() {
   footerHTML.innerHTML = "<div class='footerLineBreak'></div>\
