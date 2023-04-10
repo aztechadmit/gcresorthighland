@@ -8,7 +8,7 @@
             margin:0;
             width:full;
             min-height:50px;
-            background:#07039D;
+            background:#073763; /* old: #07039D , #073763 */
             padding:5px;
             transition:0.1s;
             z-index:9999;
