@@ -30,3 +30,5 @@ button:hover {background:lightgray;cursor:pointer;}
 .btnFull:hover {background:#073763;cursor:pointer;}
 
 .btnWhite {border:2px solid white;border-radius:8px;color:white;background:none;min-width:150px;padding:10px;}
+
+.titleBarContainer {.fullContainer; background:#073763;margin-top:0;color:white;text-align:center;padding:10px;}
