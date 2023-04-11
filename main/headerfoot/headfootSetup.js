@@ -191,7 +191,7 @@ function createFooter() {
     <b>Information</b><br>\
     <a class='footerLink'>About Us</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/information'>Resort Information</a><br>\
-    <a class='footerLink'>Guidelines and Rules</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/resortsafety'>Guidelines and Rules</a><br>\
     <a class='footerLink'>News and Updates</a><br>\
     <a class='footerLink'>Resort Calendar</a><br>\
     <br><b>Resort Hotels</b><br>\
