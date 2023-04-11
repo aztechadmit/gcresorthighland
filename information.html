@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
 
- <body style='text-align:center'>
+ <body>
   <!-- Place the header -->
   <div id="headerDiv" class="headerBar"></div>
   <div id="headerMenuBar"></div>
   <button id='headerHideMenuButton' onclick='openSideBar()'></button>
   
   <!-- Title Bar Text -->
-  <div class='titleBarContainer'><h2 style='color:white;font-weight:normal'>Resort Information</h2><br>
-    <p id='dateDisplay'>Todays Date - Error Loading?</p>
+  <div class='titleBarContainer'><h2 style='color:white;font-weight:normal;'>Resort Information</h2><br>
+    <p id='dateDisplay' style:'margin-top:0'>Todays Date - Error Loading?</p>
    </div> <!-- Remember to Change Page Title above!! -->
   
   <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
- 
+ <div style='text-align:center'>
   <div class='container'>
     <h2>Today's Operating Hours</h2>
     <br><br>
@@ -53,12 +53,14 @@
     <button style='width:80%;max-width:500px;'>View Tickets and Passports</button>
   </div>
    
+  </div> <!-- end of text centered div -->
+  
    <br><br>
    
   <div class='container'>
     <p style='font-size:12px;'>The information displayed on this page is updated using a pre-set calendar and general data analytics. Accuracy is not guaranteed and changes may occur that are not displayed on this page.</p>
   </div>
-   
+  
   <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
   <br><div id="footerDiv"></div>
  </body>
