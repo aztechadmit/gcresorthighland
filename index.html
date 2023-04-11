@@ -60,7 +60,7 @@
    <br>
    <div class='container' style='text-align:center;'>
    <img src='main/images/passholderIcon1.png' style='width:400px;height:auto;display:inline-block;vertical-align:middle;'/>
-   <div style='text-align:right;width:90%;max-width:600px;display:inline-block;vertical-align:middle;'>
+   <div style='text-align:right;width:90%;max-width:600px;display:inline-block;vertical-align:middle;' id='apadspace'>
     <h1 style='color:white;'>Adventure for the Whole Year</h1>
     <p>Purchase an annual passport to visit Adventure Park on over 230* days of the year for no additional fee</p>
     <p><a style='text-decoration:underline;color:white;' href='parktickets/annualpassports'>Learn More</a></p>
@@ -93,6 +93,10 @@
   <!-- Place the Footer -->
   <br><div id="footerDiv"></div>
  </body>
+ 
+ <!-- change align text of passport section if necessary -->
+ <script>function changeTxtAlign(){if(window.innerWidth < 1000){document.getElementById('apadspace').style.textAlign = 'center';} }</script>
+ <script>changeTxtAlign();</script>
  
  <!-- Call the function to create the header and footer -->
  <script src="main/headerfoot/headfootSetup.js"></script>
