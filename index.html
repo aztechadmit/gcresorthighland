@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="main/headerfoot/headfootStyle.css">
  </head>
  
+ <style>
+  .indexHeaderLink {color:white;background:none;border:2px solid white;border-radius:5px;display:inline-block;padding:5px;margin-left:10px;margin-right:10px;vertical-align: middle;}
+ </style>
  
  <body>
   <!-- Place the header -->
@@ -15,7 +18,13 @@
   <button id='headerHideMenuButton' onclick='openSideBar()'></button>
   
   <!-- Banner Image -->
-  <div class='fullContainer' style='background-image:url("https://media2.giphy.com/media/YSgAZyEj9ndDDXLX9h/giphy.gif");background-size:cover;background-position:center;height:75vh;margin-top:0;'></div>
+  <div class='fullContainer' style='background-image:url("https://media2.giphy.com/media/YSgAZyEj9ndDDXLX9h/giphy.gif");background-size:cover;background-position:center;height:85vh;margin-top:-50px;'></div>
+  <div class='titleBarContainer' style='height:15vh;align-items'>
+   <button class='indexHeaderLink' onclick='window.open("parktickets","_self")'>Park Tickets</button>
+   <button class='indexHeaderLink' onclick='window.open("parktickets/gcvip","_self")'>GC-VIP</button>
+   <button class='indexHeaderLink' onclick='window.open("parktickets/annualpassports","_self")'>Annual Passes</button>
+   <button class='indexHeaderLink' onclick='window.open("places-to-stay","_self")'>Hotels</button>
+  </div>
   
   <!-- Beggining of body -->
   <div class="container" style='text-align:center;'>
