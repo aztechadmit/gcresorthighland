@@ -24,6 +24,4 @@ function runResortInfo() {
   const tdate = new Date();
   dateDisplay.innerHTML = "<p style='margin-top:0'>Todays Date: " + tdate + "</p>";
   
-  alert('Welcome!');
-  
 }
