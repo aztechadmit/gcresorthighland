@@ -12,3 +12,13 @@ resortInfoTags = {
 
 resortParkingRates = {"<p>$15 - $28</p>","<p>$24 - $35</p>","<p>$24 - $35</p>","<p>$30 - $50</p>","<p>$30 - $55</p>"};
 
+// Functions:
+
+runResortInfo() {
+  
+  const dateDisplay = document.getElementById('datedisptxt');
+  
+  const tdate = new Date();
+  dateDisplay.innerHTML = "Todays Date: " + tdate.toString();
+  
+}
