@@ -1,3 +1,4 @@
+/*
 resortInfoTags = {
   "<p style='color:red;'>Closed</p>",
   "<p style='color:green;'>Light Crowds</p>",
@@ -11,6 +12,8 @@ resortInfoTags = {
 };
 
 resortParkingRates = {"<p>$15 - $28</p>","<p>$24 - $35</p>","<p>$24 - $35</p>","<p>$30 - $50</p>","<p>$30 - $55</p>"};
+
+*/
 
 // Functions:
 
