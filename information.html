@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
+ 
+ <style>
+  .prkHrsDisp {display:inline-block;vertical-align:middle;}
+ </style>
 
  <body>
   <!-- Place the header -->
@@ -21,15 +25,17 @@
   <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
  <div style='text-align:center'>
   <div class='container'>
-    <h2>Today's Operating Hours</h2>
-    <br><br>
+    <h2>Today's Operating Hours</h2><br>
+     <div class='prkHrsDisp' id='apHrs'><b>Adventure Park</b><br>10AM - 10PM</div>
+     <div class='prkHrsDisp' id='csHrs'><b>City-Shop</b><br>11AM - 11PM</div>
+    <br>
     <a href=''>View Calendar</a>
   </div>
    
    <div class='lineBreak'></div>
    
   <div class='container'>
-    <h2>Adventure Park Status Updates</h2>
+    <h2>Crowd Levels and Parking</h2>
   </div>
    
    <div class='lineBreak'></div>
@@ -50,7 +56,7 @@
    <div class='lineBreak'></div>
    
   <div class='container'>
-    <button style='width:80%;max-width:500px;'>View Tickets and Passports</button>
+    <button style='width:80%;max-width:500px;' onclick="window.open('parktickets','_self');">View Tickets and Passports</button>
   </div>
    
   </div> <!-- end of text centered div -->
