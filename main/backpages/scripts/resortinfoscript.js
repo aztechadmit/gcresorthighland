@@ -14,7 +14,7 @@ resortParkingRates = {"<p>$15 - $28</p>","<p>$24 - $35</p>","<p>$24 - $35</p>","
 
 // Functions:
 
-runResortInfo() {
+function runResortInfo() {
   
   const dateDisplay = document.getElementById('datedisptxt');
   
