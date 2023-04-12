@@ -13,10 +13,11 @@
   .indexBanner {position:static;top:0;width:full;background:dodgerblue;padding:14px;text-align:center;color:white;}
   
   .spotlightContainer {display:flex;flex-wrap:wrap;text-align:center;}
-  .spotlightTile {margin:15px;padding:10px;flex:33%;border:2px solid black;}
-  .spotlightTile:hover {cursor:pointer;}
+  .spotlightTile {margin:15px;padding:10px;flex:33%;border:2px solid black;border-radius:10px;min-height:400px;}
+  .spotlightTile:hover {cursor:pointer;background:azure;}
+  .spotlightImg {width:100%;height:auto;border-radius:10px;}
   
-  @media(max-width:1100px){
+  @media(max-width:600px){
    .spotlightTile {flex:100%;}
   }
  </style>
@@ -49,11 +50,15 @@
   
   <div class='lineBreak'></div>
   
+  <!-- RESORT SPOTLIGHT -->
+  
   <div class='container' style='text-align:center'>
    <h1>Resort Spotlight</h1>
    <p>View Recent News and Updates by clicking <a href='www.google.com'>here</a></p>
     <div class='spotlightContainer' id='rsSptCont'>
-     <div class='spotlightTile'>Hello There!</div>
+     <div class='spotlightTile'><img class='spotlightImg' src='main/images/banner6.jpg'/><br><h3>Hello There!</h3><p>This is the part where we tell you about this spotlight</p><a href='places-to-stay'>Learn More</a></div>
+     <div class='spotlightTile'><img class='spotlightImg' src='main/images/banner5.jpg'/><br><h3>GoodBye Friend</h3><p>This is the part where we tell you about this spotlight</p><a href='parktickets'>Learn More</a></div>
+     <div class='spotlightTile'><img class='spotlightImg' src='main/images/banner7.jpg'/><br><h3>There's Lot's to Learn!</h3><p>This is the part where we tell you about this spotlight</p><a href='information'>Learn More</a></div>
     </div>
   </div>
   
