@@ -26,7 +26,7 @@ function runResortInfo() {
   const tmonth = months[tdate.getMonth()];
   const tday = tdate.getDate();
   const tyear = tdate.getFullYear();
-  const dayOfWeek = days[tdate.getDay()+1];
+  const dayOfWeek = days[tdate.getDay()];
   
   dateDisplay.innerHTML = "<p style='margin-top:0'>"+dayOfWeek+", "+tmonth+" "+tday+" "+tyear+"</p>";
   
