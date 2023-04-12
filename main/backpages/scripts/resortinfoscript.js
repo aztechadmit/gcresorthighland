@@ -19,6 +19,6 @@ function runResortInfo() {
   const dateDisplay = document.getElementById('datedisptxt');
   
   const tdate = new Date();
-  dateDisplay.innerHTML = "Todays Date: " + tdate.toString();
+  dateDisplay.innerHTML = "<p style='margin-top:0'>Todays Date: " + tdate + "</p>";
   
 }
