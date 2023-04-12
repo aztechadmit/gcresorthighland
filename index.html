@@ -11,6 +11,14 @@
   .indexHeaderLink {color:white;background:none;border:2px solid white;border-radius:5px;display:inline-block;padding:5px;margin-left:10px;margin-right:10px;vertical-align: middle;}
   .indexIcon {font-size:40px;margin:0;}
   .indexBanner {position:static;top:0;width:full;background:dodgerblue;padding:14px;text-align:center;color:white;}
+  
+  .spotlightContainer {display:flex;flex-wrap:wrap;text-align:center;}
+  .spotlightTile {margin:15px;padding:10px;flex:33%;border:2px solid black;}
+  .spotlightTile:hover {cursor:pointer;}
+  
+  @media(max-width:1100px){
+   .spotlightTile {flex:100%;}
+  }
  </style>
  
  <body>
@@ -44,7 +52,9 @@
   <div class='container' style='text-align:center'>
    <h1>Resort Spotlight</h1>
    <p>View Recent News and Updates by clicking <a href='www.google.com'>here</a></p>
-   <br>
+    <div class='spotlightContainer' id='rsSptCont'>
+     <div class='spotlightTile'>Hello There!</div>
+    </div>
   </div>
   
   <div class='lineBreak'></div>
@@ -81,7 +91,7 @@
    <button>Begin Vacation Planning</button><br>
   </div>
   
-  <br>
+  <br><br>
   
    <div class='titleBarContainer' style='min-height:10vh;bottom:0;width:full;'>
     <img src='main/images/gcresortlogo.png' style='width:300px;height:auto;'/>
