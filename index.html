@@ -18,8 +18,13 @@
   .spotlightImg {width:100%;height:auto;border-radius:20px;max-height:40%;}
   .spotLightlink{float:bottom;}
   
+  #headBtnHoldr {position:relative;}
+  
   @media screen and (max-width:800px){
    .spotlightTile {width:80%;}
+  }
+  @media screen and (max-width:1000px){
+   #headBtnHoldr {position:absolute;bottom:0;left:0;}
   }
  </style>
  
@@ -33,7 +38,7 @@
   
   <!-- Banner Image -->
   <div class='fullContainer' style='background-image:url("https://media2.giphy.com/media/YSgAZyEj9ndDDXLX9h/giphy.gif");background-size:cover;background-position:center;height:85vh;margin-top:-60px;'></div>
-  <div class='titleBarContainer' style='min-height:10vh;bottom:0;width:full;'>
+  <div class='titleBarContainer' style='min-height:10vh;bottom:0;width:full;' id='headBtnHoldr'>
    <button class='indexHeaderLink' onclick='window.open("parktickets","_self")'><p class='indexIcon'>&#127906;</p>Park Tickets</button>
    <button class='indexHeaderLink' onclick='window.open("parktickets/gcvip","_self")'><p class='indexIcon'>&#11088;</p>GC-VIP</button>
    <button class='indexHeaderLink' onclick='window.open("parktickets/annualpassports","_self")'><p class='indexIcon'>&#128159;</p>Annual Passes</button>
