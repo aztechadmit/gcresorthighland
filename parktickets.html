@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
  
+ <style>
+ 	.tkContainer {
+    border:2px solid black;border-radius:20px;
+    transition:0.5s;
+    width:40%;height:450px;
+    vertical-align:middle;margin:15px;
+    padding:10px;
+    display:inline-block;
+    max-width:500px;
+    position:relative;
+    }
+    .tkContainer:hover {cursor:pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    
+    .tkImage {margin:0;width:100%;height:35%;border-radius:20px;object-fit:cover;}
+    
+    .tkBtn {position:absolute;bottom:6px;left:0;right:0;margin:auto;width:90%;border-radius:20px;}
+    
+    @media screen and (max-width:900px) {
+    	.tkContainer {width:85%;margin:5px;margin-bottom:15px;}
+    }
+    
+    
+ </style>
+ 
  
  <body>
   <!-- Place the header -->
@@ -19,8 +44,26 @@
   
   <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
  
-   <div class='container' style='text-align:center'>
-   	
+   <div class='fullContainer' style='text-align:center'>
+   	<div class='tkContainer' onclick='openTkLnk(1);'>
+    	<img class='tkImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg' />
+        <h2>Day Tickets</h2>
+        <p>Purchase daily admission to Adventure Park. 
+        <br><br><b>Starting at $65</b> 
+        </p>
+        <button class='tkBtn'>Purchase Tickets</button>
+    </div>
+    
+    <div class='tkContainer' onclick='openTkLnk(2);'>
+    	   	<img class='tkImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg' />
+        <h2>Annual Passports</h2>
+        <p>Purchase an annual passport to enter Adventure Park on over 230<sup>1</sup> days at no extra cost! 
+        <br><br><b>Starting at $175</b> 
+        </p>
+        <button class='tkBtn'>Purchase Passports</button>
+    </div>
+    
+    
    </div>
    
    
@@ -44,6 +87,16 @@
   <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
   <br><div id="footerDiv"></div>
  </body>
+ 
+ <script>
+ function openTkLnk(numL) {
+ 	if(numL == 1){
+    	window.open('https://aztechadmit.github.io/client-ticketingservice/globecityresorthighland/client-demonstration.html','_self');
+    }else{
+    	window.open('https://aztechadmit.github.io/client-ticketingservice/globecityresorthighland/annual-passports','_self');
+   	}
+ }
+ </script>
  
  <!-- Call the function to create the header and footer -->
  <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
