@@ -60,7 +60,7 @@
         <p>Purchase an annual passport to enter Adventure Park on over 230<sup>1</sup> days at no extra cost! 
         <br><br><b>Starting at $175</b> 
         </p>
-        <button class='tkBtn'>Purchase Passports</button>
+        <button class='tkBtn' onclick='openTkLink(3);'>Purchase Passports</button>
     </div>
     
     
@@ -92,7 +92,9 @@
  function openTkLnk(numL) {
  	if(numL == 1){
     	window.open('https://aztechadmit.github.io/client-ticketingservice/globecityresorthighland/client-demonstration.html','_self');
-    }else{
+    }
+  else if(numL==2){window.open('parktickets/annualpassports','_self');}
+  else{
     	window.open('https://aztechadmit.github.io/client-ticketingservice/globecityresorthighland/annual-passports','_self');
    	}
  }
