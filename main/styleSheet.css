@@ -35,7 +35,7 @@ button:hover {background:lightgray;cursor:pointer;}
 
 /* TEXT AND INFORMATION TILES (LIKE IN THE RESORT SPOTLIGHT TAB AND ANY OTHER PLACES */
 
-    .tileContainer {border:2px solid black; border-radius:20px; position:relative; margin:15px; padding:10px; vertical-align:middle; width:20%; min-width:300px; min-height:400px; transition:0.4s; display:inline-block;}
+    .tileContainer {border:1px solid black; border-radius:20px; position:relative; margin:15px; padding:10px; vertical-align:middle; width:20%; min-width:300px; min-height:400px; transition:0.4s; display:inline-block;}
     .tileContainer:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
     .tileLink {position:absolute;bottom:10px;left:0;right:0;margin:auto;}
     .tileImage {margin:0; width:100%; height:25%; border-radius:20px; object-fit:cover;}
