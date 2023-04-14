@@ -177,7 +177,7 @@ function createFooter() {
     </div>   \
     <div class='footerGroup'>\
     <b>City Shop</b><br>\
-    <a class='footerLink'>About</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/city-shop'>About</a><br>\
     <a class='footerLink'>Restauraunts and Dining</a><br>\
     <a class='footerLink'>Shopping and Attractions</a><br>\
     <a class='footerLink'>City-Shop Parking</a><br>\
