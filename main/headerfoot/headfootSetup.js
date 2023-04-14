@@ -123,7 +123,7 @@ function openHeadElem(){
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(0)' id='head.ttd'>Things to Do  &#9660;</a>\
                             <div class='headerMenuExtension' id='head.ttdminimen'><div class='headerMenuExtensionLinks' id='head.ttdminimenlnk'>\
                                <b>Adventure Park</b><a class='headerMenuLinks' style='font-size:18px;' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/adventurepark/attractions-and-entertainment'>Attractions and Entertainment</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Places to Eat</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Shopping</a>\
-                               <b>City-Shop</b><a class='headerMenuLinks' href='' style='font-size:18px;'>About</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Restauraunts and Dining</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Shopping</a></div></div>\
+                               <b>City-Shop</b><a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/city-shop' style='font-size:18px;'>About</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Restauraunts and Dining</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Shopping</a></div></div>\
                             <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
                             <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(1)' id='head.more'>More  &#9660;</a>";
   
