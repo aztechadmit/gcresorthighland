@@ -18,7 +18,7 @@ body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height
 .fullContainer, .titleBarContainer {width:full;margin:0;padding:0;margin-top:40px;}
 
 /* Dividers */
-.lineBreak {width:95vw; margin:auto;max-width:1200px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
+.lineBreak {width:95vw; margin:auto;max-width:1200px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;overflow-x:hidden;}
 
 
 /* Buttons */
@@ -46,4 +46,30 @@ button:hover {background:lightgray;cursor:pointer;}
 
 /* Announcement Banners */
 #announcementBanner {position:sticky;top:70px;left:0;right:0;background:dodgerblue;text-align:center;color:white;padding:5px;z-index:299;}
+
+/* Image and Text Blocks */
+    .txtBlockImg1 {width:40%;height:300px;display:inline;vertical-align:top;margin-right:20px;object-fit:cover;border-radius:20px;}
+    .txtBlockTxt1 {width:50%;display:inline-block;vertical-align:top;}
+    .txtBlockTitle1 {display:inline-block;margin:0;font-weight:normal;font-size:30px;}
+    
+     .txtBlockContainer1 {text-align:left;}
+    
+    @media screen and (max-width:700px){
+    	.txtBlockImg1{display:block;width:90%;height:auto;margin:auto;margin-bottom:15px;}
+        .txtBlockTxt1{width:95%;}
+        .txtBlockContainer1 {text-align:center;}    
+    }
+
+    .menSelectContainer{text-align:center;padding:10px;}
+
+/* DEFAULT FORM ELEMENTS */
+select {width:150px; height:30px; border-radius:5px; font-size:18px;}
  	
+/* ANIMTED ELEMENTS */
+    /*Example use: <div class='container fadeInBlock> */
+    .fadeInBlock {display: block;    -webkit-animation: fadeIn 1s;    animation: fadeIn 1s;}
+    
+    @-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+	}
