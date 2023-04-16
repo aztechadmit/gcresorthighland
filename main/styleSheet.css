@@ -67,7 +67,7 @@ button:hover {background:lightgray;cursor:pointer;}
 	 .txtBlockRow{display:flex;}
    	 .txtBlockColumn{float:left;width:50%;padding:10px;}
     
-   	 @media screen and (max-width:500px){.txtBlockRow{display:block;}.txtBlockColumn{width:100%;} }
+   	 @media screen and (max-width:600px){.txtBlockRow{display:block;}.txtBlockColumn{width:100%;} }
 
 
 /* DEFAULT FORM ELEMENTS */
