@@ -43,3 +43,7 @@ button:hover {background:lightgray;cursor:pointer;}
     @media screen and (max-width:900px){
     	.tileContainer {width:85%; min-width:300px; min-height:300px;}
     }
+
+/* Announcement Banners */
+#announcementBanner {position:sticky;top:70px;left:0;right:0;background:dodgerblue;text-align:center;color:white;padding:5px;z-index:299;}
+ 	
