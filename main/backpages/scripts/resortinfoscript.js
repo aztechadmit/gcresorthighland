@@ -12,6 +12,8 @@ resortInfoTags = [
 
 resortParkingRates = ["<p>$15 - $28</p>","<p>$24 - $35</p>","<p>$24 - $35</p>","<p>$30 - $50</p>","<p>$30 - $55</p>"];
 
+//const loadingSymbol = document.getElementById('loadingSymbol');
+
 // Functions:
 
 const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -30,4 +32,24 @@ function runResortInfo() {
   
   dateDisplay.innerHTML = "<p style='margin-top:0'>"+dayOfWeek+", "+tmonth+" "+tday+" "+tyear+"</p>";
   
+  //Import Data File
+  var fs = require('fs');
+  
+  fs.readFile('https://aztechadmit.github.io/gcresorthighland/main/backpages/database/datetiers.txt', function(err, data){
+    
+    if(err) throw err;
+    
+    var dataRead = data.toString().split("\n");
+    
+    for(i in dataRead){
+      alert(dataRead[i]);
+    }
+    
+  });
+  
 }
+
+/*
+function finishLoading(){
+  loadingSymbol.style.display = 'none';
+} *\
