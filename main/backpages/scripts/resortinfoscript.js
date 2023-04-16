@@ -52,4 +52,4 @@ function runResortInfo() {
 /*
 function finishLoading(){
   loadingSymbol.style.display = 'none';
-} *\
+} */
