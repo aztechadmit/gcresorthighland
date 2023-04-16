@@ -1,0 +1,127 @@
+<html>
+ <head> <!-- Basic HTML Page Setup -->
+    <title>LOCATION NAME | Globe-City Adventure Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
+    <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
+    <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
+ </head>
+ 
+ <style>
+  .txtBlockRow{display:flex;}
+   	 .txtBlockColumn{float:left;width:50%;padding:10px;}
+    
+   	 @media screen and (max-width:700px){.txtBlockRow{display:block;}.txtBlockColumn{width:100%;} }
+ </style>
+ 
+ 
+ <body>
+  <!-- Place the header -->
+  <div id="headerDiv" class="headerBar"></div>
+  <div id="headerMenuBar"></div>
+  <button id='headerHideMenuButton' onclick='openSideBar()'></button>
+  
+  <div class='fullContainer' style='background:#efefef;margin-top:0px;'><br>
+  	<div class='container txtBlockContainer1' style='margin-top:0;'>
+
+        <img class='txtBlockImg1' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg'>
+        
+        <div class='txtBlockTxt1'>
+        	<h1 class='txtBlockTitle1'>Boulevard Diner</h1><br>
+            Dining located in <em>Adventure Boulevard</em> in Adventure Park<br><br>
+            Relax under a candy-striped umbrella and watch the world pass by—or unwind inside the Classic Era style dining room as waiters in vintage dress bustle past. The Boulevard Diner takes you on a trip to the turn-of-the-century with a nostalgic menu of delicious delights for breakfast, lunch and dinner.
+       </div>
+    </div><br>
+  </div> <!-- end of dining intro -->
+  
+  <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
+  
+  <div class='menSelectContainer'>
+  <label for='menSelect'>Select Menu: </label>
+  <select name='menSelect' id='menSelect' onchange='changeMenu()' defaultvalue='dinner'>
+  <option value='brkfst'>Breakfast</option><option value='dinner'>Lunch / Dinner</option></select>
+  </div>
+  
+  <!-- START OF MENU ITEMS -------------------------------------------------------------------------->
+   
+  <div class='container fadeInBlock' id='lunchMenu' style='overflow-x:hidden;display:none;margin-top:0;'>
+  	<div style='text-align:center'><h2>Lunch and Dinner Menu</h2></div>
+    <div class='lineBreak'></div>
+    
+  </div> <!-- end of lunch/dinner -->
+  
+  <div class='container fadeInBlock' id='breakfastMenu' style='overflow-x:hidden;display:block;margin-top:0;'>
+    <div style='text-align:center'><h2>Breakfast Menu</h2>
+    <p>Served from park opening to 12PM on select days</p></div>
+    
+    <!-- Section -->
+    <div class='lineBreak'></div>
+    
+    <h3 style='margin-bottom:0;'>Sandwiches</h3>
+    <p style='margin:0;'>Served with choice of fries, house-made potato chips, or fresh fruit</p>
+    
+    <div class='txtBlockRow'>
+    
+    	<div class='txtBlockColumn'>
+        
+        <p><b>The Turkey Melt - $15.25</b><br>Sliced turkey with mozzarella cheese, tomato, mayonnaise, bacon, and drizzled balsamic vinegar, served on buttery sourdough bread</p>
+        
+        <p><b>Minecraftian BLT - $15.40</b><br>Bacon, lettuce, and tomato drizzled with mayonnaise served on buttery sourdough bread</p>
+        </div>
+        
+        <div class='txtBlockColumn'>
+        <p><b>Menu Item 1</b><br>This item is so delicious!</p>
+        <p><b>Menu Item 2</b><br>This item is so delicious!</p>
+        </div>
+       
+    </div>
+    <!-- end of section -->
+    
+    <!-- Section -->
+    <div class='lineBreak'></div>
+    
+    <h3 style='margin-bottom:0;'>Soups and Salads</h3>
+    <p style='margin:0;'></p>
+    
+    <div class='txtBlockRow'>
+    
+    	<div class='txtBlockColumn'>
+        
+        <p><b>The Turkey Melt - $15.25</b><br>Sliced turkey with mozzarella cheese, tomato, mayonnaise, bacon, and drizzled balsamic vinegar, served on buttery sourdough bread</p>
+        
+        <p><b>Minecraftian BLT - $15.40</b><br>Bacon, lettuce, and tomato drizzled with mayonnaise served on buttery sourdough bread</p>
+        </div>
+        
+        <div class='txtBlockColumn'>
+        <p><b>Menu Item 1</b><br>This item is so delicious!</p>
+        <p><b>Menu Item 2</b><br>This item is so delicious!</p>
+        </div>
+       
+    </div>
+    <!-- end of section -->
+    
+    
+  </div> <!-- end of breakfast -->
+  
+   
+  <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+  
+  <script>
+   	function changeMenu(){
+    	const dropDown = document.getElementById('menSelect');
+        const breakmen = document.getElementById('breakfastMenu');
+        const lunchmen = document.getElementById('lunchMenu');
+        
+        if (dropDown.value == 'brkfst'){breakmen.style.display = 'block';lunchmen.style.display = 'none';}
+        else if(dropDown.value == 'dinner'){breakmen.style.display = 'none';lunchmen.style.display = 'block';}
+    }
+   </script>
+  
+  <br><div id="footerDiv"></div>
+ </body>
+ 
+ <!-- Call the function to create the header and footer -->
+ <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeadFoot('null');</script>
+
+</html>
