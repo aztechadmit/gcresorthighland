@@ -11,4 +11,8 @@ Jan 9	2	0
 Jan 10	1	0
 Jan 11	1	0
 Jan 12	1	0
-Jan 13	2	x
+Jan 13	2	b
+Apr 16  2 b
+Apr 17  1 0
+Apr 18  1 0
+Apr 19  1 0
