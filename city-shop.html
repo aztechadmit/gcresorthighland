@@ -11,11 +11,13 @@
  	.tileContainer{vertical-align:top;}
  </style>
  
- <body>
-  <!-- Place the header -->
-  <div id="headerDiv" class="headerBar"></div>
-  <div id="headerMenuBar"></div>
-  <button id='headerHideMenuButton' onclick='openSideBar()'></button>
+ <!-- Call the function to create the header and footer -->
+ <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ 
+ 
+<body onload='initiateHeader()'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
   
   <!-- Banner Image -->
   <div class='fullContainer' style='background-image:url("https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg");background-size:cover;background-position:center;height:60%;margin-top:0;'></div>
@@ -133,6 +135,5 @@
  
  <!-- Call the function to create the header and footer -->
  <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
- <script>initiateHeadFoot('null');</script>
 
 </html>
