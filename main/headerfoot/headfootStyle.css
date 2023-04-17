@@ -1,6 +1,6 @@
 /* HEADER WILL ALWAYS BE 70PX HEIGHT if greater than 900px or 60PX HEIGHT if less than 900px; */
 
-#headerSpacer {width:full;height:70px;opacity:0;} /*Prevents page elements from appearing below the header */
+#headerSpacer {display:block;width:full;height:70px;opacity:0;} /*Prevents page elements from appearing below the header */
 
 #headerMain{
 	position:fixed;top:0;right:0;left:0;
@@ -26,7 +26,7 @@
 
 /* SCREEN WIDTH ADJUSTMENTS */
 @media screen and (max-width:900px){
-	#headerMain{height:60px;}
+    #headerMain{height:60px;}
     #headerLogo{height:40px;}
     .headerLink{margin-top:18px;font-size:22px;}
     #headerSpacer{height:60px;}
