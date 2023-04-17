@@ -8,11 +8,12 @@
  </head>
  
  
- <body>
-  <!-- Place the header -->
-  <div id="headerDiv" class="headerBar"></div>
-  <div id="headerMenuBar"></div>
-  <button id='headerHideMenuButton' onclick='openSideBar()'></button>
+<body onload='initiateHeader()'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
+  <!-- Optional Announcement Banner -->
+  <!-- <div style='position:sticky;background:dodgerblue;'>This is a sticky element</div>
+  -->
   
   <!-- Banner Image -->
   <div class='fullContainer' style='background-image:url("https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg");background-size:cover;background-position:center;height:200px;margin-top:0;'></div>
