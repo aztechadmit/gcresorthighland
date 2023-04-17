@@ -33,16 +33,16 @@
     
  </style>	
  
- <body>
-  <!-- Place the header -->
-  <div id="headerDiv" class="headerBar"></div>
-  <div id="headerMenuBar"></div>
-  <button id='headerHideMenuButton' onclick='openSideBar()'></button>
-
-  <!-- ANNOUNCEMENT BANNER -->
-  <div id='announcementBanner'>
-	  View Current Operating Hours and Information: <a style='display:inline-block;color:white;text-decoration:underline;' href='information'>Click Here</a>
-  </div>
+ <!-- Call the function to create the header and footer -->
+ <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ 
+ 
+<body onload='initiateHeader()'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
+  <!-- Optional Announcement Banner -->
+  <div style='position:sticky;background:dodgerblue;'>View Current Operating Hours and Information: <a style='display:inline-block;color:white;text-decoration:underline;' href='information'>Click Here</a></div>
+ 
   
   <!-- BANNER VIDEO -->
   <div class='fullContainer' style='margin:0;' id='videoBanCont'>
