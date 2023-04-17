@@ -2,12 +2,12 @@ const footerHTML = document.getElementById('footerDiv');
 
 var windowSize = 0; var menuMade = 0;
     
-	const hdCnt = document.getElementById('headerContents');
+const hdCnt = document.getElementById('headerContents');
     
     
     function initiateHeader() {
     
-    	  headerContents.innerHTML = "<div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
+    	headerContents.innerHTML = "<div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
         head = document.getElementById('headerMain');
         
         
@@ -43,7 +43,7 @@ var windowSize = 0; var menuMade = 0;
             
             document.getElementById('headerMenuContentsB').style.display = 'none';
             
-        	setTimeout(function(){headMenu.style.display = 'none';},400);
+       		setTimeout(function(){headMenu.style.display = 'none';},400);
         
         }else{
  
@@ -75,12 +75,12 @@ var windowSize = 0; var menuMade = 0;
              
              hdMenCnt.innerHTML += "<button class='headerMenuLinks' onclick='openTtdMen(2)'>More &#9660;</button>";
              hdMenCnt.innerHTML += "<div class='hmlIndent' style='display:none' id='moremenhd'>\
-            					<a class='headerMenuLinks'>GC-VIP Admission</a>\
-                                <a class='headerMenuLinks'>Annual Passports</a>\
-                                <a class='headerMenuLinks'>Special Events</a>\
-                                <a class='headerMenuLinks'>Hours and Information</a>\
-                                <a class='headerMenuLinks'>Park Map</a>\
-            					<br></div>";
+            						<a class='headerMenuLinks'>GC-VIP Admission</a>\
+                                	<a class='headerMenuLinks'>Annual Passports</a>\
+                               	 	<a class='headerMenuLinks'>Special Events</a>\
+                                	<a class='headerMenuLinks'>Hours and Information</a>\
+                                	<a class='headerMenuLinks'>Park Map</a>\
+            						<br></div>";
             
             
             menuMade = 1;
@@ -115,7 +115,7 @@ var windowSize = 0; var menuMade = 0;
           else{varToOp.style.display = 'block';}
         
         }
-       else if(num == 2){
+      	else if(num == 2){
        		const varToOp = document.getElementById('moremenhd');
 
             if(varToOp.style.display == 'block'){varToOp.style.display = 'none';}
