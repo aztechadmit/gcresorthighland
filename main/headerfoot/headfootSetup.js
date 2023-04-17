@@ -1,165 +1,133 @@
-const headerHTML = document.getElementById('headerDiv');
 const footerHTML = document.getElementById('footerDiv');
-const sideBarHTML = document.getElementById('headerMenuBar');
-const headHideBtn = document.getElementById('headerHideMenuButton');
 
-var bOp = 0;
-var headMenOpen = 0;
-
-var headElemCreated = 0;
-
-function initiateHeadFoot(pgNum) {
-  
-  head_pgNum=pgNum;
-  
-  //Step 1: Create the header
-  createFooter();
-  resizeHeader();
-  
-  //step 2, get the page number 0 is the index. Null means no page will be highlighted
-  //This function is to display the page the viewer is currently on as bold in the header
-  
-  
-  
-}//end of initiateHeadFoot
-
-function headerboldPageButton(pgNum){
-  var idToSet = 'null';
-  
-  switch(pgNum){
-    case 0:idToSet='head.home';break;
-    case 1:idToSet='head.pts';break;
-    case 'null':break;
-  }//end of switch
-  
-  if(idToSet != 'null'){
-  document.getElementById(idToSet).style.fontWeight = "bold";
-  }
-}
-
-function createHeader(typ) {
-  if(typ == 0){ //normal desktop header
-    //remember to put in order of first item will be the right most, last item will be the left most
-    headerHTML.innerHTML = "<a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>"
+var windowSize = 0; var menuMade = 0;
     
-    headerHTML.innerHTML += "<button id='headtknpsbtn' onclick='openLnkFrmHed(0)'>Tickets and Passes</button>\
-                            <a class='headerLink' id='head.more'>MORE &#9660;</a>\
-                            <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>PLACES TO STAY</a>\
-                            <a class='headerLink' id='head.ttd'>THINGS TO DO &#9660;</a>\
-                            <a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>HOME</a>";
-    
-    headerboldPageButton(head_pgNum);
-    
-  }else if(typ==1){ //mobile view header
-    headerHTML.style.height = 60;
-    headerHTML.innerHTML = "<button id='headerMenuButton' onclick='openSideBar()'>☰</button>\
-                            <a href='https://aztechadmit.github.io/gcresorthighland'><img class='headerLogo' style='width:200px;height:auto;float:left;' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png'></a>";
-    
-  }
-  
-}//end of createHeader
-
-function openLnkFrmHed(linkNumhead){
-  switch(linkNumhead){
-    case 0:  window.open('https://aztechadmit.github.io/gcresorthighland/parktickets', '_self'); break;
-    case 1:  window.open('https://aztechadmit.github.io/gcresorthighland/parktickets/annualpassports', '_self'); break;
-  }//end of switch
-}
-
-function resizeHeader() {
-  if (window.innerWidth < 1010){
-    createHeader(1);
-  }else{createHeader(0);}
-}//end of resizeHeader
-  
-//Open header sidebar (for small screen width)
-function openSideBar() {
-  
-  if(bOp==0){
-  
-    sideBarHTML.style.display = 'block';
-    setTimeout(function(){sideBarHTML.style.width = '300px';},1);
+	const hdCnt = document.getElementById('headerContents');
     
     
-    document.getElementById('headerMenuButton').innerHTML = 'X';
-
-    setTimeout(openHeadElem, 400);
+    function initiateHeader() {
     
-    bOp=1;
-    headMenOpen = 1;
-    
-    headerHideMenuButton.style.display = 'block';
-    
-  }else if(bOp==1){
-    
-    headerHideMenuButton.style.display = 'none';
-    
-    document.getElementById('headerElements').style.opacity = 0;
-    sideBarHTML.style.width = '0px';
-    
-    setTimeout(function(){document.getElementById('headerElements').style.display = 'none';},200);
-    setTimeout(function(){sideBarHTML.style.display = 'none';},500);
-    
-    //setTimeout(function(){ sideBarHTML.style.display = 'none';  }, 500);
-    
-    document.getElementById('headerMenuButton').innerHTML = '☰';
-    
-    bOp=0;
-    headMenOpen = 0;
-    
-
-  }
-  
-}
-
-function openHeadElem(){
-  
-  if(headElemCreated == 0){
-  sideBarHTML.innerHTML = "<div id='headerElements'></div>";
-  const headElemHTML = document.getElementById('headerElements');
-  
-  headElemHTML.innerHTML = "<button id='headtknpsbtn' style='float:left;margin-left:0;width:260px;' onclick='openLnkFrmHed(0)'>Tickets and Passes</button>\
-                            <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland' id='head.home'>Home</a>\
-                            <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(0)' id='head.ttd'>Things to Do  &#9660;</a>\
-                            <div class='headerMenuExtension' id='head.ttdminimen'><div class='headerMenuExtensionLinks' id='head.ttdminimenlnk'>\
-                               <b>Adventure Park</b><a class='headerMenuLinks' style='font-size:18px;' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/adventurepark/attractions-and-entertainment'>Attractions and Entertainment</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Places to Eat</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Shopping</a>\
-                               <b>City-Shop</b><a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/city-shop' style='font-size:18px;'>About</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Restauraunts and Dining</a><a class='headerMenuLinks' style='font-size:18px;' href=''>Shopping</a></div></div>\
-                            <a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay' id='head.pts'>Places to Stay</a>\
-                            <a class='headerMenuLinks' href='javascript:openHeaderMiniMenu(1)' id='head.more'>More  &#9660;</a>";
-  
-  headElemCreated = 1;
-  }else{document.getElementById('headerElements').style.display = 'block';}
-  
-  setTimeout(function(){document.getElementById('headerElements').style.opacity = 1;},1);
-  headerboldPageButton(head_pgNum);
-}
-
-// Adjust the header if the window is resized
-window.onresize = resizeHeader;
-
-trueOrFalse = 0;
-
-function openHeaderMiniMenu(numToOpn){
-  switch(numToOpn){
-    case 0: //Things to Do Menu
-      const miniMen = document.getElementById('head.ttdminimen');
-      const miniMenLink = document.getElementById('head.ttdminimenlnk');
-      if(trueOrFalse==0){
-      
-      miniMen.style.display = 'block';miniMenLink.style.display = 'block';
-      
-      setTimeout(function(){miniMen.style.height='auto';miniMenLink.style.opacity=1;},2);
+    	  headerContents.innerHTML = "<div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
+        head = document.getElementById('headerMain');
         
-         trueOrFalse=1;
-      }else{
-         miniMen.style.height='0px'; miniMenLink.style.opacity=0;
-         setTimeout(function(){miniMen.style.display = 'none';miniMenLink.style.display = 'none';},300);
-         trueOrFalse=0;
-      }
-      break;
-  }//end of switch
-  
-}
+        
+        if(window.innerWidth < 900){createHeaderSmall();}else{createHeaderLarge();}
+      
+        createFooter();
+        
+    }
+    
+    // WINDOW GREATER THAN 900
+    function createHeaderLarge() {
+    	head.innerHTML = "<img id='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png' onclick='loadHomePg()'>"; //load in header logo
+    	head.innerHTML += "<button class='headerBtnLink' onclick='window.open("+'"https://www.google.com"'+")'>More &#9660;</button>";
+        head.innerHTML += "<a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay'>Places to Stay</a>";
+        head.innerHTML += "<button class='headerBtnLink'>Things to Do &#9660;</button>";
+        head.innerHTML += "<a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>";
+    }
+    
+    // WINDOW LESS THAN 900
+    function createHeaderSmall(){
+    	head.innerHTML = "<img id='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png' onclick='loadHomePg()'>"; //load in header logo
+    	head.innerHTML += "<button id='openHeaderMenuBtn' onclick='openHeaderMenu()'>☰</button>";
+    }
+    
+    function openHeaderMenu(){
+    	const headMenu = document.getElementById('headerMenu');
+        
+        if(headMenu.style.display == 'block'){
+        	
+       		headMenu.style.width = 0;
+            document.getElementById('openHeaderMenuBtn').innerHTML = '☰';
+            document.getElementById('hideHeaderMenuBtn').style.display = 'none';
+            
+            document.getElementById('headerMenuContentsB').style.display = 'none';
+            
+        	setTimeout(function(){headMenu.style.display = 'none';},400);
+        
+        }else{
+ 
+            document.getElementById('openHeaderMenuBtn').innerHTML = 'X';
+            document.getElementById('hideHeaderMenuBtn').style.display = 'block';
+        
+        	headMenu.style.display = 'block';
+            
+            if(menuMade == 0){
+            headMenu.innerHTML = '<div id="headerMenuContentsB" style="display:block;opacity:0;margin-left:10px;margin-top:10px;">Error :(</div>';
+            
+            const hdMenCnt = document.getElementById('headerMenuContentsB');
+        
+        	setTimeout(function(){headMenu.style.width = '310px';},1);
+            
+            setTimeout(function(){hdMenCnt.style.opacity=1;},300);
+            
+            // CREATE THE CONTENTS OF THE HEADER MENU
+            
+            hdMenCnt.innerHTML = "<button id='headerTicketsButton'>Tickets and Passes</button>";
+            hdMenCnt.innerHTML += "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>";
+            hdMenCnt.innerHTML += "<button class='headerMenuLinks' onclick='openTtdMen(1)'>Things to Do &#9660;</button>";
+            hdMenCnt.innerHTML += "<div class='hmlIndent' style='display:none' id='ttdmen'><b>Adventure Park</b><br><a class='headerMenuLinks'>Attractions and Entertainment</a><a class='headerMenuLinks'>Places to Eat</a><a class='headerMenuLinks'>Shopping</a><br>\
+            						<b>City-Shop</b><br><a class='headerMenuLinks'>About</a><a class='headerMenuLinks'>Restaurants and Dining</a><a class='headerMenuLinks'>Retail and More</a>\
+                                    <br></div>";
+            
+            
+             hdMenCnt.innerHTML += "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay'>Places-To-Stay</a>";
+             
+             hdMenCnt.innerHTML += "<button class='headerMenuLinks' onclick='openTtdMen(2)'>More &#9660;</button>";
+             hdMenCnt.innerHTML += "<div class='hmlIndent' style='display:none' id='moremenhd'>\
+            					<a class='headerMenuLinks'>GC-VIP Admission</a>\
+                                <a class='headerMenuLinks'>Annual Passports</a>\
+                                <a class='headerMenuLinks'>Special Events</a>\
+                                <a class='headerMenuLinks'>Hours and Information</a>\
+                                <a class='headerMenuLinks'>Park Map</a>\
+            					<br></div>";
+            
+            
+            menuMade = 1;
+            }else{
+            
+              const hdMenCnt = document.getElementById('headerMenuContentsB');
+
+              setTimeout(function(){headMenu.style.width = '310px';},1);
+
+              setTimeout(function(){hdMenCnt.style.opacity=1; document.getElementById('headerMenuContentsB').style.display = 'block';},300);
+              
+              
+
+            }//end of creating header menu
+            
+            
+        }
+    }//end of function openHeaderMenu
+    
+    function loadHomePg(){window.open('https://aztechadmit.github.io/gcresorthighland','_self');}
+    
+    // Change the header depending on the width of the view window
+    window.onresize = function(){if(windowSize != window.innerWidth){initiateHeader();windowSize=window.innerWidth;}};
+    
+    // FOR BUTTONS THAT HAVE A DROPDOWN
+    function openTtdMen(num){
+    
+    	if(num == 1){
+          const varToOp = document.getElementById('ttdmen');
+
+          if(varToOp.style.display == 'block'){varToOp.style.display = 'none';}
+          else{varToOp.style.display = 'block';}
+        
+        }
+       else if(num == 2){
+       		const varToOp = document.getElementById('moremenhd');
+
+            if(varToOp.style.display == 'block'){varToOp.style.display = 'none';}
+            else{varToOp.style.display = 'block';}
+       }
+    }
+ 
+    
+
+
+
+
 
 function createFooter() {
   footerHTML.innerHTML = "<div class='footerLineBreak'></div>\
