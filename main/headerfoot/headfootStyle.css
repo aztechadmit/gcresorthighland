@@ -1,60 +1,82 @@
-.headerLink {font-style:normal;color:white;font-weight:normal;font-size:17px;text-decoration:none;vertical-align:middle;display:inline-block;float:right;margin-right:20px;margin-top:20px;}
+/* HEADER WILL ALWAYS BE 70PX HEIGHT if greater than 900px or 60PX HEIGHT if less than 900px; */
 
+#headerSpacer {width:full;height:70px;opacity:0;} /*Prevents page elements from appearing below the header */
+
+#headerMain{
+	position:fixed;top:0;right:0;left:0;
+    height:70px; background:#073763; color:white;
+    text-align:right;
+    z-index:998;
+    }
+#headerLogo{
+	display:inline-block;height:50px;width:auto;margin:10px;cursor:pointer;vertical-align:middle;float:left;
+}
+.headerLink{
+	color:white;font-size:24px;font-weight:normal;font-style:normal;
+    display:inline-block;margin:8px;margin-top:21px;line-height:1;
+}
 .headerLink:hover {font-weight:bold;cursor:pointer;}
 
-.headerBar {
-            position:sticky;
-            top:0;left:0;
-            margin:0;
-            width:full;
-            min-height:50px;
-            background:#073763; /* old: #07039D , #073763 */
-            padding:5px;
-            transition:0.1s;
-            z-index:9999;
- }
+.headerBtnLink {min-width:0px;font-size:24px;padding:0;background:none;border:none;margin:8px;margin-top:20px;color:white;float:right;}
+.headerBtnLink:hover {font-weight:bold;background:none;}
 
-.headerLogo {width:230px;height:auto;margin-left:20px;margin-top:5px;margin-bottom:10px;display:inline-block; margin-right:20px;}
+#headerTicketsButton {width:250px;background:white;color:#07309D;border:none;height:50px;margin-top:10px;float:right;transition:0.4s;}
+#headerTicketsButton:hover{box-shadow: 4px 4px 3px lightgray;}
 
-#headerMenuButton {font-size:30px; min-width:50px;min-height:50px; max-width:40px;max-height:40px; background:none;border:none;color:white; float:right; margin-top:0; margin-right:20px;display:inline-block;}
 
-#headerMenuBar{
-            position:fixed;
-            top:0;left:0;
-            height:100vh;
-            
-            overflow-y:auto;
-            
-            width:0;
-            
-            transition-property:width;
-            transition-duration:0.5s;
-            
-            background:dimgray;
-            color:white;
-            display:none;
-            z-index:9998;
+/* SCREEN WIDTH ADJUSTMENTS */
+@media screen and (max-width:900px){
+	#headerMain{height:60px;}
+    #headerLogo{height:40px;}
+    .headerLink{margin-top:18px;font-size:22px;}
+    #headerSpacer{height:60px;}
+    #headerTicketsButton{margin:auto;margin-top:0;width:240px;display:block;height:40px;float:none;margin-bottom:10px;}
+    
+    .headerBtnLink{-webkit-animation: fadeIn 1s;    animation: fadeIn 1s; font-size:20px;margin-top:2px;}
+
 }
 
-#headerElements {
-            margin-left:20px;
-            margin-top:80px;
-            
-            opacity:0;
-            transition-property: opacity;
-            transition-duration: 0.2s;
-          
-            text-align:left;
+/* HEADER LINKS ANIMATION */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+	}
+
+/* HEADER SIDE BAR MENU */
+#headerMenu {
+	overflow-y:auto;
+    overflow-x:hidden;
+    
+    position:fixed;
+    top:60px;left:0;bottom:0;
+    
+    background:dimgray;
+    color:white;
+    
+    width:0;
+	z-index:999;
+    
+    transition-property:width;
+    transition-duration:0.4s;
+
+    display:none;
+    text-align:left;
 }
+#hideHeaderMenuBtn {position:fixed;z-index:997;opacity:0;top:0;bottom:0;right:0;left:0;display:none;}
 
-.headerMenuLinks {font-size:24px;color:white;font-style:normal;display:block;}
-.headerMenuLinks:hover {font-weight:bold;}
+#openHeaderMenuBtn {background:none;height:50px;min-width:50px;max-width:50px;padding:0;margin-top:5px;margin-right:5px;float:right;border:none;color:white;font-size:25px;}
+#openHeaderMenuBtn:hover {transform: rotate(-20deg);}
 
-#headtknpsbtn {width:200px;height:40px;float:right;display:inline-block; color:#07039D; background:white; border:none; transition:0.4s;}
-#headtknpsbtn:hover {background:white;color:#07039D;box-shadow: 4px 4px 3px lightgray;}
+.headerMenuLinks {
+	-webkit-animation: fadeIn 1s;    animation: fadeIn 1s;
+    font-size:21px; color:white; font-weight:normal; font-style:normal; text-decoration:none;
+    margin-top:5px; display:block;
+    padding:0;min-width:0;border:none;margin-left:0;
+}
+.headerMenuLinks:hover {color:#efefef; text-decoration:underline; font-weight:normal; background:none;}
+.hmlIndent {margin-left:20px;}
 
-.headerMenuExtension{transition-property:height;transition-duration:0.3s;height:0;display:none;width:200px;margin-left:20px;}
-.headerMenuExtensionLinks{transition-property:opacity;transition-duration:0.3s;opacity:0;display:none;margin:0;}
+
 
 
 
@@ -63,6 +85,3 @@
 .footerLineBreak{width:95%; margin:auto;max-width:1500px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
 .footerLink {color:dimgray;text-decoration:none;cursor:pointer;font-style:normal;}
 .footerLink:hover {color:blue;text-decoration:underline;}
-
-#headerHideMenuButton{position:fixed;z-index:9996;top:0;left:0;opacity:0;margin:0;width:100%;height:100%;display:none;}
-#headerHideMenuButton:hover {cursor:default;}
