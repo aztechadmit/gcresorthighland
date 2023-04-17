@@ -103,7 +103,7 @@ const hdCnt = document.getElementById('headerContents');
     function loadHomePg(){window.open('https://aztechadmit.github.io/gcresorthighland','_self');}
     
     // Change the header depending on the width of the view window
-    window.onresize = function(){if(windowSize != window.innerWidth){initiateHeader();windowSize=window.innerWidth;}};
+    window.onresize = function(){if(windowSize != window.innerWidth){initiateHeader();windowSize=window.innerWidth;menuMade=0;}};
     
     // FOR BUTTONS THAT HAVE A DROPDOWN
     function openTtdMen(num){
