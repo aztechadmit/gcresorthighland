@@ -21,10 +21,10 @@ const hdCnt = document.getElementById('headerContents');
     function createHeaderLarge() {
     	head.innerHTML = "<img id='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png' onclick='loadHomePg()'>"; //load in header logo
         head.innerHTML += "<button id='headerTicketsButton' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/parktickets","_self"'+")'>Tickets and Passes</button>";
-    	head.innerHTML += "<button class='headerBtnLink' onclick='window.open("+'"https://www.google.com"'+")'>More &#9660;</button>";
-        head.innerHTML += "<a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay'>Places to Stay</a>";
-        head.innerHTML += "<button class='headerBtnLink'>Things to Do &#9660;</button>";
-        head.innerHTML += "<a class='headerLink' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>";
+    	head.innerHTML += "<button class='headerBtnLink' onclick=''>More &#9660;</button>";
+        head.innerHTML += "<button class='headerBtnLink' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/places-to-stay","_self"'+")'>Places to Stay</button>";
+        head.innerHTML += "<button class='headerBtnLink' onclick=''>Things to Do &#9660;</button>";
+        head.innerHTML += "<button class='headerBtnLink' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/","_self"'+")'>Home</button>";
     }
     
     // WINDOW LESS THAN 900
