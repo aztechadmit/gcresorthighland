@@ -24,7 +24,7 @@ const hdCnt = document.getElementById('headerContents');
     	head.innerHTML = "<img id='headerLogo' src='https://aztechadmit.github.io/gcresorthighland/main/images/gcresortlogo.png' onclick='loadHomePg()'>"; //load in header logo
         head.innerHTML += "<button id='headerTicketsButton' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/parktickets","_self"'+")'>Tickets and Passes</button>";
     	head.innerHTML += "<button class='headerBtnLink' onclick=''>More &#9660;</button>";
-        head.innerHTML += "<button class='headerBtnLink' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/places-to-stay","_self"'+")'>Places to Stay</button>";
+        head.innerHTML += "<button class='headerBtnLink' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/places-to-stay","_self"'+")'>Hotels and Resorts</button>";
         head.innerHTML += "<button class='headerBtnLink' onclick=''>Things to Do &#9660;</button>";
         head.innerHTML += "<button class='headerBtnLink' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/","_self"'+")'>Home</button>";
     }
@@ -74,7 +74,7 @@ const hdCnt = document.getElementById('headerContents');
                                     <br></div>";
             
             
-             hdMenCnt.innerHTML += "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay'>Places-To-Stay</a>";
+             hdMenCnt.innerHTML += "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/places-to-stay'>Hotels and Resorts</a>";
              
              hdMenCnt.innerHTML += "<button class='headerMenuLinks' onclick='openTtdMen(2)'>More &#9660;</button>";
              hdMenCnt.innerHTML += "<div class='hmlIndent' style='display:none' id='moremenhd'>\
