@@ -2,22 +2,22 @@
  <head> <!-- Basic HTML Page Setup -->
     <title>Website Redirect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="main/images/webfavicon1.ico">
+    <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
  
  
- <body>
-  <!-- Place the header -->
-  <div id="headerDiv" class="headerBar"></div>
-  <div id="headerMenuBar"></div>
-  
-  <!-- Banner Image -->
-  
-  <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
  
-   <br><br><br><br>
+ 
+<body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
+  
+ <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
+ 
+
+   <br><br>
    
    <div class='lineBreak'></div>
    
@@ -37,12 +37,18 @@
    
    
    
-  <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
-  <div id="footerDiv"></div>
- </body>
+   
+   
+   
+   
+   
+   
+   
+<!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+<br><div id="footerDiv"></div>
+</body>
  
- <!-- Call the function to create the header and footer -->
- <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
- <script>initiateHeadFoot('null');</script>
-
+<!-- Call the function to create the header and footer -->
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+<script>initiateHeader();</script>
 </html>
