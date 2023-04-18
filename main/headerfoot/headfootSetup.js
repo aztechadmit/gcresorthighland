@@ -1,18 +1,18 @@
 const footerHTML = document.getElementById('footerDiv');
-const loader = document.getElementById('pageLoadingSymbol');
 
 var windowSize = 0; var menuMade = 0;
     
 const hdCnt = document.getElementById('headerContents');
     
-    function finishLoading() {loader.style.display = 'none';}    
+    function finishLoading() {return false;}    // Maybe eventually this will be a loading symbol
 
     function initiateHeader() {
-    
+        
     	headerContents.innerHTML = "<div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
+        
         head = document.getElementById('headerMain');
         
-        
+        //Determine how the header is formatted depending on screen width
         if(window.innerWidth < 900){createHeaderSmall();}else{createHeaderLarge();}
       
         createFooter();
