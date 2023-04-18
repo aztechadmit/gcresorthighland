@@ -1,6 +1,6 @@
 <html>
  <head> <!-- Basic HTML Page Setup -->
-    <title>Welcome to the Globe-City Resort Highland</title>
+    <title>PAGE TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
@@ -21,27 +21,24 @@
     #apadspace {text-align:right;}
     
      @media screen and (max-width:950px){
-       #quickLinkContainer{position:relative;width:full;background:#073763;}
-       #videoBanner {height:75vh;}
-       .qlIcon {display:inline;font-size:22px;margin-right:5px;}
-       #videoBanCont {position:relative;}
-       #minWidSpacer{display:none;}
-
+       	#quickLinkContainer{position:relative;width:full;background:#073763;}
+       	#videoBanner {height:75vh;}
+       	.qlIcon {display:inline;font-size:22px;margin-right:5px;}
+       	#videoBanCont {position:relative;}
+       	#minWidSpacer{display:none;}
 		#apadspace {text-align:center;}
-        
   	}
     
  </style>	
  
-<body onload='initiateHeader()'>
+ 
+<body onload='finishLoading();'>
   <!-- Initiate the Header -->
   <div id='headerContents'></div>
-	
-  <!-- Optional Announcement Banner -->
-  <!--<div id='announcementBanner'>View Current Resort Operating Hours and Information: <a style='color:white' href='information'>View Page</a></div>-->
- 
   
-  <!-- BANNER VIDEO -->
+ <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
+ 
+	<!-- BANNER VIDEO -->
   <div class='fullContainer' style='margin:0;' id='videoBanCont'>
   <video autoplay loop muted id='videoBanner' poster="https://aztechadmit.github.io/gcresorthighland/main/images/video/video1.1Frame1.png">
    	<source src="https://aztechadmit.github.io/gcresorthighland/main/images/video/vidBanner1.1.mp4" type="video/mp4">
@@ -180,11 +177,22 @@
     <input type='text' id='hmSrch' style='width:300px;margin:auto;height:35px;border-radius:10px;'>
    </div>
    
-  <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
-  <br><div id="footerDiv"></div>
- </body>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+<!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+<br><div id="footerDiv"></div>
+</body>
  
- <!-- Call the function to create the header and footer -->
- <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
-
+<!-- Call the function to create the header and footer -->
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeader();</script>
 </html>
