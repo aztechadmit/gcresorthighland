@@ -17,7 +17,7 @@
 }
 .headerLink:hover {font-weight:bold;cursor:pointer;}
 
-.headerBtnLink {max-width:150px;height:70px;border:none;border-radius:0;background:none;font-size:20px;transition:0.4s;color:white;float:right;margin:0;padding:10px;text-align:left;}
+.headerBtnLink {height:70px;border:none;border-radius:0;background:none;font-size:20px;transition:0.4s;color:white;float:right;margin:0;padding:10px;min-width:0;}
 .headerBtnLink:hover {background:#efefef;color:#073763;}
 
 #headerTicketsButton {width:200px;background:white;color:#07309D;border:none;height:40px;margin-top:15px;float:right;transition:0.4s;}
