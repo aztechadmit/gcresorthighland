@@ -1,10 +1,12 @@
 const footerHTML = document.getElementById('footerDiv');
+const loader = document.getElementById('pageLoadingSymbol');
 
 var windowSize = 0; var menuMade = 0;
     
 const hdCnt = document.getElementById('headerContents');
     
-    
+    function finishLoading() {loader.style.display = 'none';}    
+
     function initiateHeader() {
     
     	headerContents.innerHTML = "<div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
