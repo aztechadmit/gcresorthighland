@@ -17,11 +17,9 @@
   }
  </style>
  
- <body>
-  <!-- Place the header -->
-  <div id="headerDiv" class="headerBar"></div>
-  <div id="headerMenuBar"></div>
-  <button id='headerHideMenuButton' onclick='openSideBar()'></button>
+ <body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
   
   <!-- Banner Image -->
   <div class='fullContainer' style='background-image:url("https://aztechadmit.github.io/gcresorthighland/main/images/banner4.jpg");background-size:cover;background-position:50% 25%;height:300px;margin-top:0;'></div><div class='fullContainer'style='background:#073763;margin-top:0;color:white;text-align:center;padding:10px;'><h2 style='color:white;font-weight:normal'>Adventure Park | Annual Passports</h2></div>
@@ -95,12 +93,11 @@
    
    
    
-  <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
-  <br><div id="footerDiv"></div>
- </body>
+ <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+<br><div id="footerDiv"></div>
+</body>
  
- <!-- Call the function to create the header and footer -->
- <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
- <script>initiateHeadFoot('null');</script>
-
+<!-- Call the function to create the header and footer -->
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeader();</script>
 </html>
