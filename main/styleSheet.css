@@ -46,11 +46,11 @@ button:hover {background:lightgray;cursor:pointer;}
     
     @media screen and (max-width:900px){
     	.tileContainer {width:85%; min-width:300px; min-height:300px;}
-	    #announcementBanner{top:60px;}
+	    #announcementSpacer{height:60px;}
     }
 
 /* Announcement Banners */
-#announcementBanner {position:absolute;top:70px;background:dodgerblue;color:white;text-align:center;right:0;left:0;padding:5px;}
+#announcementBanner {position:sticky;background:dodgerblue;color:white;text-align:center;right:0;left:0;padding:5px;}
 
 /* Image and Text Blocks */
     .txtBlockImg1 {width:40%;height:300px;display:inline;vertical-align:top;margin-right:20px;object-fit:cover;border-radius:20px;}
