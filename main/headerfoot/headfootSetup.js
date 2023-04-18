@@ -63,7 +63,7 @@ const hdCnt = document.getElementById('headerContents');
             
             // CREATE THE CONTENTS OF THE HEADER MENU
             
-            hdMenCnt.innerHTML = "<button id='headerTicketsButton'>Tickets and Passes</button>";
+            hdMenCnt.innerHTML = "<button id='headerTicketsButton' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/parktickets","_self"'+")'>Tickets and Passes</button>";
             hdMenCnt.innerHTML += "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>";
             hdMenCnt.innerHTML += "<button class='headerMenuLinks' onclick='openTtdMen(1)'>Things to Do &#9660;</button>";
             hdMenCnt.innerHTML += "<div class='hmlIndent' style='display:none' id='ttdmen'><b>Adventure Park</b><br><a class='headerMenuLinks'>Attractions and Entertainment</a><a class='headerMenuLinks'>Places to Eat</a><a class='headerMenuLinks'>Shopping</a><br>\
