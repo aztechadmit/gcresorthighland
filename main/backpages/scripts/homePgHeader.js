@@ -1,14 +1,23 @@
 const tdate = new Date();
-//const tmonth = tdate.getMonth();
 
-tmonth = 0;
+const tmonth = tdate.getMonth();
 
-// User inputed header informations
-const headerContentTxt = [
-    ""
-  ];
-const headerContentBkg = [
-    "https://media2.giphy.com/media/YSgAZyEj9ndDDXLX9h/giphy.gif"
-  ];
-document.getElementById('homePgHeader').innerHTML = headerContentTxt[tmonth];
-document.getElementById('homePgHeaderBkg').style.backgroundImage = "url(')"+headerContentBkg[tmonth]+"')";
+
+
+if(tmonth >= 0 && tmonth < 5){ // JANUARY - MAY
+    
+    
+    
+}else if(tmonth >= 5 && tmonth < 8){ // JUNE - AUGUST
+    
+    
+    
+}else if(tmonth >= 8 && tmonth < 10) {//SEPTEMBER - OCTOBER
+    
+    
+    
+}else if(tmonth >= 11) { // NOVEMBER - DECEMBER
+    
+    
+    
+}
