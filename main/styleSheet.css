@@ -40,8 +40,8 @@ button:hover {background:lightgray;cursor:pointer;}
 .titleBarContainer {background:#073763;margin-top:0;color:white;text-align:center;padding:10px;}
 .titleBarContainer h1 {color:white;font-weight:normal;}
 
-.titleImageContainer {width:full;background-size:cover;background-position:50% 25%;height:300px;margin-top:0;}
-
+.titleImageContainer {width:full;background-size:cover;background-position:50% 25%;height:315px;margin-top:0;}
+@media screen and (max-width:900px){.titleImageContainer{height:250px;}}
 /* TEXT AND INFORMATION TILES (LIKE IN THE RESORT SPOTLIGHT TAB AND ANY OTHER PLACES */
 	
 	.tileSection {width:full;margin:auto;padding:0;margin-top:40px;max-width:1400px;text-align:center;}
