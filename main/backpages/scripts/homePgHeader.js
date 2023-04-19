@@ -47,11 +47,37 @@ function setUpHomePage() {
 			
 			break;
 		case 3: // April
-			title1 = 'Test1';	content1 = 'Test1';	imgLnk1 = 'Test1'; link1 = 'Test1';	linkTxt1 = 'Test1';
-			title2 = '';	content2 = '';	imgLnk2 = ''; link2 = '';	linkTxt2 = '';
-			title3 = '';	content3 = '';	imgLnk3 = ''; link3 = '';	linkTxt3 = '';
+			
+			title1 = 'The New and Improved gcresort website!';	
+			content1 = 'Welcome to our refreshed website complete with new UI and awesome new functionality! Stay a while and explore all the cool stuff we have to offer :)';
+			imgLnk1 = 'https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg'; 
+			linkTxt1 = '';	link1 = '';
+			
+			title2 = 'Bring on Spring';	content2 = 'This spring season, crowds are small and ticket prices are low AKA the perfect time for a mid-spring trip to the park!';	
+			imgLnk2 = 'https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg'; 
+			linkTxt2 = 'View Tickets';	link2 = 'parktickets';
+			
+			title3 = "We're Hiring";	content3 = 'Become a part of the adventure and help bring magic and memories to millions of guests every year!';	
+			imgLnk3 = 'https://aztechadmit.github.io/gcresorthighland/main/images/banner5.jpg'; 
+			linkTxt3 = 'View Career Portal';	link3 = 'https://sites.google.com/view/gcresorthighland/backpages/employee-portal';
+			
 			break;
 		case 4: // May
+			
+			title1 = "Mother's Day Treats and More <3";	
+			content1 = "Treat your mother to a thrilling day with all new mothers-day sweet and treats plus discounted admission! Then continue the celebration at City-Shop";
+			imgLnk1 = "https://4.bp.blogspot.com/-3Vtm461c4Y4/XMaIpWIi9EI/AAAAAAAA4xA/h8rjxenWd0URwL_4Y06y-k5YP2qFCo9PACLcBGAs/s1600/TikilandDayDL-101.jpg"; 
+			linkTxt1 = "View Special Event";	link1 = "things-to-do/events/specialevents";
+			
+			title2 = "New Flex-Eat<sup>tm</sup> Menus";	
+			content2 = "We are proud to announce a partnership with Flex-Eat<sup>tm</sup> Minecraftia to bring affordable low-calorie menu items to many of our in-park restaurants for Adventurers on a diet.";
+			imgLnk2 = "https://www.travelandleisure.com/thmb/kDzGk9PyniwDgv5VaA8vuMeehLY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TL_mickey-waffle_HERO_DISNEYFOOD1022-11a85361f080449a8e80c62fcb0a6407.jpg"; 
+			linkTxt2 = "View Places to Eat";	link2 = "things-to-do/dining/adventurepark";
+
+			title3 = "The Globe-City Marching Band";	
+			content3 = "This month we would like to give a shoutout to the GC Marching Band!";
+			imgLnk3 = "https://www.widener.edu/sites/default/files/2019-07/marching-band.jpg"; 
+			linkTxt3 = "View Attraction";	link3 = "things-to-do/adventuepark/entertainment/gc-marching-band";
 			
 			break;
 		case 5: // June
@@ -82,9 +108,31 @@ function setUpHomePage() {
 	spotlightDiv.innerHTML += " <div class='tileContainer'><img class='tileImage' src='" + imgLnk1 + "'\><h3>" + title1 + "</h3><p>" + content1 + "</p><br><a class='tileLink' href='" + link1 + "'>" + linkTxt1 + "</a></div> \
       							<div class='tileContainer'><img class='tileImage' src='" + imgLnk2 + "'\><h3>" + title2 + "</h3><p>" + content2 + "</p><br><a class='tileLink' href='" + link2 + "'>" + linkTxt2 + "</a></div> \
 								<div class='tileContainer'><img class='tileImage' src='" + imgLnk3 + "'\><h3>" + title3 + "</h3><p>" + content3 + "</p><br><a class='tileLink' href='" + link3 + "'>" + linkTxt3 + "</a></div> \
-								<br><button style='margin:auto;' onclick='window.open("+'"parktickets"'+")'>View News and Updates</button><br>";
+								<br><br><button style='margin:auto;' onclick='window.open("+'"parktickets"'+")'>View News and Updates</button><br>";
 
 } // function setUpHomePage();
+
+
+/* SPOTLIGHT TEMPLATE 
+
+			title1 = "TITLE HERE";	
+			content1 = "CONTENT GOES HERE";
+			imgLnk1 = "https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg"; 
+			linkTxt1 = "";	link1 = "";
+			
+			title2 = "TITLE HERE";	
+			content2 = "CONTENT GOES HERE";
+			imgLnk2 = "https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg"; 
+			linkTxt2 = "";	link2 = "";
+
+			title3 = "TITLE HERE";	
+			content3 = "CONTENT GOES HERE";
+			imgLnk3 = "https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg"; 
+			linkTxt3 = "";	link3 = "";
+
+
+
+
 
 
 
@@ -97,6 +145,7 @@ function setUpHomePage() {
 										<br><button style='margin:auto;'>View News and Updates</button><br>";
 			break; 
 */
+
 
 
 
