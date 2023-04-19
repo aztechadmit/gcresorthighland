@@ -11,7 +11,12 @@
  	
     .tkBtn {position:absolute;bottom:6px;left:0;right:0;margin:auto;width:90%;border-radius:20px;}
 	
-    .tileContainer{margin:20px;}
+    .tileContainer{margin:20px;min-height:450px;}
+    
+    @media screen and (max-width:900px){
+    
+    	.tileContainer{min-height:100px;}
+    }
     
     
  </style>
@@ -29,6 +34,7 @@
   <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
  
    <div class='fullContainer' style='text-align:center'>
+	   
    	<div class='tileContainer' onclick='openTkLnk(1);'>
     	<img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg' />
         <h2>Day Tickets</h2>
@@ -39,7 +45,7 @@
     </div>
     
     <div class='tileContainer' onclick='openTkLnk(2);'>
-    	   	<img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg' />
+    	<img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg' />
         <h2>Annual Passports</h2>
         <p style='margin-bottom:60px;'>Purchase an annual passport to enter Adventure Park on over 230<sup>1</sup> days at no extra cost! 
         <br><br><b>Starting at $175</b> 
