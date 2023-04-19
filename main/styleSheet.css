@@ -41,6 +41,8 @@ button:hover {background:lightgray;cursor:pointer;}
 .titleBarContainer h1 {color:white;font-weight:normal;}
 
 /* TEXT AND INFORMATION TILES (LIKE IN THE RESORT SPOTLIGHT TAB AND ANY OTHER PLACES */
+	
+	.tileSection {width:full;margin:auto;padding:0;margin-top:40px;max-width:1400px;text-align:center;}
 
     .tileContainer {border:1px solid black; border-radius:20px; position:relative; margin:10px; padding:10px; vertical-align:top; width:30%; min-width:300px; min-height:400px; transition:0.4s; display:inline-block;}
     .tileContainer:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
