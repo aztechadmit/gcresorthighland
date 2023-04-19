@@ -8,57 +8,40 @@
  </head>
  
  <style>
- 	.tkContainer {
-    border:2px solid black;border-radius:20px;
-    transition:0.5s;
-    width:40%;height:450px;
-    vertical-align:middle;margin:15px;
-    padding:10px;
-    display:inline-block;
-    max-width:500px;
-    position:relative;
-    }
-    .tkContainer:hover {cursor:pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-    
-    .tkImage {margin:0;width:100%;height:35%;border-radius:20px;object-fit:cover;}
-    
+ 	
     .tkBtn {position:absolute;bottom:6px;left:0;right:0;margin:auto;width:90%;border-radius:20px;}
-    
-    @media screen and (max-width:900px) {
-    	.tkContainer {width:85%;margin:5px;margin-bottom:15px;}
-    }
+	
+    .tileContainer{margin:20px;}
     
     
  </style>
  
  
 <body onload='initiateHeader()'>
-
 <div id='headerContents'></div>
 
-<div style='position:sticky;background:dodgerblue;'>Upgrade your visit with <b>GC-VIP</b>! <a style='color:white;text-decoration:underline;'>Learn More</a></div>
+
 
   
   <!-- Banner Image -->
-  <div class='fullContainer'style='background:#073763;margin-top:0;color:white;text-align:center;padding:10px;'><h2 style='color:white;font-weight:normal'>Tickets and Passports</h2></div><div class='fullContainer'style='background:#efefef;margin-top:0;color:black;text-align:center;padding:5px;'><p style='font-size:18px;'><b>Important Note</b>: Before your next visit, please review our updated <a href='https://aztechadmit.github.io/gcresorthighland/resortsafety'>Safety and Guidelines</a> to ensure a safe and pleasent visit to the resort</p></div>
+  <div class='titleBarContainer'><h2 style='color:white;font-weight:normal'>Tickets and Passports</h2></div><div class='fullContainer'style='background:#efefef;margin-top:0;color:black;text-align:center;padding:5px;'><p style='font-size:18px;'><b>Important Note</b>: Before your next visit, please review our updated <a href='https://aztechadmit.github.io/gcresorthighland/resortsafety'>Safety and Guidelines</a> to ensure a safe and pleasent visit to the resort</p></div>
   
   <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
  
    <div class='fullContainer' style='text-align:center'>
-   	<div class='tkContainer' onclick='openTkLnk(1);'>
-    	<img class='tkImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg' />
+   	<div class='tileContainer' onclick='openTkLnk(1);'>
+    	<img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg' />
         <h2>Day Tickets</h2>
-        <p>Purchase daily admission to Adventure Park. 
+        <p style='margin-bottom:60px;'>Purchase daily admission to Adventure Park. 
         <br><br><b>Starting at $65</b> 
         </p>
         <button class='tkBtn'>Purchase Tickets</button>
     </div>
     
-    <div class='tkContainer' onclick='openTkLnk(2);'>
-    	   	<img class='tkImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg' />
+    <div class='tileContainer' onclick='openTkLnk(2);'>
+    	   	<img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg' />
         <h2>Annual Passports</h2>
-        <p>Purchase an annual passport to enter Adventure Park on over 230<sup>1</sup> days at no extra cost! 
+        <p style='margin-bottom:60px;'>Purchase an annual passport to enter Adventure Park on over 230<sup>1</sup> days at no extra cost! 
         <br><br><b>Starting at $175</b> 
         </p>
         <button class='tkBtn' onclick='openTkLink(3);'>Purchase Passports</button>
