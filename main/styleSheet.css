@@ -38,6 +38,7 @@ button:hover {background:lightgray;cursor:pointer;}
 .btnWhite {border:2px solid white;border-radius:8px;color:white;background:none;min-width:150px;padding:10px;}
 
 .titleBarContainer {background:#073763;margin-top:0;color:white;text-align:center;padding:10px;}
+.titleBarContainer h1 {color:white;font-weight:normal;}
 
 /* TEXT AND INFORMATION TILES (LIKE IN THE RESORT SPOTLIGHT TAB AND ANY OTHER PLACES */
 
