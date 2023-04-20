@@ -10,7 +10,7 @@ const hdCnt = document.getElementById('headerContents');
         
     	headerContents.innerHTML = "<div id='loaderContainer'><div id='loaderBackground'></div><div id='loader'></div></div> <div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
         
-        loaderDiv = document.getElementById('loader');
+        loaderDiv = document.getElementById('loaderContainer');
         head = document.getElementById('headerMain');
         
         //Determine how the header is formatted depending on screen width
