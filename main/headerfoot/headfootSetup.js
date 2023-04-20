@@ -3,12 +3,19 @@ const footerHTML = document.getElementById('footerDiv');
 var windowSize = 0; var menuMade = 0;
     
 const hdCnt = document.getElementById('headerContents');
+
+var preInitiated;
     
     function finishLoading() {loaderDiv.style.opacity = 0; setTimeout(function(){loaderDiv.style.display='none';},500); }    // Maybe eventually this will be a loading symbol
 
     function initiateHeader() {
         
+        if(preInitiated == 0){
     	headerContents.innerHTML = "<div id='loaderContainer'><div id='loaderBackground'></div><div id='loader'></div></div> <div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
+            preInitiated = 1;
+        }else{
+            headerContents.innerHTML = "<div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
+        }
         
         loaderDiv = document.getElementById('loaderContainer');
         head = document.getElementById('headerMain');
