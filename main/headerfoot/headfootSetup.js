@@ -144,7 +144,7 @@ var preInitiated = 0;
 function createFooter() {
   footerHTML.innerHTML = "<div class='footerLineBreak'></div>\
     <div style='position:relative;margin:auto;'>\
-    <div class='footerGroup'>\
+    <div class='footerLinkDiv'><div class='footerGroup'>\
     <b>Adventure Park</b><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets'>Tickets and Passes</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets/gcvip'>GC-VIP</a><br>\
@@ -190,7 +190,7 @@ function createFooter() {
     <br><b>Jobs</b><br>\
     <a class='footerLink'>Career Portal</a><br>\
     </div>\
-    </div> \
+    </div></div> \
     <div class='footerLineBreak' style='margin-top:0px;'></div> \
     <p style='text-align:center;'><b>Get in Touch</b><br>(312) 872 2212<br><a href='mailto:guestservices.gcrh@gcpr.net'>guestservices.gcrh@gcpr.net</a></p>\
     <div class='footerLineBreak' style='margin-top:25px;'></div>\
