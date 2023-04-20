@@ -4,7 +4,7 @@ var windowSize = 0; var menuMade = 0;
     
 const hdCnt = document.getElementById('headerContents');
 
-var preInitiated;
+var preInitiated = 0;
     
     function finishLoading() {loaderDiv.style.opacity = 0; setTimeout(function(){loaderDiv.style.display='none';},500); }    // Maybe eventually this will be a loading symbol
 
