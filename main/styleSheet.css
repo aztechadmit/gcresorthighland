@@ -79,7 +79,7 @@ button:hover {background:lightgray;cursor:pointer;}
     
     	@media screen and (max-width:700px){
 		.inlineFrame{flex-flow:column;}
-		.inlineImg {width:100%;display:block;height:200px;}
+		.inlineFrame img{width:100%;display:block;height:200px;}
 		.inlineTxt {width:100%;display:block;}
     	}
 
