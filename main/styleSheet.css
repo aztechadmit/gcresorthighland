@@ -37,6 +37,8 @@ button:hover {background:lightgray;cursor:pointer;}
 
 .btnWhite {border:2px solid white;border-radius:8px;color:white;background:none;min-width:150px;padding:10px;}
 
+.expandLink {font-style:normal;font-weight:bold;}
+
 
 
 /* BANNER / TITLE THINGS ----------------------------------------------------------------------------------------- */
@@ -89,7 +91,7 @@ button:hover {background:lightgray;cursor:pointer;}
     
      .txtBlockContainer1 {text-align:left;}
     
-    @media screen and (max-width:700px){
+    @media screen and (max-width:900px){
     	.txtBlockImg1{display:block;width:90%;height:auto;margin:auto;margin-bottom:15px;}
         .txtBlockTxt1{width:95%;}
         .txtBlockContainer1 {text-align:center;}    
