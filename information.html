@@ -11,8 +11,9 @@
   .prkHrsDisp {display:inline-block;vertical-align:middle;padding:10px;}
  </style>
 
-<body onload='initiateHeader()'>
-<div id='headerContents'></div>
+<body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
   
   <!-- Title Bar Text -->
   <div class='titleBarContainer'><h2 style='color:white;font-weight:normal;'>Resort Information</h2>
@@ -70,7 +71,7 @@
  
  <!-- Call the function to create the header and footer -->
  <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
- 
+ <script>initiateHeader();</script>
  
  <!-- Run the resort information gathering script --> 
   <script src='https://aztechadmit.github.io/gcresorthighland/main/backpages/scripts/resortinfoscript.js'></script>
