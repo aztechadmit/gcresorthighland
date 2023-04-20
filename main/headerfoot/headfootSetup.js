@@ -4,12 +4,13 @@ var windowSize = 0; var menuMade = 0;
     
 const hdCnt = document.getElementById('headerContents');
     
-    function finishLoading() {return false;}    // Maybe eventually this will be a loading symbol
+    function finishLoading() {loaderDiv.style.opacity = 0; setTimeout(function(){loaderDiv.style.display='none';},500); }    // Maybe eventually this will be a loading symbol
 
     function initiateHeader() {
         
-    	headerContents.innerHTML = "<div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
+    	headerContents.innerHTML = "<div id='loaderContainer'><div id='loaderBackground'></div><div id='loader'></div></div> <div id='headerMain'></div><div id='headerSpacer'></div><div id='headerMenu'></div><div id='hideHeaderMenuBtn' onclick='openHeaderMenu()'></div>";
         
+        loaderDiv = document.getElementById('loader');
         head = document.getElementById('headerMain');
         
         //Determine how the header is formatted depending on screen width
