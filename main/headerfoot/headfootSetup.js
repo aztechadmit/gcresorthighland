@@ -18,6 +18,7 @@ const hdCnt = document.getElementById('headerContents');
       
         createFooter();
         
+        setTimeout(function(){if(loaderDiv.style.display != 'none'){loaderDiv.style.display  = 'none';}},2000);
     }
     
     // WINDOW GREATER THAN 900
