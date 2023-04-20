@@ -43,13 +43,14 @@ button:hover {background:lightgray;cursor:pointer;}
 
 .titleBarContainer {background:#073763;margin-top:0;color:white;text-align:center;padding:10px;}
 .titleBarContainer h1 {color:white;font-weight:normal;font-size:22px;}
+.titleBarContainer img{width:auto;height:100px;margin:10px;}
 
 .titleSummaryContainer {width:full;margin-top:0;background:#efefef;padding:15px;text-align:center;}
 .titleSummaryContainer p {max-width:1100px;margin:auto;margin-top:15px;margin-bottom:15px;}
 
 /*For Banner Image <img class='titleImageContainer' src='image.jpg'/> */
 .titleImageContainer {width:100%;height:315px;object-fit:cover;}
-@media screen and (max-width:900px){.titleImageContainer{height:250px;}}
+@media screen and (max-width:900px){.titleImageContainer{height:250px;} .titleBarContainer img{width:200px;height:auto;}
 
 
 
