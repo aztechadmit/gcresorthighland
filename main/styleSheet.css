@@ -71,12 +71,14 @@ button:hover {background:lightgray;cursor:pointer;}
     }
 
 
-/* Image with text next to it section (place into a div container) */
+/* FLEXIBILE TEXT AND IMAGE CONTAINERS FOR PAGE FORMATTING */
 
- 	.inlineImg {width:40%;height:30vw;object-fit:cover;display:inline-block;vertical-align:top;margin:5px;border-radius:10px;}
-   	.inlineTxt {width:50%;margin:5px;display:inline-block;text-align:left;vertical-align:top;margin-left:10px;}
+	.inlineFrame {display:flex; flex-flow:row;}
+ 	.inlineFrame img {width:40%;height:auto;object-fit:cover;margin:10px;border-radius:10px;}
+   	.inlineTxt {width:60%;margin:5px;text-align:left;margin:10px;}
     
     	@media screen and (max-width:700px){
+		.inlineFrame{flex-flow:column;}
 		.inlineImg {width:100%;display:block;height:200px;}
 		.inlineTxt {width:100%;display:block;}
     	}
