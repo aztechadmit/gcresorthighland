@@ -1,43 +1,76 @@
 <html>
  <head> <!-- Basic HTML Page Setup -->
-    <title>GC-VIP | Globe-City Resort Highland</title>
+    <title>PAGE TITLE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
  
+ <style>
+  .tileContainer {border:none;}
+ </style>
  
- <body>
-  <!-- Place the header -->
-  <div id="headerDiv" class="headerBar"></div>
-  <div id="headerMenuBar"></div>
-  <button id='headerHideMenuButton' onclick='openSideBar()'></button>
+<body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
   
-  <!-- Banner Image -->
-  <div class='fullContainer' style='background-image:url("https://aztechadmit.github.io/gcresorthighland/main/images/banner5.jpg");background-size:cover;background-position:center;height:200px;margin-top:0;'></div>
-  <!-- Title Bar Text -->
-  <div class='titleBarContainer'><h2 style='color:white;font-weight:normal'>GC-VIP Admission</h2></div> <!-- Remember to Change Page Title above!! -->
-  
-  <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
+ <!-- BANNER AND SUMMARY ------------------------------------------------------------------------------------------------------------------------------ BANNER -->
+ <img class='titleImageContainer' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner5.jpg'/>
+ <!-- Title of Page Goes Here -->
+ <div class='titleBarContainer'><h1>GC-VIP Admission</h1></div> <!-- REMEMBER TO SET PAGE TAB TITLE -->
  
-   <div class='fullContainer' style='text-align:center;background:#efefef;margin-top:0;'>
-    <div class='container' style='margin-top:0;'>
-     <p>Adventure like royalty with the GC-VIP experience, an upgrade to your already amazing visit to Adventure Park!</p>
-    </div>
-  </div>
+ <!-- Summary of Page Goes here, displayed under the title -->
+ <div class='titleSummaryContainer'>
+  <p>Enhance your visit with GC-VIP admission for a deluxe experience including exclusive perks, shorter waittimes, and more!</p>
+ </div>
+   
+  <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
+   
+  <!-- Example Tile Format -->
+   <br><div class='tileSection'>
+   
+   	<div class='tileContainer'>
+    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg'\>
+    <h2>Tile 1</h2>
+    <p>Tile Text Contents</p> 
+    <a class='tileLink'>Learn More</a>
+   	</div>
+    
+    <div class='tileContainer'>
+    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg'\>
+    <h1>Tile 2</h1>
+    <p>Tile Text Contents</p>
+    <a class='tileLink'>Learn More</a>
+   	</div>
+    
+    <div class='tileContainer'>
+    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner3.jpg'\>
+    <h1>Tile 3</h1>
+    <p>Tile Text Contents</p>
+    <a class='tileLink'>Learn More</a>
+   	</div>
+    
+   </div>
    
    
    
    
    
    
-  <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
-  <br><div id="footerDiv"></div>
- </body>
+   
+   
+   
+   
+   
+   
+   
+   
+<!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+<br><div id="footerDiv"></div>
+</body>
  
- <!-- Call the function to create the header and footer -->
- <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
- <script>initiateHeadFoot('null');</script>
-
+<!-- Call the function to create the header and footer -->
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeader();</script>
 </html>
