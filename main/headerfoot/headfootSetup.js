@@ -25,7 +25,7 @@ var preInitiated = 0;
       
         createFooter();
         
-        setTimeout(function(){if(loaderDiv.style.display != 'none'){loaderDiv.style.display  = 'none';}},2000);
+        setTimeout(function(){if(loaderDiv.style.display != 'none'){loaderDiv.style.display  = 'none';}},4000);
     }
     
     // WINDOW GREATER THAN 900
