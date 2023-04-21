@@ -1,12 +1,21 @@
 <html>
  <head> <!-- Basic HTML Page Setup -->
-    <title>PAGE TITLE</title>
+    <title>Attractions and Entertainment | Globe-City Resort Highland</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
  
+ <style>
+ 
+ 	.attractionsContainer {display:flex;flex-flow:row;flex-wrap:wrap;width:full;}
+    .attractionsContainer h2{width:100%;}
+    
+ 	.attractionButton {width:30%;height:auto;border:2px solid black;border-radius:10px;cursor:pointer;margin:10px;}
+    .attractionButton:hover{background:azure;}
+    
+ </style>
  
  
 <body onload='finishLoading();'>
@@ -15,43 +24,64 @@
   
  <!-- BANNER AND SUMMARY ------------------------------------------------------------------------------------------------------------------------------ BANNER -->
  
- <!-- Banner Image Goes Here -->
- <img class='titleImageContainer' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg'/>
+
  <!-- Title of Page Goes Here -->
- <div class='titleBarContainer'><h1>Template Page Title</h1></div> <!-- REMEMBER TO SET PAGE TAB TITLE -->
+ <div class='titleBarContainer'><h1>Attractions and Entertainment</h1></div> <!-- REMEMBER TO SET PAGE TAB TITLE -->
  
  <!-- Summary of Page Goes here, displayed under the title -->
  <div class='titleSummaryContainer'>
-  <p>Summary Goes here </p>
+ 
+ <label for='loctionSelect'>Select Location</label>
+  <select id='locationSelect' style='width:250px;'>
+  	<option>View All</option>
+    <option>Adventure Park</option>
+    <option>City-Shop</option>
+  </select> <br><br>
+  
+  <label for='typeSelect'>Attraction Type</label>
+  <select id='typeSelect' style='width:250px;'>
+  	<option>All</option>
+    <option>Entertainment</option>
+    <option>Rides</option>
+    <option>Midway Games and Arcades</option>
+    <option>Paid Experiences</option>
+  </select>
  </div>
    
   <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
+   <div class='container'>
    
-  <!-- Example Tile Format -->
-   <br><div class='tileSection'>
+   <h2>High-Thrill Rides</h2>
    
-   	<div class='tileContainer'>
-    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg'\>
-    <h2>Tile 1</h2>
-    <p>Tile Text Contents</p> 
-    <a class='tileLink'>Learn More</a>
-   	</div>
-    
-    <div class='tileContainer'>
-    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg'\>
-    <h1>Tile 2</h1>
-    <p>Tile Text Contents</p>
-    <a class='tileLink'>Learn More</a>
-   	</div>
-    
-    <div class='tileContainer'>
-    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner3.jpg'\>
-    <h1>Tile 3</h1>
-    <p>Tile Text Contents</p>
-    <a class='tileLink'>Learn More</a>
-   	</div>
-    
+   <div class='attractionsContainer' id='adventurePark'>
+
+      <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      Ride the Beat</div>
+      <div class='attractionButton'>Ride the Beat</div>
+      <div class='attractionButton'>Ride the Beat</div>
+   
    </div>
+   
+   <div class='lineBreak' style='width:100%'></div>
+   
+    <h2>Dark Rides</h2>
+    
+    <div class='attractionsContainer' id='adventurePark'>
+    
+      <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      Ride the Beat</div>
+      <div class='attractionButton'>Ride the Beat</div>
+      <div class='attractionButton'>Ride the Beat</div>
+   
+   </div>
+   
+   
+   </div> <!-- end of container -->
+   
+   <div class='attractionsContainer' id='cityShop'>
+   
+   </div> <!-- end of container -->
+
    
    
    
