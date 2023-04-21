@@ -1,1 +1,81 @@
+<html>
+ <head> <!-- Basic HTML Page Setup -->
+    <title>Park-View<sup>TM</sup> Livestream | Globe-City Resort Highland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
+    <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
+    <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
+ </head>
+ 
+ <style>
+   #videoContainer {position:absolute;height:100vh;top:0;left:0;right:0;width:full;}
+   #videoContainer video{width:100%;height:100%;object-fit:cover;overflow:none;}
+   
+   button{color:white;border-color:white;vertical-align:middle;}
+   
+   #mediaControls{
+   	position:absolute;bottom:0;right:0;left:0;background:rgba(0,0,0,0.5);
+    
+    transiton: 1s;
+    
+    height:auto;
+    
+    overflow-x:auto;
+    overflow-y:hidden;
+   }
+ </style>
+ 
+<body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
+  
+ <!-- BANNER AND SUMMARY ------------------------------------------------------------------------------------------------------------------------------ BANNER -->
+ <div id='videoContainer'>
+ 	<video autoplay loop muted>
+    <source src="" type="video/mp4">
+    Your Browser Does Not Support Backend Livestreaming
+    </video>
+    
+    <div id='mediaControls'>
+ 	<button onclick='hideHed()' style=''>Hide Controls</button><button onclick='videoContainer.requestFullscreen();'>Fullscreen</button>
+    
+ 	</div>
+    
+    <button style='all: revert;font-size:18px; position:absolute;bottom:10px;right:10px;' onclick='hideHed()' id='shwCntrl'>Show Controls</button>
+    
+ </div>
+ 
+ 
+ 
+ <div style='height:100vh;margin-top:-50px;'></div>
+ <div class='container'>
+ Powered by <a>Park-View</a><sup>TM</sup> Livestreaming technology
+ </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+<!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+<br><div id="footerDiv"></div>
+</body>
 
+<script>
+	const hed = document.getElementById('mediaControls');
+    
+    function hideHed(){
+      if(hed.style.height != 'auto'){hed.style.height = 0;}
+      else{hed.style.height = 'auto';}
+    }
+</script>
+ 
+<!-- Call the function to create the header and footer -->
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeader();</script>
+</html>
