@@ -124,7 +124,7 @@ select {width:150px; height:30px; border-radius:5px; font-size:18px;}
 
 /* TABLE OF CONTENTS AND BACK TO TOP BUTTONS */
 `````````#tblCntnt {text-align:left;}
-		 #tblCntnt a{display:inline-block;color:dimgray;font-style:normal;margin-left:5px;margin-right:5px;}   
+		 #tblCntnt a{display:inline-block;color:dimgray;font-style:normal;margin-left:10px;margin-right:10px;}   
   		 #tblCntnt a:hover {text-decoration:underline;}
    
    		 #bkToTop {font-weight:bold;}
