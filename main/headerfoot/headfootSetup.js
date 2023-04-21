@@ -78,7 +78,7 @@ var preInitiated = 0;
             hdMenCnt.innerHTML = "<button id='headerTicketsButton' onclick='window.open("+'"https://aztechadmit.github.io/gcresorthighland/parktickets","_self"'+")'>Tickets and Passes</button>";
             hdMenCnt.innerHTML += "<a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland'>Home</a>";
             hdMenCnt.innerHTML += "<button class='headerMenuLinks' onclick='openTtdMen(1)'>Things to Do &#9660;</button>";
-            hdMenCnt.innerHTML += "<div class='hmlIndent' style='display:none' id='ttdmen'><b>Adventure Park</b><br><a class='headerMenuLinks'>Attractions and Entertainment</a><a class='headerMenuLinks'>Places to Eat</a><a class='headerMenuLinks'>Shopping</a><br>\
+            hdMenCnt.innerHTML += "<div class='hmlIndent' style='display:none' id='ttdmen'><b>Adventure Park</b><br><a class='headerMenuLinks' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment.html'>Attractions and Entertainment</a><a class='headerMenuLinks'>Places to Eat</a><a class='headerMenuLinks'>Shopping</a><br>\
             						<b>City-Shop</b><br><a class='headerMenuLinks'>About</a><a class='headerMenuLinks'>Restaurants and Dining</a><a class='headerMenuLinks'>Retail and More</a>\
                                     <br></div>";
             
@@ -151,7 +151,7 @@ function createFooter() {
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets/annualpassports'>Annual Passports</a><br>\
     <a class='footerLink'>Group Admission (10+)</a><br>\
     <a class='footerLink'>Special Events</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/adventurepark/attractions-and-entertainment'>Attractions and Entertainment</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment.html'>Attractions and Entertainment</a><br>\
     <a class='footerLink'>Places to Eat</a><br>\
     <a class='footerLink'>Shopping</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/gc-photopass'>GC PhotoPass</a><br>\
