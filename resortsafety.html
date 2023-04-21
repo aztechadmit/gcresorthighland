@@ -8,12 +8,14 @@
  </head>
  
  
-<body onload='initiateHeader()'>
-<div id='headerContents'></div>
+<body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
   
   <!-- Banner Image -->
  <!-- <div class='fullContainer' style='background-image:url("https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg");background-size:cover;background-position:center;height:200px;margin-top:0;'></div>
   <!-- Title Bar Text -->
+	<a id='top'></a>
   <div class='titleBarContainer'><h2 style='color:white;font-weight:normal'>Safety and Guidelines</h2></div> <!-- Remember to Change Page Title above!! -->
   
   <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
@@ -82,10 +84,14 @@
    </div>
    
    <br>
+	<div class='container'>
+	<a href='top' id='bkToTop'>Back to Top</a>
+	</div>
+	<br>
    
    <div class='fullContainer' style='background:#efefef'>
    <div class='container'>
-   <p>Failure to adhere to our posted guidelines and instructions given by our staff is grounds for removal from resort 	property with no refunds.<br><br>
+   <p>Failure to adhere to our posted guidelines and instructions given by our staff is grounds for removal from resort property with no refunds.<br><br>
 
 Guests visiting with annual passports or multi day tickets can have these passes revoked with no refunds depending on the circumstances. 
 	</p></div></div>
@@ -98,6 +104,7 @@ Guests visiting with annual passports or multi day tickets can have these passes
  </body>
  
  <!-- Call the function to create the header and footer -->
- <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeader();</script>
 
 </html>
