@@ -9,11 +9,21 @@
  
  <style>
  
- 	.attractionsContainer {display:flex;flex-flow:row;flex-wrap:wrap;width:full;}
+ 	.attractionsContainer {display:flex;flex-flow:row;flex-wrap:wrap;width:full;justify-content:center;align-items:center;}
     .attractionsContainer h2{width:100%;}
     
- 	.attractionButton {width:30%;height:auto;border:2px solid black;border-radius:10px;cursor:pointer;margin:10px;}
+ 	.attractionButton {display:flex; flex-flow:row; width:50%;min-width:300px;height:auto;border:2px solid black;border-radius:10px;cursor:pointer;margin:10px;}
     .attractionButton:hover{background:azure;}
+    
+    .attractionButton p{vertical-align:top;margin-left:10px;margin-top:0;margin-bottom:0;line-height:1.3;font-size:16px;}
+    .attractionButton img {width:40%;height:auto;border-radius:8px;object-fit:cover;vertical-align:top;}
+    
+    
+    @media screen and (max-width:900px){
+    	.attractionsContainer{flex-flow:column;}
+        .attractionButton{width:100%;max-width:400px;}
+    }
+    
     
  </style>
  
@@ -50,18 +60,20 @@
    
   <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
    <div class='container'>
-   
+   <h1 style='font-weight:normal;font-size:28px;'>Adventure Park</h1>
    <h2>High-Thrill Rides</h2>
    
    <div class='attractionsContainer' id='adventurePark'>
 
       <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
-      Ride the Beat</div>
-      <div class='attractionButton'>Ride the Beat</div>
-      <div class='attractionButton'>Ride the Beat</div>
+      <img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+      <p>RIDE THE BEAT: WAVERIDERS<br><b>Sponsored by <em>ENERGIZER<sup>TM</sup></em></p></p>
+      </div>
+      
+      
    
    </div>
-   
+      
    <div class='lineBreak' style='width:100%'></div>
    
     <h2>Dark Rides</h2>
