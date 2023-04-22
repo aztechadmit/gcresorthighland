@@ -170,7 +170,7 @@ function createFooter() {
     </div>\
     <div class='footerGroup'>\
     <b>Information</b><br>\
-    <a class='footerLink'>About Us</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/about'>About Us</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/information'>Resort Information</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/resortsafety'>Guidelines and Rules</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/resortmap'>Resort Map</a><br>\
