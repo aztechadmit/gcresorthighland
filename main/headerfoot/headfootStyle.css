@@ -105,8 +105,14 @@
 
 /* ----------------------------------------------------------------------------------------- FOOOTER ELEMENT ----- */
 
-#footerDiv{width:100%;max-width:1100px;margin:auto;line-height:2;font-family:arial;font-size:15px;}
-.footerGroup {width:200px;display:inline-block;margin:25px; vertical-align:top;}
-.footerLineBreak{width:95%; margin:auto;max-width:1500px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;}
-.footerLink {color:dimgray;text-decoration:none;cursor:pointer;font-style:normal;}
-.footerLink:hover {color:blue;text-decoration:underline;}
+#footerDiv{width:100%;max-width:1100px;margin:auto;line-height:2;font-size:15px;}
+
+	#footerLinks{display:flex; flex-flow:row; font-size:15px; width:100%; align-items:center; justify-content:center; align-items: flex-start;max-width:900px;margin:auto;}
+  	.footerColumn{max-width:25%; padding:10px; vertical-align:top; margin:auto; margin-top:0;}
+    	#footerLinks a{color:dimgray;font-weight:normal;font-style:normal;text-decoration:none;display:block;line-height:1.2;margin-top:9px;}
+    	#footerLinks a:hover {text-decoration:underline;cursor:pointer;}
+    
+	@media screen and (max-width:500px){
+		#footerLinks{flex-flow:column;}
+		.footerColumn{width:100%;text-align:left;padding-left:25px;}
+	}
