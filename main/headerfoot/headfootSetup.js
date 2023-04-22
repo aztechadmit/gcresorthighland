@@ -142,60 +142,73 @@ var preInitiated = 0;
 
 
 function createFooter() {
-  footerHTML.innerHTML = "<div class='footerLineBreak'></div>\
-    <div style='position:relative;margin:auto;'>\
-    <div class='footerLinkDiv'><div class='footerGroup'>\
-    <b>Adventure Park</b><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets'>Tickets and Passes</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets/gcvip'>GC-VIP</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets/annualpassports'>Annual Passports</a><br>\
-    <a class='footerLink'>Group Admission (10+)</a><br>\
-    <a class='footerLink'>Special Events</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment'>Attractions and Entertainment</a><br>\
-    <a class='footerLink'>Places to Eat</a><br>\
-    <a class='footerLink'>Shopping</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/gc-photopass'>GC PhotoPass</a><br>\
-    </div>   \
-    <div class='footerGroup'>\
-    <b>City Shop</b><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/city-shop'>About</a><br>\
-    <a class='footerLink'>Restauraunts and Dining</a><br>\
-    <a class='footerLink'>Shopping and Attractions</a><br>\
-    <a class='footerLink'>City-Shop Parking</a><br>\
-    <a class='footerLink'>Event Venues</a><br>\
-    <a class='footerLink'>Performance Opurtunities</a><br>\
-    <br><b>Other</b><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/corporate-sponsors'>Corporate Partners</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/mcbpo-documents'>MCPBO Documents</a><br>\
-    </div>\
-    <div class='footerGroup'>\
-    <b>Information</b><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/about'>About Us</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/information'>Resort Information</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/resortsafety'>Guidelines and Rules</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/resortmap'>Resort Map</a><br>\
-    <a class='footerLink'>News and Updates</a><br>\
-    <a class='footerLink'>Resort Calendar</a><br>\
-    <br><b>Resort Hotels</b><br>\
-    <a class='footerLink'>Lakeside Hotel</a><br>\
-    <a class='footerLink'>The Aztech Resort</a><br>\
-    <a class='footerLink'>Vacation Packages</a><br>\
-    </div>\
-    <div class='footerGroup'>\
-    <b>Resort Services</b><br>\
-    <a class='footerLink'>Contact a Representative</a><br>\
-    <a class='footerLink'>Guest Satisfaction Survey</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/accessibility-information'>Accessility Information</a><br>\
-    <a class='footerLink'>Lockers and Rentals</a><br>\
-    <a class='footerLink'>Security</a><br>\
-    <br><b>Jobs</b><br>\
-    <a class='footerLink'>Career Portal</a><br>\
-    </div>\
-    </div></div> \
-    <div class='footerLineBreak' style='margin-top:0px;'></div> \
-    <p style='text-align:center;'><b>Get in Touch</b><br>(312) 872 2212<br><a href='mailto:guestservices.gcrh@gcpr.net'>guestservices.gcrh@gcpr.net</a></p>\
-    <div class='footerLineBreak' style='margin-top:25px;'></div>\
-    <p style='text-align:center;font-size:12px;color:dimgray;'>&#169; 2023 Globe-City Parks and Resorts LLC.<br>A Division of R and R Industries</p>";
+    footerHTML.innerHTML = "<br><div class='lineBreak' style='margin:0;'></div><br>";
+    
+    //Footer Links
+    footerHTML.innerHTML += "<div id='footerLinks'>";
+    
+    footerHTML.innerHTML += "<div class='footerColumn'>\
+                            <b>Adventure Park</b>\
+                            <a href=''>Tickets and Passes</a>\
+                            <a href=''>GC-VIP Admission</a>\
+                            <a href=''>Annual Passports</a>\
+                            <a href=''>Group Admission(10+)</a>\
+                            <a href=''>Special Events</a>\
+                            <a href=''>Attractions and Entertainment</a>\
+                            <a href=''>Places to Eat</a>\
+                            <a href=''>Shopping</a>\
+                            <a href=''>GC Photo Pass</a>\
+                            <a href=''>Themepark Parking</a>\
+                        </div>\
+\
+                        <div class='footerColumn'>\
+                            <b>City-Shop</b>\
+                            <a href=''>About</a>\
+                            <a href=''>Restaurants and Dining</a>\
+                            <a href=''>Shopping and Attractions</a>\
+                            <a href=''>Event Venues</a>\
+                            <a href=''>Performance Oppurtunities</a>\
+                            <a href=''>City-Shop Parking</a>\
+\
+                            <br><b>Other</b>\
+                            <a href=''>Coporate Partners</a>\
+                            <a href=''>Buisness Opurtunities</a>\
+                            <a href=''>MCPBO Documents</a>\
+                        </div>\
+\
+                        <div class='footerColumn'>\
+                            <b>Information</b>\
+                            <a href=''>About Us</a>\
+                            <a href=''>Live Information</a>\
+                            <a href=''>Guidelines and Rules</a>\
+                            <a href=''>Resort Map</a>\
+                            <a href=''>News and Updates</a>\
+                            <a href=''>Resort Calendar</a>\
+\
+                            <br><b>Resort Hotels</b>\
+                            <a href=''>Lakeside Hotel</a>\
+                            <a href=''>The Aztech Resort</a>\
+                            <a href=''>Vacation Packages</a>\
+                        </div>\
+\
+                        <div class='footerColumn'>\
+                            <b>Resort Services</b>\
+                            <a href=''>Accessibility Information</a>\
+                            <a href=''>Lockers and Rentals</a>\
+                            <a href=''>Resort Lost and Found</a>\
+                            <a href=''>Security</a>\
+                            <a href=''>Contact a Representative</a>\
+                            <a href=''>Guest Satisfaction Survey</a>\
+                            <br><b>Jobs</b>\
+                            <a href=''>Career Portal</a>\
+                        </div>";
+    
+    footerHTML.innerHTML += "</div>"; // end of footer links
+    
+    footerHTML.innerHTML += "<div class='lineBreak' style='margin:0;'></div>";
+    footerHTML.innerHTML += "<div style='width:100%;text-align:center;><p><b>Get In Touch</b></p><p>(312) 872 2212</p><p><a>guestservices.gcrh@gcpr.net</a></p></div>";
+    footerHTML.innerHTML += "<div class='lineBreak' style='margin:0;'></div>";
+    footerHTML.innerHTML += "<br><div style='width:100%;text-align:center;color:gray;><p>&#169;2023 Globe-City Parks and Resorts LLC.</p><p>Sunbidiary of Globe-City Entertainment LLC. and R and R Industries<sup>tm</sup></div><br>";
 }//end of createFooter
 
 /*
