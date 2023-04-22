@@ -149,21 +149,21 @@ function createFooter() {
     
     footerHTML.innerHTML += "<div class='footerColumn'>\
                             <b>Adventure Park</b>\
-                            <a href=''>Tickets and Passes</a>\
-                            <a href=''>GC-VIP Admission</a>\
-                            <a href=''>Annual Passports</a>\
-                            <a href=''>Group Admission(10+)</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/parktickets'>Tickets and Passes</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/gcvip'>GC-VIP Admission</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/annualpassports'>Annual Passports</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/groupadmission'>Group Admission(10+)</a>\
                             <a href=''>Special Events</a>\
-                            <a href=''>Attractions and Entertainment</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment'>Attractions and Entertainment</a>\
                             <a href=''>Places to Eat</a>\
                             <a href=''>Shopping</a>\
-                            <a href=''>GC Photo Pass</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/gc-photopass'>GC Photo Pass</a>\
                             <a href=''>Themepark Parking</a>\
                         </div>\
 \
                         <div class='footerColumn'>\
                             <b>City-Shop</b>\
-                            <a href=''>About</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/city-shop'>About</a>\
                             <a href=''>Restaurants and Dining</a>\
                             <a href=''>Shopping and Attractions</a>\
                             <a href=''>Event Venues</a>\
@@ -171,16 +171,16 @@ function createFooter() {
                             <a href=''>City-Shop Parking</a>\
 \
                             <br><b>Other</b>\
-                            <a href=''>Coporate Partners</a>\
-                            <a href=''>Buisness Opurtunities</a>\
-                            <a href=''>MCPBO Documents</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/corporate-sponsors'>Coporate Partners</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/partnership'>Buisness Opurtunities</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/mcbpo-documents'>MCPBO Documents</a>\
                         </div>\
 \
                         <div class='footerColumn'>\
                             <b>Information</b>\
-                            <a href=''>About Us</a>\
-                            <a href=''>Live Information</a>\
-                            <a href=''>Guidelines and Rules</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/about'>About Us</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/information'>Live Information</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/resortsafety'>Guidelines and Rules</a>\
                             <a href=''>Resort Map</a>\
                             <a href=''>News and Updates</a>\
                             <a href=''>Resort Calendar</a>\
@@ -193,7 +193,7 @@ function createFooter() {
 \
                         <div class='footerColumn'>\
                             <b>Resort Services</b>\
-                            <a href=''>Accessibility Information</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/accessibility-information'>Accessibility Information</a>\
                             <a href=''>Lockers and Rentals</a>\
                             <a href=''>Resort Lost and Found</a>\
                             <a href=''>Security</a>\
