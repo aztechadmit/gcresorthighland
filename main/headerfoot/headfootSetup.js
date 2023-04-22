@@ -166,7 +166,7 @@ function createFooter() {
     <a class='footerLink'>Performance Opurtunities</a><br>\
     <br><b>Other</b><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/corporate-sponsors'>Corporate Partners</a><br>\
-    <a class='footerLink'>MCPBO Documents</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/mcbpo-documents'>MCPBO Documents</a><br>\
     </div>\
     <div class='footerGroup'>\
     <b>Information</b><br>\
