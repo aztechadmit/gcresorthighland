@@ -8,10 +8,10 @@
  </head>
  
  <style>
-  .tileImage{width:100%;height:auto;}
+  .tileImage{width:90%;height:auto;}
   .tileContainer{vertical-align:top;}
   
-  @media screen and (max-width:1080px){
+  @media screen and (max-width:1000px){
   	.tileImage{width:60%;height:auto;}
    .tileContainer{width:85%; max-width:700px;}
   }
@@ -23,8 +23,9 @@
   
 
   <!-- Banner Image -->
-  <img class='titleImageContainer' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner3.jpg'/>
-  <div class='titleBarContainer'><h1>Globe-City Adventure Park - Annual Passports</h1></div>
+  <img class='titleImageContainer' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner4.jpg'/>
+  
+  <div class='titleBarContainer'><p style='margin-bottom:0'>Globe-City's Adventure Park</p><h1>Annual Passports</h1></div>
   
   <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
  
@@ -34,16 +35,20 @@
    </div>
    
    <div class='fullContainer' style='background:#efefef;text-align:center;'>
+   <br>
    <div style='tileSection'>
    
     <!-- PASSPORT TYPES -->
+    
+    <h2>Passport Tiers</h2>
     
     <div class='tileContainer'> <!-- RESIDENT PASS -->
      <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/passholderIcon1.png'\>
      <h3>Resident Passport</h3>
      <p><ul style='text-align:left'>
           <li>Admission to Adventure Park on over 230<sup>2</sup>days</li>
-          <li>Item 2</li>
+          <li>5% Discount on food and drink in-park only</li>
+          <li>Passholder exclusive pricing for parking in Adventure Parking Lot</li>
         </ul>
      <b style='text-align:center;'>Starting at $155</b> <!-- PRICE -->
      </p>
@@ -80,6 +85,8 @@
    	<div class='container'>
    		<button style='width:70%;min-width:300px;max-width:500px;'>Purchase or Renew an Annual Passport</button>
     </div>
+    
+    <br>
    </div>
    
    </div> <!-- end of passport tiers-->
@@ -92,6 +99,43 @@
     <p><sup>4</sup>Includes General Parking in Adventure Lot only. Themepark guests cannot park in City-Shop Parking lot.</p>
    </div>
    
+	<br><br>
+   
+   <div class='titleBarContainer'><h1>Passholder Calendar</h1></div>
+   <div class='titleSummaryContainer' style='background:none'><p>Each annual passport tier has a select number of days that are not available for passholders of that tier to visit the park. On these days however, passholders can purchase discounted general admission through the <a>passholder ticketing portal</a> or by visiting the ticket booths in the Resort Esplenade.</p>
+   <p>View the calendar below to see what days are available for visiting based on the passport tier selected.</p>
+   </div>
+   
+   <div class='lineBreak'></div>
+   
+   <div class='container'> <!-- passholder calendar -->
+   
+   <div style='border:1px solid black;border-radius:10px;width:100%;padding:10px;margin:auto;text-align:center;'>
+   	<label for='tierSelection'>Select Passport Tier to View: </label>
+    <select id='tierSelection' style='width:auto'>
+    	<option>Resident Passport</option>
+        <option>Adventure Passport</option>
+        <option>Deluxe Passport</option>
+    </select>
+   </div><br>
+   
+   <div id='calendar' style='width:100%;height:60%;background:azure;border:1px solid black;'>
+   	<p>Could not load calendar. Please try again later.<br><em>Error Code: 0991</em></p>
+   </div>
+   	
+   </div>
+   
+   <div class='lineBreak'></div>
+   
+   <div class='container' style='text-align:center'>
+
+      For any further annual passport related inquiries, contact our passholder service department<br><br>
+
+   <b>(312) 872 0900</b><br><br>
+
+    <a>passholderconnection.gcrh@gcpr.net</a>
+   
+   </div>
    
    
    
