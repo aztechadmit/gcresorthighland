@@ -142,6 +142,7 @@ var preInitiated = 0;
 
 
 function createFooter() {
+    
     footerHTML.innerHTML = "<br><div class='lineBreak' style='margin:0;'></div><br>";
     
     //Footer Links
@@ -160,7 +161,7 @@ function createFooter() {
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/gc-photopass'>GC Photo Pass</a>\
                             <a href=''>Themepark Parking</a>\
                         </div>\
-\
+
                         <div class='footerColumn'>\
                             <b>City-Shop</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/city-shop'>About</a>\
@@ -169,13 +170,13 @@ function createFooter() {
                             <a href=''>Event Venues</a>\
                             <a href=''>Performance Oppurtunities</a>\
                             <a href=''>City-Shop Parking</a>\
-\
+
                             <br><b>Other</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/corporate-sponsors'>Coporate Partners</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/partnership'>Buisness Opurtunities</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/mcbpo-documents'>MCPBO Documents</a>\
                         </div>\
-\
+
                         <div class='footerColumn'>\
                             <b>Information</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/about'>About Us</a>\
@@ -184,13 +185,13 @@ function createFooter() {
                             <a href=''>Resort Map</a>\
                             <a href=''>News and Updates</a>\
                             <a href=''>Resort Calendar</a>\
-\
+
                             <br><b>Resort Hotels</b>\
                             <a href=''>Lakeside Hotel</a>\
                             <a href=''>The Aztech Resort</a>\
                             <a href=''>Vacation Packages</a>\
                         </div>\
-\
+
                         <div class='footerColumn'>\
                             <b>Resort Services</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/accessibility-information'>Accessibility Information</a>\
