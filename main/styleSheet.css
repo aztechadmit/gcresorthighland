@@ -24,7 +24,7 @@ body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height
 .fullContainer, .titleBarContainer {width:full;margin:0;padding:0;margin-top:40px;}
 
 /* Dividers */
-.lineBreak {width:95vw; margin:auto;max-width:1200px;margin-top:40px;background:lightgray;height:3px;border-radius:2px;overflow-x:hidden;}
+.lineBreak {width:95%; margin:auto;max-width:1200px;margin-top:40px;background:lightgray;height:2px;border-radius:2px;overflow-x:hidden;}
 
 
 /* Buttons */
