@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
  
+	<script>
+		function jumpToSection(){
+			
+			const userInput = document.getElementById('headingSelect');
+			const num = userInput.value;
+			
+			const openWin = '#' + num;
+			
+			window.open(openWin,'_self');
+			
+		}
+	</script>
  
 <body onload='finishLoading();'>
   <!-- Initiate the Header -->
@@ -30,18 +42,19 @@
   
   <div class='container' style='max-width:500px;border:1px solid black; border-radius:10px;'>
   <label for='headingSelect'>Jump to Section </label>
-  <select id='headingSelect' style='width:auto' onchange=''>
+  <select id='headingSelect' style='width:auto' onchange='jumpToSection()'>
 	<option>None</option>
-  	<option>Prohibited Items</option>
-    <option>General Guidelines</option>
-    <option>Security and Medical Aid</option>
-    <option>Attraction Safety</option>
-    <option>Resort Dress Code</option>
-    <option>Service Animals and Pets</option>
+  	<option value='1'>Prohibited Items</option>
+    <option value='2'>General Guidelines</option>
+    <option value='3'>Security and Medical Aid</option>
+    <option value='4'>Attraction Safety</option>
+    <option value='5'>Resort Dress Code</option>
+    <option value='6'>Service Animals and Pets</option>
   </select>
   </div>
    
    <div class='container'>
+	   <a id='1'></a>
      <h2>Prohibited Items</h2>
      <p>The Following Items are Not allowed in Adventure Park, City-Shop, or any other areas on resort property</p>
      <ul>
@@ -56,6 +69,7 @@
         <em>Note: Bike locks are available at all resort drop-off locations</em>
      </ul>  
     
+	   <a id='2'></a>
       <br>
     
     <h2>General Guidelines</h2>
@@ -68,6 +82,7 @@
         <li>To preserve immersion, playing of loud music or video in guest areas is prohibited</li>
      </ul>  
      
+	   <a id='3'></a>
      <br>
      
      <h2>Security and Medical Emergencies</h2>
@@ -80,6 +95,7 @@
         <li>Click <a>here</a> for more information on lost group members or children</li>
      </ul>  
      
+	   <a id='4'></a>
      <br>
 	   
 	   <a id='attractionsafetylink'></a>
