@@ -35,9 +35,9 @@ button:hover {background:lightgray;cursor:pointer;}
 .btnFull {border:2px solid #07039D;border-radius:8px;color:white;background:#07039D;}
 .btnFull:hover {background:#073763;cursor:pointer;}
 
-.btnWhite {border:2px solid white;border-radius:8px;color:white;background:none;min-width:150px;padding:10px;font-size:25px;}
+.btnWhite {border:2px solid white;border-radius:8px;color:white;background:none;min-width:150px;padding:10px;}
 
-.expandLink {font-style:normal;font-weight:bold;}
+.expandLink {font-style:normal;font-weight:bold;font-size:25px;}
 
 
 
