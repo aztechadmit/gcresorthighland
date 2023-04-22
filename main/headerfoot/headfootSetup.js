@@ -151,7 +151,7 @@ function createFooter() {
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/parktickets/annualpassports'>Annual Passports</a><br>\
     <a class='footerLink'>Group Admission (10+)</a><br>\
     <a class='footerLink'>Special Events</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment.html'>Attractions and Entertainment</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment'>Attractions and Entertainment</a><br>\
     <a class='footerLink'>Places to Eat</a><br>\
     <a class='footerLink'>Shopping</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/gc-photopass'>GC PhotoPass</a><br>\
@@ -165,7 +165,7 @@ function createFooter() {
     <a class='footerLink'>Event Venues</a><br>\
     <a class='footerLink'>Performance Opurtunities</a><br>\
     <br><b>Other</b><br>\
-    <a class='footerLink'>Corporate Partners</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/corporate-sponsors'>Corporate Partners</a><br>\
     <a class='footerLink'>MCPBO Documents</a><br>\
     </div>\
     <div class='footerGroup'>\
@@ -173,7 +173,7 @@ function createFooter() {
     <a class='footerLink'>About Us</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/information'>Resort Information</a><br>\
     <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/resortsafety'>Guidelines and Rules</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/resortmap.html'>Resort Map</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/things-to-do/resortmap'>Resort Map</a><br>\
     <a class='footerLink'>News and Updates</a><br>\
     <a class='footerLink'>Resort Calendar</a><br>\
     <br><b>Resort Hotels</b><br>\
@@ -185,7 +185,7 @@ function createFooter() {
     <b>Resort Services</b><br>\
     <a class='footerLink'>Contact a Representative</a><br>\
     <a class='footerLink'>Guest Satisfaction Survey</a><br>\
-    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/accessibility-information.html'>Accessility Information</a><br>\
+    <a class='footerLink' href='https://aztechadmit.github.io/gcresorthighland/main/pages/accessibility-information'>Accessility Information</a><br>\
     <a class='footerLink'>Lockers and Rentals</a><br>\
     <a class='footerLink'>Security</a><br>\
     <br><b>Jobs</b><br>\
