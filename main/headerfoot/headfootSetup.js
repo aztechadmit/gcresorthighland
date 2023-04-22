@@ -146,9 +146,9 @@ function createFooter() {
     footerHTML.innerHTML = "<br><div class='lineBreak' style='margin:0;'></div><br>";
     
     //Footer Links
-    footerHTML.innerHTML += "<div id='footerLinks'>";
+    footerHTML.innerHTML += "<div id='footerLinks'>\
     
-    footerHTML.innerHTML += "<div class='footerColumn'>\
+                        <div class='footerColumn'>\
                             <b>Adventure Park</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/parktickets'>Tickets and Passes</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/gcvip'>GC-VIP Admission</a>\
@@ -202,9 +202,8 @@ function createFooter() {
                             <a href=''>Guest Satisfaction Survey</a>\
                             <br><b>Jobs</b>\
                             <a href=''>Career Portal</a>\
-                        </div>";
-    
-    footerHTML.innerHTML += "</div>"; // end of footer links
+                        </div></div>";
+    // end of footer links
     
     footerHTML.innerHTML += "<div class='lineBreak' style='margin:0;'></div>";
     footerHTML.innerHTML += "<div style='width:100%;text-align:center;><p><b>Get In Touch</b></p><p>(312) 872 2212</p><p><a>guestservices.gcrh@gcpr.net</a></p></div>";
