@@ -84,6 +84,14 @@ button:hover {background:lightgray;cursor:pointer;}
 		.inlineTxt {width:100%;display:block;}
     	}
 
+	.twoColFrame{display:flex; flex-flow:row; width:100%; justify-content:center; align-items:center;}
+    .twoColTxt{ width:50%; padding:10px; min-width:300px; }
+    
+    @media screen and (max-width:800px){
+    	.twoColFrame{flex-flow:column;}
+        .twoColTxt{width:100%;}
+    }
+
 /* Announcement Banners */
 #announcementBanner {position:sticky;background:dodgerblue;color:white;text-align:center;right:0;left:0;padding:5px;}
 
