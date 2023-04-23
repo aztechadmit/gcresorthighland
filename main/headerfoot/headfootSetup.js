@@ -153,7 +153,7 @@ function createFooter() {
                             <a href='https://aztechadmit.github.io/gcresorthighland/parktickets'>Tickets and Passes</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/gcvip'>GC-VIP Admission</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/annualpassports'>Annual Passports</a>\
-                            <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/groupadmission'>Group Admission(10+)</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/group-admission'>Group Admission(10+)</a>\
                             <a href=''>Special Events</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment'>Attractions and Entertainment</a>\
                             <a href=''>Places to Eat</a>\
