@@ -205,10 +205,10 @@ function createFooter() {
                         </div></div>";
     // end of footer links
     
+    footerHTML.innerHTML += "<br><div class='lineBreak' style='margin:0;'></div>";
+    footerHTML.innerHTML += "<div style='width:100%;text-align:center;line-height:2;'><p style='margin:20px;'><b>Get In Touch</b><br>(312) 872 2212<br><a>guestservices.gcrh@gcpr.net</a></p></div>";
     footerHTML.innerHTML += "<div class='lineBreak' style='margin:0;'></div>";
-    footerHTML.innerHTML += "<div style='width:100%;text-align:center;'><p><b>Get In Touch</b></p><p>(312) 872 2212</p><p><a>guestservices.gcrh@gcpr.net</a></p></div>";
-    footerHTML.innerHTML += "<div class='lineBreak' style='margin:0;'></div>";
-    footerHTML.innerHTML += "<br><div style='width:100%;text-align:center;color:gray;'><p>&#169;2023 Globe-City Parks and Resorts LLC.</p><p>Subsidiary of Globe-City Entertainment LLC. and R and R Industries<sup>tm</sup></div><br>";
+    footerHTML.innerHTML += "<br><div style='width:100%;text-align:center;font-size:12px;color:gray;'><p>&#169;2023 Globe-City Parks and Resorts LLC.</p><p>Subsidiary of Globe-City Entertainment LLC. and R and R Industries<sup>tm</sup></div><br>";
 }//end of createFooter
 
 /*
