@@ -1,6 +1,6 @@
 <html>
  <head> <!-- Basic HTML Page Setup -->
-    <title>LOCATION NAME | Globe-City Adventure Park</title>
+    <title>LOCATION NAME | Restaurants and Dining | Globe-City Resort Highland</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
@@ -8,120 +8,183 @@
  </head>
  
  <style>
-  .txtBlockRow{display:flex;}
-   	 .txtBlockColumn{float:left;width:50%;padding:10px;}
+	
+    h2 {color:dimgray;}
+    .veg {color:green;font-weight:bold;font-style:normal;}
+    .veg2 {color:orange;font-weight:bold;font-style:normal;}
     
-   	 @media screen and (max-width:700px){.txtBlockRow{display:block;}.txtBlockColumn{width:100%;} }
  </style>
  
- 
- <body>
-  <!-- Place the header -->
-  <div id="headerDiv" class="headerBar"></div>
-  <div id="headerMenuBar"></div>
-  <button id='headerHideMenuButton' onclick='openSideBar()'></button>
-  
-  <div class='fullContainer' style='background:#efefef;margin-top:0px;'><br>
-  	<div class='container txtBlockContainer1' style='margin-top:0;'>
-
-        <img class='txtBlockImg1' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg'>
+ <script>
+ 	function changeMenu()
+    {
+    	const input = document.getElementById('headingSelect').value;
         
-        <div class='txtBlockTxt1'>
-        	<h1 class='txtBlockTitle1'>Boulevard Diner</h1><br>
-            Dining located in <em>Adventure Boulevard</em> in Adventure Park<br><br>
-            Relax under a candy-striped umbrella and watch the world pass by—or unwind inside the Classic Era style dining room as waiters in vintage dress bustle past. The Boulevard Diner takes you on a trip to the turn-of-the-century with a nostalgic menu of delicious delights for breakfast, lunch and dinner.
-       </div>
-    </div><br>
-  </div> <!-- end of dining intro -->
+        document.getElementById('breakfastMenu').style.display = 'none';
+        document.getElementById('lunchMenu').style.display = 'none';
+        
+        document.getElementById(input).style.display = 'block';
+        window.open("#top","_self");
+        
+    }
+ </script>
+ 
+<body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
   
-  <!-- START OF BODY --------------------------------------------------------------------------------------------------------------------------------->
-  
-  <div class='menSelectContainer'>
-  <label for='menSelect'>Select Menu: </label>
-  <select name='menSelect' id='menSelect' onchange='changeMenu()' defaultvalue='dinner'>
-  <option value='brkfst'>Breakfast</option><option value='dinner'>Lunch / Dinner</option></select>
+ <!-- BANNER AND SUMMARY ------------------------------------------------------------------------------------------------------------------------------ BANNER -->
+ <div class='fullContainer' style='background:#efefef;margin-top:0;'>
+ <br>
+ 	<div class='container' style='margin-top:0;'>
+    	<div class='inlineFrame'>
+        	<img src='https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg'>
+            <div class='inlineTxt'>
+            
+            	<h1 style='font-weight:normal;margin-top:0;margin-bottom:0;font-size:28px;'>Restaurant Title</h1>
+                Dining located in <em>LOCATION</em> at Adventure Park
+                
+                <p>Quick summary here</p>
+                <b>Now Serving Breakfast!</b>
+                
+            </div>
+        </div>
+        <br>
+    </div>
+ </div> <!-- End of Main Title and Summary -->
+ 
+ <!-- MAIN MENU CONTENT --------------------------------------------------------------------------------------------->
+<a id='top'></a>
+  <div class='container' style='max-width:500px;border:1px solid black; border-radius:10px;'>
+  <label for='headingSelect'>View Menu </label>
+  <select id='headingSelect' style='width:auto' onchange='changeMenu()'>
+	<option value='lunchMenu'>Lunch / Dinner</option>
+  	<option value='breakfastMenu'>Breakfast</option>
+  </select>
   </div>
   
-  <!-- START OF MENU ITEMS -------------------------------------------------------------------------->
+  <div class='lineBreak'></div>
    
-  <div class='container fadeInBlock' id='lunchMenu' style='overflow-x:hidden;display:none;margin-top:0;'>
-  	<div style='text-align:center'><h2>Lunch and Dinner Menu</h2></div>
-    <div class='lineBreak'></div>
-    
-  </div> <!-- end of lunch/dinner -->
-  
-  <div class='container fadeInBlock' id='breakfastMenu' style='overflow-x:hidden;display:block;margin-top:0;'>
-    <div style='text-align:center'><h2>Breakfast Menu</h2>
-    <p>Served from park opening to 12PM on select days</p></div>
-    
-    <!-- Section -->
-    <div class='lineBreak'></div>
-    
-    <h3 style='margin-bottom:0;'>Sandwiches</h3>
-    <p style='margin:0;'>Served with choice of fries, house-made potato chips, or fresh fruit</p>
-    
-    <div class='txtBlockRow'>
-    
-    	<div class='txtBlockColumn'>
-        
-        <p><b>The Turkey Melt - $15.25</b><br>Sliced turkey with mozzarella cheese, tomato, mayonnaise, bacon, and drizzled balsamic vinegar, served on buttery sourdough bread</p>
-        
-        <p><b>Minecraftian BLT - $15.40</b><br>Bacon, lettuce, and tomato drizzled with mayonnaise served on buttery sourdough bread</p>
-        </div>
-        
-        <div class='txtBlockColumn'>
-        <p><b>Menu Item 1</b><br>This item is so delicious!</p>
-        <p><b>Menu Item 2</b><br>This item is so delicious!</p>
-        </div>
-       
-    </div>
-    <!-- end of section -->
-    
-    <!-- Section -->
-    <div class='lineBreak'></div>
-    
-    <h3 style='margin-bottom:0;'>Soups and Salads</h3>
-    <p style='margin:0;'></p>
-    
-    <div class='txtBlockRow'>
-    
-    	<div class='txtBlockColumn'>
-        
-        <p><b>The Turkey Melt - $15.25</b><br>Sliced turkey with mozzarella cheese, tomato, mayonnaise, bacon, and drizzled balsamic vinegar, served on buttery sourdough bread</p>
-        
-        <p><b>Minecraftian BLT - $15.40</b><br>Bacon, lettuce, and tomato drizzled with mayonnaise served on buttery sourdough bread</p>
-        </div>
-        
-        <div class='txtBlockColumn'>
-        <p><b>Menu Item 1</b><br>This item is so delicious!</p>
-        <p><b>Menu Item 2</b><br>This item is so delicious!</p>
-        </div>
-       
-    </div>
-    <!-- end of section -->
-    
-    
-  </div> <!-- end of breakfast -->
-  
+   <div class='container' id='breakfastMenu'>
+   <h1 style='text-align:center;margin:auto;'>Lunch and Dinner Menu</h1><br>
    
-  <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
-  
-  <script>
-   	function changeMenu(){
-    	const dropDown = document.getElementById('menSelect');
-        const breakmen = document.getElementById('breakfastMenu');
-        const lunchmen = document.getElementById('lunchMenu');
+   <h2>Section Name</h2>
+   <p style='margin-top:-10px;font-size:15px;font-style:italic;'>Subtext goes here</span>
+   <div class='twoColFrame'>
+   
+   	<div class='twoColTxt'>
+    	
+    	<p><b>Item One Name - $00.00</b><br>
+    	Item one description goes here
+        </p>
         
-        if (dropDown.value == 'brkfst'){breakmen.style.display = 'block';lunchmen.style.display = 'none';}
-        else if(dropDown.value == 'dinner'){breakmen.style.display = 'none';lunchmen.style.display = 'block';}
-    }
-   </script>
-  
-  <br><div id="footerDiv"></div>
- </body>
+      	<p><b>Forest Fried Steak - $18</b><br>
+    	Breaded Steak fried in oil and topped with sausage gravy. Served with creamy mashed potatoes and vegetables
+        </p>
+        
+    	</div> <!-- col 1 -->
+    
+    <div class='twoColTxt'>
+    	
+    	<p><b>Item Three Name - $00.00</b><br>
+    	Item three description goes here
+        </p>
+        
+      	<p><b>Dragon Slab - $17</b><br>
+    	A large slab of grilled chicken served over steamed rice and drizzled with signature garlic sauce
+        </p>
+        
+    	</div> <!-- col 2 -->
+    
+   </div><!-- end of two column section -->
+   
+    <div class='lineBreak'></div>
+    
+   
+   
+   </div> <!-- end of container BEAKFAST MENU-->
+   
+   
+   
+   
+   
+   <div class='container' id='lunchMenu'>
+   <h1 style='text-align:center;margin:auto;'>Lunch and Dinner Menu</h1><br>
+   
+   <h2>Section Name</h2>
+   <p style='margin-top:-10px;font-size:15px;font-style:italic;'>Subtext goes here</span>
+   <div class='twoColFrame'>
+   
+   	<div class='twoColTxt'>
+    	
+    	<p><b>Item One Name - $00.00</b><br>
+    	Item one description goes here
+        </p>
+        
+      	<p><b>Forest Fried Steak - $18</b><br>
+    	Breaded Steak fried in oil and topped with sausage gravy. Served with creamy mashed potatoes and vegetables
+        </p>
+        
+    	</div> <!-- col 1 -->
+    
+    <div class='twoColTxt'>
+    	
+    	<p><b>Item Three Name - $00.00</b><br>
+    	Item three description goes here
+        </p>
+        
+      	<p><b>Dragon Slab - $17</b><br>
+    	A large slab of grilled chicken served over steamed rice and drizzled with signature garlic sauce
+        </p>
+        
+    	</div> <!-- col 2 -->
+    
+   </div><!-- end of two column section -->
+   
+    <div class='lineBreak'></div>
+    
+   
+   
+   </div> <!-- end of container LUNCH MENU-->
+   
+   
+   
+   <div class='lineBreak'></div>
+   
+   <div class='container'>
+   
+   <h1 style='font-weight:normal;'>Allergen Information</h1>
+   <p><em class='veg'>v</em> - Vegan, <em class='veg2'>v</em> - Vegan with substitution</p>
+   All food prepared in this kitchen holds the possibility of coming into contact with the following allergens:
+   
+   <ul>Poultry, Red Meat, Tree Nuts, Peanuts, Seafood (including shellfish), Dairy</ul>
+   
+   <p>Please inform your server if you have severe food allergies</p>
+   <br>
+   <p><em>All prices subject to change without notice</em></p>
+      
+   </div>
+   
+   <div class='lineBreak'></div>
+   
+   <div class='container' style='text-align:center;'>
+   <button onclick='history.back()'>Back</button>
+   </div>
+   
+   <br><br>
+   
+   
+   
+   
+   
+   
+   
+   
+<!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+<br><div id="footerDiv"></div>
+</body>
  
- <!-- Call the function to create the header and footer -->
- <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
- <script>initiateHeadFoot('null');</script>
-
+<!-- Call the function to create the header and footer -->
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeader();</script>
 </html>
