@@ -5,7 +5,7 @@
 html{scroll-behavior: smooth;}
 
 /* HEADINGS AND PARAGRAPH STYLES */
-h1 {font-size:24px;color:#073763;font-weight:bold;}
+h1 {font-size:30px;color:#073763;font-weight:normal;}
 h2 {font-size:22px;color:#073763;}
 h3 {font-size:21px;font-weight:bold;}
 
