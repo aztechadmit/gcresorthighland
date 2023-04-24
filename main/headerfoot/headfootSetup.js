@@ -197,7 +197,8 @@ function createFooter() {
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/accessibility-information'>Accessibility Information</a>\
                             <a href=''>Lockers and Rentals</a>\
                             <a href=''>Resort Lost and Found</a>\
-                            <a href=''>Security</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/resort-services/security'>Security</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/resort-services/first-aid'>First-Aid</a>\
                             <a href=''>Contact a Representative</a>\
                             <a href=''>Guest Satisfaction Survey</a>\
                             <br><b>Jobs</b>\
