@@ -1,0 +1,166 @@
+<html>
+ <head> <!-- Basic HTML Page Setup -->
+    <title>Restaurants and Dining | Globe-City Resort Highland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/gcresorthighland/main/images/webfavicon1.ico">
+    <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/styleSheet.css">
+    <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
+ </head>
+ 
+ <style>
+ 
+ 	.pageItemContainer{display:flex;margin:0;padding:0px;flex-flow:row;flex-wrap:wrap;justify-content:start;align-items:top;
+    					}
+    .pageItem{margin-right:18px;width:30%;min-width:300px;height:auto;border:1px solid black; border-radius:10px;margin-bottom:15px;margin-top:15px;cursor:pointer;transition:0.2s;}
+    .pageItem:hover {border:2px solid black;}
+    .pageItem img{width:100%;height:175px;border-radius:9px;object-fit:cover;}
+    .pageItemTxt{padding:15px;margin:0;text-align:center;}
+    .pageItemTxt h3{color:#073763;margin:0;}
+    
+    @media screen and (max-width:1040px){
+    .pageItem{width:47%;}
+    }
+    @media screen and (max-width:700px){
+    .pageItem{width:100%;}
+    }
+    
+    
+ </style>
+ 
+<body onload='finishLoading();'>
+  <!-- Initiate the Header -->
+  <div id='headerContents'></div>
+  
+ <!-- BANNER AND SUMMARY ------------------------------------------------------------------------------------------------------------------------------ BANNER -->
+ 
+ <!-- Title of Page Goes Here -->
+ <div class='titleBarContainer'><h1>Restaurants and Dining</h1></div> <!-- REMEMBER TO SET PAGE TAB TITLE -->
+ 
+ <!-- Summary of Page Goes here, displayed under the title -->
+ <div class='titleSummaryContainer'>
+ <div style='display:inline-block;margin:10px;'>
+  <label for='selectLocation'>Select Location: </label>
+  <select id='selectLocation'>
+  	<option>View All</option>
+    <option>Adventure Park</option>
+    <option>City-Shop</option>
+    <option>Resort Hotels</option>
+   <select></div>
+<div style='display:inline-block;margin:10px;'>
+ <label for='selectType'>Service Type: </label>
+  <select id='selectLocation'>
+  	<option>View All</option>
+    <option>Full Service</option>
+    <option>Counter Service</option>
+   <select></div>
+   
+  <div style='display:inline-block;margin:10px;'>
+ <label for='selectType'>Category: </label>
+  <select id='selectLocation'>
+  	<option>View All</option>
+    <option>Breakfast</option>
+    <option>Lunch and Dinner</option>
+    <option>Quick Food and Snacks</option>
+    <option>Dessert</option>
+   <select></div>
+ </div>
+   
+  <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
+
+<div class='container'>
+	<h1>Adventure Park</h1>
+    
+    <h2>Full-Service Restaurants</h2>
+    <div class='pageItemContainer'>
+    
+    	<div class='pageItem'>
+        	<img src='https://i.stack.imgur.com/bFto1.jpg?s=64&g=1'>
+            <div class='pageItemTxt'>
+            <h3>Boulevard Diner</h3>
+        	<em>Adventure Boulevard, Adventure Park</em><br><br>
+            Classic Minecraftian sit-down style eatery serving gourmet burgers, salads, and more.
+            </div>
+        </div> <!--end of item-->
+        
+        <div class='pageItem'>
+        	<img src='https://i.stack.imgur.com/bFto1.jpg?s=64&g=1'>
+            <div class='pageItemTxt'>
+            <h3>Finona's Restaurant</h3>
+        	<em>Hindsborg, Adventure Park</em><br><br>
+            Rustic fine dining featuring gourmet meals and artful drinks in a themed sit-down dining experience
+            </div>
+        </div> <!--end of item-->
+       
+    </div><!--end of item container -->
+    
+    <h2>Coffee and Dessert</h2>
+    <div class='pageItemContainer'>
+    
+    	<div class='pageItem'>
+        	<img src='https://i.stack.imgur.com/bFto1.jpg?s=64&g=1'>
+            <div class='pageItemTxt'>
+            <h3>Boulevard Diner</h3>
+        	<em>Adventure Boulevard, Adventure Park</em><br><br>
+            Classic Minecraftian sit-down style eatery serving gourmet burgers, salads, and more.
+            </div>
+        </div> <!--end of item-->
+        
+        
+       
+    </div><!--end of item container -->
+    
+    <h2>Specialty Beverages</h2>
+    <div class='pageItemContainer'>
+    
+    	<div class='pageItem'>
+        	<img src='https://i.stack.imgur.com/bFto1.jpg?s=64&g=1'>
+            <div class='pageItemTxt'>
+            <h3>Boulevard Diner</h3>
+        	<em>Adventure Boulevard, Adventure Park</em><br><br>
+            Classic Minecraftian sit-down style eatery serving gourmet burgers, salads, and more.
+            </div>
+        </div> <!--end of item-->
+        
+        
+       
+    </div><!--end of item container -->
+    
+    <h2>Counter Service</h2>
+    <div class='pageItemContainer'>
+    
+    	<div class='pageItem'>
+        	<img src='https://i.stack.imgur.com/bFto1.jpg?s=64&g=1'>
+            <div class='pageItemTxt'>
+            <h3>Boulevard Diner</h3>
+        	<em>Adventure Boulevard, Adventure Park</em><br><br>
+            Classic Minecraftian sit-down style eatery serving gourmet burgers, salads, and more.
+            </div>
+        </div> <!--end of item-->
+        
+        
+       
+    </div><!--end of item container -->
+    
+</div> <!-- end of section container -->
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+<!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
+<br><div id="footerDiv"></div>
+</body>
+ 
+<!-- Call the function to create the header and footer -->
+<script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
+ <script>initiateHeader();</script>
+</html>
