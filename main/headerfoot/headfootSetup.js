@@ -156,7 +156,7 @@ function createFooter() {
                             <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/group-admission'>Group Admission(10+)</a>\
                             <a href=''>Special Events</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/attractions-and-entertainment'>Attractions and Entertainment</a>\
-                            <a href=''>Places to Eat</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/restaurants-and-dining'>Places to Eat</a>\
                             <a href=''>Shopping</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/gc-photopass'>GC Photo Pass</a>\
                             <a href=''>Themepark Parking</a>\
@@ -165,7 +165,7 @@ function createFooter() {
                         <div class='footerColumn'>\
                             <b>City-Shop</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/city-shop'>About</a>\
-                            <a href=''>Restaurants and Dining</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/restaurants-and-dining'>Restaurants and Dining</a>\
                             <a href=''>Shopping and Attractions</a>\
                             <a href=''>Event Venues</a>\
                             <a href=''>Performance Oppurtunities</a>\
