@@ -196,8 +196,8 @@ function createFooter() {
                         <div class='footerColumn'>\
                             <b>Resort Services</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/accessibility-information'>Accessibility Information</a>\
-                            <a href=''>Lockers and Rentals</a>\
-                            <a href=''>Resort Lost and Found</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/resort-services/rentals'>Lockers and Rentals</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/resort-services/lost-and-found'>Resort Lost and Found</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/resort-services/child-care-center'>Child Care Center</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/resort-services/first-aid'>First-Aid Stations</a>\
                             <a href=''>Contact a Representative</a>\
