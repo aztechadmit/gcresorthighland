@@ -185,6 +185,7 @@ function createFooter() {
                             <a href=''>Resort Map</a>\
                             <a href=''>News and Updates</a>\
                             <a href=''>Resort Calendar</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/faq'>Frequently Asked Questions</a>\
 \
                             <br><b>Resort Hotels</b>\
                             <a href=''>Lakeside Hotel</a>\
