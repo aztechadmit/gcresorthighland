@@ -174,7 +174,7 @@ function createFooter() {
                             <br><b>Other</b>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/corporate-sponsors'>Coporate Partners</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/business-opportunities'>Buisness Opurtunities</a>\
-                            <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/surplus-sales>Surplus Sales</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/surplus-sales'>Surplus Sales</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/main/backpages/business/mcbpo-documents'>MCPBO Documents</a>\
                         </div>\
 \
