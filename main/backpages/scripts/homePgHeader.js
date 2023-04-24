@@ -72,7 +72,7 @@ function setUpHomePage() {
 			title2 = "New Flex-Eat<sup>tm</sup> Menus";	
 			content2 = "We are proud to announce a partnership with Flex-Eat<sup>tm</sup> Minecraftia to bring affordable low-calorie menu items to many of our in-park restaurants for Adventurers on a diet.";
 			imgLnk2 = "https://www.travelandleisure.com/thmb/kDzGk9PyniwDgv5VaA8vuMeehLY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TL_mickey-waffle_HERO_DISNEYFOOD1022-11a85361f080449a8e80c62fcb0a6407.jpg"; 
-			linkTxt2 = "View Places to Eat";	link2 = "things-to-do/dining/adventurepark";
+			linkTxt2 = "View Places to Eat";	link2 = "https://aztechadmit.github.io/gcresorthighland/things-to-do/restaurants-and-dining";
 
 			title3 = "The Globe-City Marching Band";	
 			content3 = "This month we would like to give a shoutout to the GC Marching Band!";
@@ -81,6 +81,21 @@ function setUpHomePage() {
 			
 			break;
 		case 5: // June
+			
+			title1 = "Changes to Annual Passports";	
+			content1 = "We have updated our annual passport calendar. Days of visit will now depend on the ticketing tier for each day.";
+			imgLnk1 = "https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg"; 
+			linkTxt1 = "Learn More";	link1 = "parktickets/annualpassports";
+			
+			title2 = "The Return of Globe-City's Summerfest!";	
+			content2 = "Per popular demand, Globe-City's Summerfest has returned! Get ready for the ultimate summer fun";
+			imgLnk2 = "https://lh3.googleusercontent.com/drive-viewer/AFGJ81r3983dCyjUGwOYdHDQSOBbtOplw4TwSQr42usKh1HWrCOzYDlLb4sVl0gOf4Wzss7ljwyxj3t8ci-GEv_S36ODXBPCaA=s1600"; 
+			linkTxt2 = "View Special Event";	link2 = "";
+
+			title3 = "Let us help you plan your visit!";	
+			content3 = "Our advanced resort itinerary planner can help you craft your perfect adventure after just a few questions";
+			imgLnk3 = "https://lh3.googleusercontent.com/drive-viewer/AFGJ81pkXSnjkqfjP3vW2NDy0bm3-3LKOUWGGiEBu5Ch8s1fhN_QUKE7iOWX94XovMutRJ692vkcbjH9UZY_Jn7SeujD3hZ5CQ=s1600"; 
+			linkTxt3 = "Create Itinerary";	link3 = "";
 			
 			break;
 		case 6: // July
