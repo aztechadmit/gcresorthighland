@@ -123,7 +123,7 @@ function setUpHomePage() {
 	spotlightDiv.innerHTML += " <div class='tileContainer'><img class='tileImage' src='" + imgLnk1 + "'\><h3>" + title1 + "</h3><p>" + content1 + "</p><br><a class='tileLink' href='" + link1 + "'>" + linkTxt1 + "</a></div> \
       							<div class='tileContainer'><img class='tileImage' src='" + imgLnk2 + "'\><h3>" + title2 + "</h3><p>" + content2 + "</p><br><a class='tileLink' href='" + link2 + "'>" + linkTxt2 + "</a></div> \
 								<div class='tileContainer'><img class='tileImage' src='" + imgLnk3 + "'\><h3>" + title3 + "</h3><p>" + content3 + "</p><br><a class='tileLink' href='" + link3 + "'>" + linkTxt3 + "</a></div> \
-								<br><br><button style='margin:auto;' onclick='window.open("+'"parktickets"'+")'>View News and Updates</button><br>";
+								<br><br><button style='margin:auto;' onclick='window.open("+'"main/resort-updates","_self"'+")'>View News and Updates</button><br>";
 
 } // function setUpHomePage();
 
