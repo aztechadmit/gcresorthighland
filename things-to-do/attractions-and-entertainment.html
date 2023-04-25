@@ -8,20 +8,39 @@
  </head>
  
  <style>
+
  
- 	.attractionsContainer {display:flex;flex-flow:row;flex-wrap:wrap;width:full;justify-content:center;align-items:center;}
+ 	.attractionsContainer {display:flex;flex-flow:row;flex-wrap:wrap;width:full;justify-content:left;align-items:flex-start;}
     .attractionsContainer h2{width:100%;}
     
- 	.attractionButton {display:flex; flex-flow:row; width:31%;min-width:300px;height:auto;border:2px solid black;border-radius:10px;cursor:pointer;margin:10px;}
-    .attractionButton:hover{background:azure;}
+ 	.attractionButton {
+    	display:flex; flex-flow:row; 
+        width:47%; min-width:300px; height:150px;
+        border:2px solid black; border-radius:10px;
+        cursor:pointer; margin-left:0; margin-right:3%; margin-bottom:20px;
+        transition:0.4s;}
+        
+    .attractionButton:hover{background:azure;width:49%;margin-right:1%;}
     
-    .attractionButton p{vertical-align:top;margin-left:10px;margin-top:0;margin-bottom:0;line-height:1.3;font-size:16px;}
+    .attractionButton div{display:flex;margin-left:10px;height:full;flex-direction:column;flex-wrap:wrap;}
+    .attractionButton p{display:block;margin:0;font-size:15px;margin-bottom:5px;}
     .attractionButton img {width:40%;height:auto;border-radius:8px;object-fit:cover;vertical-align:top;}
-    
+    .attractionButton h3{display:block;margin:0;font-weight:bold;}
+    .attractionButton em{dipslay:block;margin:0;font-size:15px;margin-top:auto;margin-bottom:5px;}
     
     @media screen and (max-width:900px){
+    	.attractionsContainer{flex-flow:row;flex-wrap:wrap;}
+        .attractionButton{width:45%;max-width:400px;height:auto;flex-flow:column;}
+        .attractionButton img{width:100%;margin-bottom:15px;max-height:150px;}
+         .attractionButton:hover {margin-right:5px;}
+    }
+    
+     @media screen and (max-width:700px){
     	.attractionsContainer{flex-flow:column;}
-        .attractionButton{width:100%;max-width:400px;}
+        .attractionButton{width:100%;max-width:400px;margin:auto;flex-flow:column;margin-bottom:30px;}
+        .attractionButton img{width:100%;margin-bottom:15px;}
+        .attractionButton:hover {width:101%;margin-right:auto;}
+
     }
     
     
@@ -60,55 +79,160 @@
  </div>
    
   <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
-   <div class='container'>
-   <h1>Adventure Park</h1>
-   <h2>High-Thrill Rides</h2>
+   <div class='container' id='adventurePark'>
+   	<h1>Adventure Park</h1>
+   	<h2>High-Thrill Rides</h2><br>
    
-   <div class='attractionsContainer' id='adventurePark'>
+   		<div class='attractionsContainer rides'>
 
-      <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
-      <img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
-      <p>RIDE THE BEAT: WAVERIDERS<br><b>Sponsored by <em>ENERGIZER<sup>TM</sup></em></b></p>
-      </div>
+      		<div class='attractionButton' onclick='window.open("adventurepark/attractions/touch-the-sky","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AFGJ81r1ZAAZSZHIUfhKX1gZaFKmmPx4ttqcBsM_iXMPVXToMN47HrWfElc8XN1fi__D7PMDNTscmEnFEBUGFavkdoePtH3u=s16000'>
+                <div>
+      			<h3>TOUCH THE SKY</h3>
+                <p>Sponsored by the Ford Motor Company</p>
+                <em>Minimum Height: 50" (127 cm)</em>
+                </div>
+      		</div><!--end of button -->
       
-      <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
-      <img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
-      <p>RIDE THE BEAT: WAVERIDERS<br><b>Sponsored by <em>ENERGIZER<sup>TM</sup></em></b></p>
-      </div>
+   			<div class='attractionButton' onclick='window.open("adventurepark/attractions/ride-the-beat-waveriders","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>RIDE THE BEAT: WAVERIDERS</h3>
+                <p>Sponsored by ENERGIZER</p>
+                <em>Minimum Height: 48" (122 cm)</em>
+                </div>
+      		</div><!--end of button -->
+            
+            <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://insidethemagic.net/wp-content/uploads/2021/02/Space-Mountain-Ride.jpg'>
+                <div>
+      			<h3>MISSION 12</h3>
+                <p></p>
+                <em>Minimum Height: 40" (102 cm)</em>
+                </div>
+      		</div><!--end of button -->
       
-      <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
-      <img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
-      <p>RIDE THE BEAT: WAVERIDERS<br><b>Sponsored by <em>ENERGIZER<sup>TM</sup></em></b></b></p>
-      </div>
-      
+      		<div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>SPACE JUMP</h3>
+                <p></p>
+                <em>Minimum Height: 45" (115 cm)</em>
+                </div>
+      		</div><!--end of button -->
+            
+            <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>CRUSADER</h3>
+                <p>Sponsored by OUTDOOR | WEAR<sup>tm</sup></p>
+                <em>Minimum Height: 45" (115 cm)</em>
+                </div>
+      		</div><!--end of button -->
+            
+            <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>TOMB OF THE EMPEROR'S CURSE</h3>
+                <p></p>
+                <em>Minimum Height: 40" (115 cm)</em>
+                </div>
+      		</div><!--end of button -->
       
    
-   </div>
+   		</div> <!-- end of thrill rides ---------------------------->
       
-   <div class='lineBreak' style='width:100%'></div>
+  <div class='lineBreak' style='width:100%'></div>
    
-    <h2>Dark Rides</h2>
+    <br><h2>Dark Rides</h2><br>
     
-    <div class='attractionsContainer' id='adventurePark'>
+    <div class='attractionsContainer entertainment'>
     
-      <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
-      Ride the Beat</div>
-      <div class='attractionButton'>Ride the Beat</div>
-      <div class='attractionButton'>Ride the Beat</div>
+    		<div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>ATTRACTION NAME</h3>
+                <p>Sponsored by Company Name</p>
+                <em>Minimum Height: 00in (000cm)</em>
+                </div>
+      		</div><!--end of button -->
+            
+            <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>ATTRACTION NAME</h3>
+                <p>Sponsored by Company Name</p>
+                <em>Minimum Height: 00in (000cm)</em>
+                </div>
+      		</div><!--end of button -->
+            
+            <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>ATTRACTION NAME</h3>
+                <p>Sponsored by Company Name</p>
+                <em>Minimum Height: 00in (000cm)</em>
+                </div>
+      		</div><!--end of button -->
    
-   </div>
+   	</div> <!-- end of dark rides -->
    
    
-   </div> <!-- end of container -->
+ </div> <!-- end of adventure park container -->
+ 
+ <div class='lineBreak'></div>
    
+ <div class='container' id='cityshop'>
+ <h1>City-Shop</h1>
    <div class='attractionsContainer' id='cityShop'>
-    <h1>City-Shop</h1>
-   </div> <!-- end of container -->
+   
+   			<div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>I-FLY<sup class='supers'>tm</sup></h3>
+                <p>Indoor Skydiving Experience</p>
+                <em>Additional Purchase Required</em>
+                </div>
+      		</div><!--end of button -->
+            
+            <div class='attractionButton' onclick='window.open("adventurepark/attractions/attractionTemplate.html","_self");'>
+      			<img src='https://lh3.googleusercontent.com/drive-viewer/AAOQEOQ03M8ZmiNsPzNHEYuI8dBPamLFUBzTvQTGJZOV_Z_dq0v-QXD4zauMjZEf-XaC2UIePjiAwVFSPAceI8xbhzAFWEjRJQ=s1600'>
+                <div>
+      			<h3>THE ULTRAVIOLET<sup class='supers'>tm</sup></h3>
+                <p>Indoor Laser Tag</p>
+                <em>Additional Purchase Required</em>
+                </div>
+      		</div><!--end of button -->
+    
+   </div> 
+ </div> <!-- end of container -->
+ 
+  <div class='lineBreak'></div>
 
+<div class='container' id='aztechresort'>
+<h1>The Aztech Resort</h1>
    <div class='attractionsContainer' id='aztech'>
-    <h1>The Aztech Resort</h1>
-   </div> <!-- end of container -->
-
+    
+    		<div class='attractionButton' onclick='window.open("https://aztechadmit.github.io/gcresorthighland/hotels/places-to-stay","_self");'>
+      			<img src='https://www.kalahariresorts.com/media/txfj5ckm/block_0012_editeddsc_8077.png?width=824&height=550&rnd=132832054371900000&format=jpg&quality=60'>
+                <div>
+      			<h3>STARFIELD GAMEROOM</h3>
+                <p>Multi-Story Arcade and Play-zone</p>
+                <em>For paying hotel guests only</em>
+                </div>
+      		</div><!--end of button -->
+            
+            <div class='attractionButton' onclick='window.open("https://aztechadmit.github.io/gcresorthighland/hotels/places-to-stay","_self");'>
+      			<img src='https://www.chelseyexplores.com/wp-content/uploads/2021/05/Harrahs-pool.jpeg'>
+                <div>
+      			<h3>AQUA-ZONE</h3>
+                <p>Thrilling water slides and pool deck</p>
+                <em>For paying hotel guests only</em>
+                </div>
+      		</div><!--end of button -->
+    
+   </div> 
+</div> <!-- end of container -->
    
    
    
