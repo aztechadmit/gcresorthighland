@@ -13,6 +13,9 @@ a {font-style:italic;text-decoration:none;color:blue;}
 .txtLink {font-weight:bold;color:blue;}
 .txtLink:hover {cursor:pointer;color:darkblue;}
 
+/* For Superscripts */
+.supers{font-size:12px;font-family:arial;color:black;font-style:normal;font-decoration:none;font-weight:normal;}
+
 
 body{font-family:Arial;font-size:18px;margin:0;padding:0;color:black;line-height:1.6;}
 
