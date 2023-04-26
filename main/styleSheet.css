@@ -83,7 +83,9 @@ button:hover {background:lightgray;cursor:pointer;}
 	.tileContainer {width:95%; max-width:500px; margin-bottom:20px; align-self: center;}
 	#announcementSpacer{height:60px;}
 }
-
+@media screen and (max-width:1000px){
+	.tileContainer {width:48%; margin:1%; max-width:500px; margin-bottom:20px; align-self: center;}
+}
 
 
 /* FLEXIBILE TEXT AND IMAGE CONTAINERS FOR PAGE FORMATTING */
