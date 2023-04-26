@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
  
+ <style>
+ 	iframe {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+ </style>
  
  
 <body onload='finishLoading();'>
@@ -25,8 +41,43 @@
  </div>
    
   <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
-   
  
+ <div class='container' id='information'>
+ 	<h1>About Group Admission</h1>
+    Group Admission is designed to provide the best price as well as ease of use to large groups visiting the themepark. Currently, when using our standard ticketing portal, a maximum of 9 tickets can be purchased at one time. For groups larger than 9, please use the form below to order your tickets.<br><br>
+    
+    <h2>How to Order Group Tickets</h2>
+    To order group tickets, <a href='#formPart'>fill out the form below</a> or contact or Group Sales office at the following contact information:
+    <ul>Globe-City Resort Group Sales<br><b>(312) 872 5331</b><br><a>groupsales.gcrh@gcpr.net</a></ul> <br>
+    
+    <h2>What is the Discount for Large Group Admission?</h2>
+    The admission discount for large groups is calculated based on the date selected for your group's visit as well as the number of tickets purchased. Discounts range from <b>2% to 20%</b> off the regular cost of admission.<br><br>
+    
+    <h2>How Does Group Admission Work?</h2>
+    First, order your tickets through our Group Sales office or through the form below. Then, <u>someone will need to pick up your tickets either the day-of or day before your visit</u> by visiting the ticket booths in the Resort Esplenade. The ticket booths will print your tickets which can then be given to your group members to enter the themempark on the day of your visit.<br><br>
+    
+    <h2>Rules and Restrictions</h2>
+    Please be advised of the following restrictions on group sales:
+    <ul>
+    <li>Group Tickets cannot be refunded, transfered, or sold</li>
+    <li>Group Admission does not include parking</li>
+    <li>GC-VIP admission is not available for groups larger than 9</li>
+    <li>Discounts, promotions, or other admission savings cannot be applied to group ticket purchases</li>
+    <li>Group Sales are limited to 999 guests</li>
+    	<ul><em>For larger events, please contact Group Sales directly</em></ul>
+    </ul>
+    
+ </div>
+ <a id='formPart'></a>
+ <div class='lineBreak'></div>
+ <div class='container'>
+ <h1>Group Sales Order Form</h1>
+     <div class='container' style='text-align:center'>
+     <button onclick='showForm();' id='shBtn'>View Group Sales Order Form</button>
+     </div>
+ </div>
+ 
+ <iframe id='formContents'style='display:none' src="https://docs.google.com/forms/d/e/1FAIpQLSd17fyh_09ZrLAaOUM3GZH1k_yFaDQ-liBFBKm7cuV9w2sAyA/viewform?embedded=true" width="100%" height="2000px" frameborder="0" marginheight="0" marginwidth="0">Loading Form... Please Wait</iframe>
    
    
    
@@ -43,6 +94,13 @@
 <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
 <br><div id="footerDiv"></div>
 </body>
+
+<script>
+	function showForm(){
+    	document.getElementById("formContents").style.display="block";
+        document.getElementById("shBtn").style.display="none";
+    }
+ </script>
  
 <!-- Call the function to create the header and footer -->
 <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
