@@ -9,15 +9,9 @@
  
  <style>
  	
-    .tkBtn {position:absolute;bottom:6px;left:0;right:0;margin:auto;width:90%;border-radius:20px;}
-	
-    .tileContainer{margin:20px;min-height:450px;}
-    
-    @media screen and (max-width:900px){
-    
-    	.tileContainer{min-height:100px;}
-    }
-    
+    /*.tkBtn {margin:5%;margin-top:auto;width:90%;border-radius:10px;}
+	.tileText{}*/
+
     
  </style>
  
@@ -36,31 +30,37 @@
  
    <div class='fullContainer' style='text-align:center'>
 	   
-   	<div class='tileContainer' onclick='openTkLnk(1);'>
-    	<img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg' />
-        <h2>Day Tickets</h2>
-        <p style='margin-bottom:60px;'>Purchase daily admission to Adventure Park. 
-        <br><br><b>Starting at $65</b> 
-        </p>
-        <button class='tkBtn'>Purchase Tickets</button>
-    </div>
+   	<div class='tileSection'>
+    	<div class='tileContainer' onclick="openTkLnk(1)">
+        	<img src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg'>
+            <div class='tileText'>
+            	<h2>Day Tickets</h2>
+                Purchase daily admission to Adventure Park<br><br>
+                <b>Starting at $65</b><br><br><br>
+                <button class='tkBtn'>Purchase Tickets</button>
+            </div>
+        </div>
+        
+        <div class='tileContainer' onclick="openTkLnk(2)">
+        	<img src='https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg'>
+            <div class='tileText'>
+            	<h2>Annual Passports</h2>
+                Purchase an annual passport to enter Adventure Park on over 260 days<sup>1</sup> at no extra cost!<br><br>
+                <b>Starting at $175</b><br><br><br>
+                <button class='tkBtn'>View Annual Passports</button>
+            </div>
+        </div>
+        
+        
+    </div> <!-- end of tile container -->
     
-    <div class='tileContainer' onclick='openTkLnk(2);'>
-    	<img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner6.jpg' />
-        <h2>Annual Passports</h2>
-        <p style='margin-bottom:60px;'>Purchase an annual passport to enter Adventure Park on over 230<sup>1</sup> days at no extra cost! 
-        <br><br><b>Starting at $175</b> 
-        </p>
-        <button class='tkBtn' onclick='openTkLink(3);'>Purchase Passports</button>
-    </div>
     
-    
-   </div>
+   </div> <!-- end of full container -->
    
    
    <div class='lineBreak'></div>
    <div class='container' style='font-size:18px;text-align:center;'>
-   	For special event ticketing including <a>Sally's Halloween Party</a> and <a>Nights of Terror</a>, visit our special events page by clicking <a style='font-style:normal'>here</a>
+   	For special event ticketing including <a>Sally's Halloween Party</a> and <a>Nights of Terror</a>, visit our special events page by clicking <a style='font-style:normal' href='s://aztechadmit.github.io/gcresorthighland/things-to-do/events/specialevents.html'>here</a>
    </div>
    
    <div class='lineBreak'></div>
