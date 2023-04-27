@@ -8,7 +8,6 @@
  </head>
  
  <style>
-  .tileSection {max-width:1200px;}
  </style>
  
 <body onload='finishLoading();'>
@@ -27,37 +26,141 @@
    
   <!-- BEGGINING OF BODY -------------------------------------------------------------------------------------------------------------------------------- BODY -->
    
-  <!-- Example Tile Format -->
-   <br><div class='tileSection'>
+   <div class='fullContainer'>
+   		<div class='tileSection'>
+        	
+            <div class='tileContainer' onclick='window.open("#pq","_self")'>
+            	<img src='https://lh3.googleusercontent.com/drive-viewer/AFGJ81qiZPdak7__2SK-SB9U64CtEEaB3ZQMcC3NV290V1Q-EqG27SQVXnCUUmLKUo0Eze0djKtLV-ChWt6FtyjdzFeutvRP=s1600'>
+                <div class='tileText'>
+                	<h3>More Fun, Less Waiting</h3>
+                    Skip long lines and get more done with access to Priority Queuing<sup class='supers'>1</sup>
+                </div>
+            </div> <!-- end of tile container -->
+            
+            
+            <div class='tileContainer' onclick='window.open("#vpl","_self")'>
+            	<img src='https://i0.wp.com/minnievanmom.com/wp-content/uploads/2021/09/img_9997.jpg?resize=1200%2C900&ssl=1'>
+                <div class='tileText'>
+                	<h3>Rest Away from the Crowds</h3>
+                    Take a break from the sun and rejuvinate in comfortable indoor lounges<sup class='supers'>2</sup>
+                </div>
+            </div> <!-- end of tile container -->
+            
+            
+            <div class='tileContainer' onclick='window.open("#pvw","_self")'>
+            	<img src='https://i.ytimg.com/vi/kyXoOZjAt9k/maxresdefault.jpg'>
+                <div class='tileText'>
+                	<h3>A Perfect View, Everytime</h3>
+                    Gain access to priority viewing areas for our famous nighttime spectaculars and performances<sup class='supers'>2</sup>
+                </div>
+            </div> <!-- end of tile container -->
+            
+        </div> <!-- end of tile section -->
+       	<div class='container' style='font-size:15px;'>
+        <sup>1</sup>Rules and restrictions apply. Priority queue access and restrictions varies between GC-VIP tiers.
+        <br><br>
+        <sup>2</sup>Only guests with Gold and Deluxe VIP admission may access lounge space and priority viewing areas.
+        </div>
+   </div> <!-- end of intro tiles -->
    
-   	<div class='tileContainer'>
-      <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg'\>
-      <h3>More Fun, Less Waiting</h3>
-      <p>Skip long lines and get more done with access to Priority Queuing<sup>1</sup></p><br>
-      <a class='tileLink' href='#priorityQueuing'>Learn More</a>
-   	</div>
+   <br><br>
+   
+   <div class='titleBarContainer'><h1>VIP Admission Tiers</h1></div>
+   <div class='container' style='margin-top:0'>
+   <p>GC-VIP Admission is organized into four tiers for maximum flexibility. <br> Pricing shown below includes admission.</p>
+   
+   </div> <!-- end of container -->
+   
+   
+   <div class='titleBarContainer'><h1>VIP Perks and Benefits</h1></div>
+   
+   <a id='pq'></a>
+   <div class='container'>
+   	<h2>Priority Queuing</h2>
+    Scan your ticket at any GC-VIP queue entrance within applicable attractions. Depending on your ticket, you may have one or more uses at each priority queue. Once your ticket is scanned and approved, you may enter the priority queue for a shorter wait-time than posted at the attraction's standby entrance.
+    <p>
+    	<a onclick='expandPQ("expandRides", "ridesExpanded")' style='cursor:pointer'>Attractions with Priority Queuing <span  id='expandRides'>&darr;</span></a>
+    </p>
+    	<ul id='ridesExpanded' style='display:none'><li>Touch the Sky</li>
+          <li>Sally's Manor</li>
+          <li>Ride the Beat: Waveriders</li>
+          <li>The Ghostbusters Experience</li>
+          <li>Tomb of the Emperor's Curse</li>
+          <li>Crusader</li>
+          <li>Flight of the Dragon</li>
+          <li>The Magic Bakery Ride</li>
+          <li>Old Yander's Mine Train</li>
+          <li>Mission 12</li>
+          <li>The Galactic Starway</li>
+          <li>Journey to Atlantis</li>
     
-    <div class='tileContainer'>
-      <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg'\>
-      <h3>Rest Away from the Crowds</h3>
-      <p>Take a break from the sun in comfortable indoor lounges<sup>2</sup></p><br>
-      <a class='tileLink' href='#vipLounges'>Learn More</a>
-   	</div>
+    		<p style='font-size:15px;'>Please note, priority queues at some attractions may close in some instances.</p>
     
-    <div class='tileContainer'>
-      <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner3.jpg'\>
-      <h3>A Perfect View, Everytime</h3>
-      <p>Gain exclusive access to prioity viewing areas<sup>2</sup> for the best seat without the hassle</p><br>
-      <a class='tileLink' href='#viewingAreas'>Learn More</a>
-   	</div>
+   		</ul>
     
- 
-   </div>
+    <a id='vpl'></a>
+    <br>
+    <h2>VIP Lounge Spaces</h2>
+    Our exclusive VIP lounges feature comfortable indoor seating away from theme park crowds. Vending machines, water refill stations, and complimentary WIFI are also available. GC-VIP guests with Gold and Deluxe tickets can access our VIP lounges by scanning their tickets at the entrance. Lounge space is first-come first-serve and some lounges may be closed or unavailable during your visit. To find VIP lounges, use a park guide map or the GC RESORT mobile app.
+    
+    <a id='pvw'></a>
+    <br><br>
+    <h2>Priority Viewing Areas</h2>
+    For our live entertainment and nighttime spectaculars, GC-VIP guests with Gold and Deluxe tickets can enter our priority seating areas for a better view of the show without the hassle of reserving a seat. Priority seating areas open 1-hour before showtime and seating is first-come first-serve. 
+    
+    <br><br>
+    <h2>Prefered Parking</h2>
+    Although GC-VIP day tickets do not include free parking, showing a GC-VIP ticket at the parking booth will grant guests discounted general parking or discounted preferred parking. Guests with VIP Deluxe Annual Passports get free general parking in Adventure Lot. <br>
+    <p><a onclick='expandPQ("ppTxt", "aboutPP")' style='cursor:pointer'>About Priority Parking <span  id='ppTxt'>&darr;</span></a>
+    </p>
+    <p id='aboutPP' style='display:none'>Prefered parking is a section of the Adventure Parking lot closest to the Esplenade. Guests who pay for prefered parking will be directed to this section and can skip the long walk from general parking to the esplenade.</p>
+    
+   </div><br><br>
    
    
+    <div class='titleBarContainer'><h1>Frequently Asked Questions</h1></div>
+    <div class='container' style='margin-top:10px;'>
+    
+    <h3 style='cursor:pointer' onclick='expandPQ("q1a", "q1")'>If I have general admission, can I still purchase GC VIP perks?
+    <span id='q1a'>&darr;</span></h3>
+    
+    <p id='q1' style='display:none'>
+    	Yes, while you are in the park, visit a VIP Kiosk to upgrade your general tickets to GC VIP privileges. Your price will be calculated based on the VIP tier you choose and the day. 
+    </p>
+    
+    
+    <!-- end of q -->
+    
+    
+    <h3 style='cursor:pointer' onclick='expandPQ("q2a", "q2")'>What if I have the Priority Bronze only ticket and want to go on a ride more than once?
+    <span id='q2a'>&darr;</span></h3>
+    
+    <p id='q2' style='display:none'>
+    	Although the Bronze Tier Ticket is limited to one use per ride, you can purchase additional uses for an extra charge at any VIP Kiosk. You can also utilize the General Queue or Single Rider's Queue for no additional charge. 
+    </p>
+    
+    
+   <!-- end of q -->
+    
+    
+    <h3 style='cursor:pointer' onclick='expandPQ("q3a", "q3")'>If I have general admission, can I still purchase GC VIP perks?
+    <span id='q3a'>&darr;</span></h3>
+    
+    <p id='q3' style='display:none'>
+    	Yes, while you are in the park, visit a VIP Kiosk to upgrade your general tickets to GC VIP privileges. Your price will be calculated based on the VIP tier you choose and the day. 
+    </p>
+    
+    
+    <br> <!-- end of q -->
+    
+    
+    
+    
+    
+    </div>
    
    
-   
+   <br><br>
    
    
    
@@ -72,6 +175,17 @@
 <!-- END OF BODY footer ---------------------------------------------------------------------------------------------------------------------------->
 <br><div id="footerDiv"></div>
 </body>
+
+ <script>
+    	function expandPQ(id1, id2){
+        	const btn = document.getElementById(id1);
+            const list = document.getElementById(id2);
+            
+            if(list.style.display == 'block'){list.style.display = 'none'; btn.innerHTML = '&darr;';}
+            else{list.style.display = 'block'; btn.innerHTML = '&uarr;';}
+        }
+    
+    </script>
  
 <!-- Call the function to create the header and footer -->
 <script src="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootSetup.js"></script>
