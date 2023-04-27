@@ -96,8 +96,8 @@ button:hover {background:lightgray;cursor:pointer;}
     
     	@media screen and (max-width:700px){
 		.inlineFrame{flex-flow:column;}
-		.inlineFrame img{width:100%;display:block;height:200px;}
-		.inlineTxt {width:100%;display:block;}
+		.inlineFrame img{width:98%;display:block;height:200px;margin:auto;}
+		.inlineTxt {width:98%;display:block;margin:auto;margin-bottom:15px;margin-top:15px;}
     	}
 
 	.twoColFrame{display:flex; flex-flow:row; width:100%; justify-content:center; align-items:center;}
