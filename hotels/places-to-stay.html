@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="https://aztechadmit.github.io/gcresorthighland/main/headerfoot/headfootStyle.css">
  </head>
  
- 
+ <style>
+ 	.inlineFrame{transition:0.5s;scale:1;}
+    .inlineFrame img{max-height:200px;}
+ 	.inlineFrame:hover {cursor:pointer;scale:1.03;background:#efefef;border-radius:20px;}
+    .inlineTxt h1{margin-top:0;}
+ </style>
  
 <body onload='finishLoading();'>
   <!-- Initiate the Header -->
@@ -28,34 +33,43 @@
      
    </div>
    
+   <div class='container'>
    
+   		<div class='inlineFrame' onclick='window.open("aztech-resort","_self");'>
+        
+        	<img src='https://cdn.getawaytoday.com/api/content/image/H3AVTDPP4FXE82S2/disneys-grand-californian-hotel-spa-exterior-r.jpg'>
+            <div class='inlineTxt'>
+            	<h1>The Aztech Resort</h1>
+                <p>Our luxury themed resort that brings the adventure right to your room. Enjoy a steamy spa and large outdoor pool as well as a full arcade and splashing pool deck.</p>
+            </div>
+            
+        </div> <!-- end of frame -->
+        
+        <div class='lineBreak'></div><br><br>
+        
+        <div class='inlineFrame' onclick='window.open("lakeside-hotel","_self");'>
+        
+        	<img src='https://www.tripsavvy.com/thmb/nuCN7r0WvGLV5UlW_LEKVnHLXB0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Disneys-Paradise-Pier-Hotel-56a387ad5f9b58b7d0d2740a.jpg'>
+            <div class='inlineTxt'>
+            	<h1>Globe-City's Lakeside Hotel</h1>
+                <p>Enjoy pleasant rooms with a stunning view of the park and various themed amenities including a park-view pool.</p>
+            </div>
+            
+        </div> <!-- end of frame -->
+        
+        <div class='lineBreak'></div><br><br>
+        
+        <div class='inlineFrame' onclick='window.open("","_self");'>
+        
+        	<img src='https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/25/68/d3/hotelpuebloamigotj.jpg'>
+            <div class='inlineTxt'>
+            	<h1>Highland Neighbor Hotels</h1>
+                <p>Find a Globe-City approved hotel close to the Globe-City Resort Highland and support the local buisnesses of Oras Nou.</p>
+            </div>
+            
+        </div> <!-- end of frame -->
    
-  <!-- Example Tile Format -->
-   <br><div class='tileSection'>
-   
-   	<div class='tileContainer'>
-    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner2.jpg'\>
-    <h2>Tile 1</h2>
-    <p>Tile Text Contents</p> 
-    <a class='tileLink'>Learn More</a>
-   	</div>
-    
-    <div class='tileContainer'>
-    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner1.jpg'\>
-    <h1>Tile 2</h1>
-    <p>Tile Text Contents</p>
-    <a class='tileLink'>Learn More</a>
-   	</div>
-    
-    <div class='tileContainer'>
-    <img class='tileImage' src='https://aztechadmit.github.io/gcresorthighland/main/images/banner3.jpg'\>
-    <h1>Tile 3</h1>
-    <p>Tile Text Contents</p>
-    <a class='tileLink'>Learn More</a>
-   	</div>
-    
    </div>
-   
    
    
    
