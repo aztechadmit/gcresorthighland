@@ -189,9 +189,9 @@ function createFooter() {
                             <a href='https://aztechadmit.github.io/gcresorthighland/faq'>Frequently Asked Questions</a>\
 \
                             <br><b>Resort Hotels</b>\
-                            <a href=''>Lakeside Hotel</a>\
-                            <a href=''>The Aztech Resort</a>\
-                            <a href=''>Vacation Packages</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/hotels/lakeside-hotel'>Lakeside Hotel</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/hotels/aztech-resort'>The Aztech Resort</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/hotels/places-to-stay#vp'>Vacation Packages</a>\
                         </div>\
 \
                         <div class='footerColumn'>\
