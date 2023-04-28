@@ -167,7 +167,7 @@ function createFooter() {
                             <a href='https://aztechadmit.github.io/gcresorthighland/city-shop'>About</a>\
                             <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/restaurants-and-dining'>Restaurants and Dining</a>\
                             <a href=''>Shopping and Attractions</a>\
-                            <a href=''>Event Venues</a>\
+                            <a href='https://aztechadmit.github.io/gcresorthighland/main/pages/hosting-at-gcrh/event-venues.html'>Event Venues</a>\
                             <a href=''>Performance Oppurtunities</a>\
                             <a href=''>City-Shop Parking</a>\
 \
