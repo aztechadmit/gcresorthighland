@@ -5,6 +5,8 @@ const tmonth = tdate.getMonth();
 const headDiv = document.getElementById('homePageHeaderDiv');
 const spotlightDiv = document.getElementById('homePageSpotlightDiv');
 
+const monthsList = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
 function setUpHomePage() {
 	
 	// CREATE THE VIDEO HEADER
@@ -119,7 +121,7 @@ function setUpHomePage() {
 	}
 	
 	// Build the Resort Spotlight Section
-	spotlightDiv.innerHTML = "<h1>Resort Spotlight</h1><p style='margin-top:0px;'>April "+tdate.getFullYear()+"</p>";
+	spotlightDiv.innerHTML = "<h1>Resort Spotlight</h1><p style='margin-top:0px;'>" + monthsList[tdate.getMonth()] + " " + tdate.getFullYear() + "</p>";
 	spotlightDiv.innerHTML += "<div class='tileSection'>\
 							<div class='tileContainer'><img src='" + imgLnk1 + "'\><div class='tileText'><h3>" + title1 + "</h3><p>" + content1 + "</p><br><a href='" + link1 + "'>" + linkTxt1 + "</a></div></div> \
       							<div class='tileContainer'><img src='" + imgLnk2 + "'\><div class='tileText'><h3>" + title2 + "</h3><p>" + content2 + "</p><br><a href='" + link2 + "'>" + linkTxt2 + "</a></div></div> \
