@@ -17,7 +17,11 @@ resortParkingRates = ["<p>$15 - $28</p>","<p>$24 - $35</p>","<p>$24 - $35</p>","
 // Functions:
 
 const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+const monthsShortened = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+
 const days = ['Sunday','Monday','Teusday','Wedensday','Thursday','Friday','Saturday'];
+
 
 function runResortInfo() {
   
@@ -31,23 +35,18 @@ function runResortInfo() {
   const dayOfWeek = days[tdate.getDay()];
   
   dateDisplay.innerHTML = "<p style='margin-top:0'>"+dayOfWeek+", "+tmonth+" "+tday+" "+tyear+"</p>";
-  
-  //Import Data File
-  var fs = require('fs');
-  
-  fs.readFile('https://aztechadmit.github.io/gcresorthighland/main/backpages/database/datetiers.txt', function(err, data){
-    
-    if(err) throw err;
-    
-    var dataRead = data.toString().split("\n");
-    
-    for(i in dataRead){
-      alert(dataRead[i]);
+
+  // READ INFORMATION DATABASE DOCUMENTS
+    var fs = require('fs');
+    var array = fs.readFileSync('https://aztechadmit.github.io/main/backpages/database/testSheet.txt').toString().split("\n");
+    for(i in array) {
+      alert(array[i]);
     }
-    
-  });
   
-}
+  
+}// end pf function resortinfo
+
+
 
 /*
 function finishLoading(){
