@@ -5,9 +5,16 @@ The data base folder is where information regarding the resort calendar and date
   The date tiers file contains all of the dates and corresponding tier level (for ticketing, hours, and crowd predicitons) for each date.
   -> For dates not listed, it is assumed that the date is a tier 1 date if it is a weekday (monday - friday) or a tier 2 date if it is a weekend (saturday - sunday)
 
-  Park Hours:     City-Shop Hours:
+  Park Hours:
     For Tier 1: 11AM - 7PM
     For Tier 2: 10AM - 8PM
     For Tier 3: 10AM - 9PM
     For Tier 4: 9AM - 10PM
     For Tier 5: 9AM - 10PM
+  
+  City-Shop Hours:
+    For Tier 1: 11AM - 10PM
+    For Tier 2: 11AM - 11PM
+    For Tier 3: 11AM - 11PM
+    For Tier 4: 11AM - 11PM
+    For Tier 5: 11AM - 11PM
