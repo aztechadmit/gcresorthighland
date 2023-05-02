@@ -5,12 +5,16 @@ The data base folder is where information regarding the resort calendar and date
   The date tiers file contains all of the dates and corresponding tier level (for ticketing, hours, and crowd predicitons) for each date.
   -> For dates not listed, it is assumed that the date is a tier 1 date if it is a weekday (monday - friday) or a tier 2 date if it is a weekend (saturday - sunday)
 
-  Park Hours:
-    For Tier 1: 11AM - 7PM
-    For Tier 2: 10AM - 8PM
-    For Tier 3: 10AM - 9PM
-    For Tier 4: 9AM - 10PM
-    For Tier 5: 9AM - 10PM
+  Park Hours:                 Ticket Pricing:
+    For Tier 1: 11AM - 7PM      $65 +
+    For Tier 2: 10AM - 9PM      $75 +
+    For Tier 3: 10AM - 9PM      $80 +
+    For Tier 4: 9AM - 10PM      $93 +
+    For Tier 5: 9AM - 10PM      $115 +
+    
+    Tier 6 indicates a day where a special event takes place in the evening
+    For Tier 6: 10AM - 6PM      $65 +
+                Special Event Hours: 6PM - 12AM
   
   City-Shop Hours:
     For Tier 1: 11AM - 10PM
