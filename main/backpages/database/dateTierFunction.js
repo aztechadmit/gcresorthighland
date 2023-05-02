@@ -380,19 +380,36 @@ const dateTierVal = [
 	" dec 31 - 0 - 0 "
 ];
 
-function determineTier(dateVal) // date input example: 'jan 1'
+// Determine the Tier of the Date Selected (1 - 5) 
+// Usage: tier_of_user_date = determineTier(userInputDateFormatted);
+
+function determineTier(dateVal) // date input example: 'jan-1'
 {
-	const inA = dateVal.split(" ");
+	const inA = dateVal.split("-");
 	const mnth = inA[0];
-	var dy = inA[1];
-	if(dy.toString().length() < 2) {dy = '0'+dy; }
+	var dy = ("0" + inA[1]).slice(-2);
 	
-	const srch = mnth + " " + dy;
+	const srch = mnth + "" + dy; //formatted as jan01
+    
+    	//alert("Month: "+mnth+"; Day: "+dy);
 	
-		for (let i = 0; i <= dateTierVal.length; i++){
+		for (let i = 0; i <= dateTierVal.length(); i++){
 			const curVal = dateTierVal[i].split(" - ");
 			
-		}
+				var iMonth = curVal[0].replace(/\s+/g, ''); //formatted as jan01
+			
+				if(iMonth == srch){
+					var dateTierFinal = curVal[1];
+					break;
+				}
+			
+			
+			//alert("Iteration: "+ i + " Date: " + curVal[0].replace(/\s+/g, '') + " Tier: " + curVal[1] + " Schedule: " + curVal[2]);
+			
+			
+		}// end of for statement
+        
+		return dateTierFinal;
 	
-}
+} // end of determineTier function
 
