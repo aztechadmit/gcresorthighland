@@ -9,6 +9,9 @@ h1 {font-size:30px;color:#073763;font-weight:normal;}
 h2 {font-size:22px;color:#073763;}
 h3 {font-size:21px;font-weight:bold;}
 
+/* Headings on attractions pages */
+.attrctnHd{font-weight:normal;color:dimgray;font-size:25px;}
+
 a {font-style:italic;text-decoration:none;color:blue;}
 .txtLink {font-weight:bold;color:blue;}
 .txtLink:hover {cursor:pointer;color:darkblue;}
