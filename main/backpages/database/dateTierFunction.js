@@ -380,6 +380,16 @@ const dateTierVal = [
 	" dec 31 - 0 - 0 "
 ];
 
+// SHOW SCHEDULES ----------------------------------------------------------------------------------------------------------------------------------------------------------
+const entSched = ["No Shows Scheduled", 
+		  "<p><b>Globe-City Marching Band</b><br>12:00PM, 2:00PM, 4:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 3:00PM, 5:00PM</p>",
+		  "<p><b>Spirit of the Holidays Spectacular</b><br>9:00PM</p> <p><b>Season of Snow Cavalcade</b><br>12:00PM, 5:00PM</p> <p><b>Dance of the Winter Fairies</b><br>1:00PM, 2:00PM, 3:00PM, 6:00PM</p>",
+		  "<p><b>Summers to Remember Spectacular</b><br>9:00PM</p>"
+		 ];
+
+
+// FUNCTIONS ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Determine the Tier of the Date Selected (1 - 5) 
 // Usage: tier_of_user_date = determineTier(userInputDateFormatted);
 
@@ -390,10 +400,10 @@ function determineTier(dateVal) // date input example: 'jan-1'
 	var dy = ("0" + inA[1]).slice(-2);
 	
 	const srch = mnth + "" + dy; //formatted as jan01
-    
+    	consol.info("User input formatted to: "+srch);
     	//alert("Month: "+mnth+"; Day: "+dy);
 	
-		for (let i = 0; i <= dateTierVal.length(); i++){
+		for (let i = 0; i <= dateTierVal.length; i++){
 			const curVal = dateTierVal[i].split(" - ");
 			
 				var iMonth = curVal[0].replace(/\s+/g, ''); //formatted as jan01
@@ -408,7 +418,9 @@ function determineTier(dateVal) // date input example: 'jan-1'
 			
 			
 		}// end of for statement
-		
+	
+		consol.info("DateTier output: " + dateTierFinal);
+	
 		//Edit dateTierFinal depending on paramaters (see Description.txt)
         	if(dateTierFinal == 6){dateTierFinal = 1;}
 		else if(dateTierFinal == 0){
@@ -426,3 +438,32 @@ function determineTier(dateVal) // date input example: 'jan-1'
 	
 } // end of determineTier function
 
+function determineEntertainment(dateVal)  // date input example: 'jan-1'
+{
+	const inA = dateVal.split("-");
+	const mnth = inA[0];
+	var dy = ("0" + inA[1]).slice(-2);
+	
+	const srch = mnth + "" + dy; //formatted as jan01
+    	consol.info("User input formatted to: "+srch);
+    	//alert("Month: "+mnth+"; Day: "+dy);
+	
+		for (let i = 0; i <= dateTierVal.length; i++){
+			const curVal = dateTierVal[i].split(" - ");
+			
+				var iMonth = curVal[0].replace(/\s+/g, ''); //formatted as jan01
+			
+				if(iMonth == srch){
+					consol.info("Schedule Gathered: " + curVal[2]);
+					var showSched = entSched[curVal[2]];
+					break;
+				}
+			
+			
+			//alert("Iteration: "+ i + " Date: " + curVal[0].replace(/\s+/g, '') + " Tier: " + curVal[1] + " Schedule: " + curVal[2]);
+			
+			
+		}// end of for statement
+	
+	return showSched;
+}//end of function determineEntertainment
