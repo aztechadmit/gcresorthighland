@@ -408,7 +408,20 @@ function determineTier(dateVal) // date input example: 'jan-1'
 			
 			
 		}// end of for statement
-        
+		
+		//Edit dateTierFinal depending on paramaters (see Description.txt)
+        	if(dateTierFinal == 6){dateTierFinal = 1;}
+		else if(dateTierFinal == 0){
+			if(inA[1] > 0 && inA[1] < 6){
+				dateTierFinal = 1;
+				consol.info("Date Tier is Weekday 1");
+			}else{
+				dateTierFinal = 2;
+				consol.info("Date Tier is Weekday 2");
+			}
+		}
+	
+		// Return the tier of the day selected
 		return dateTierFinal;
 	
 } // end of determineTier function
