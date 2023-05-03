@@ -9,6 +9,10 @@
  
  <style>
   .prkHrsDisp {display:inline-block;vertical-align:middle;padding:10px;margin:20px;}
+  .CLPdisp{min-width:300px; width:31%; margin:auto; padding:10px; vertical-align:top; display:inline-block;text-align:left;}
+  .CLPdisp h3{margin-top:0;}
+  
+  #piDisp em{font-size:15px;}
  </style>
 
 <body onload='finishLoading();'>
@@ -16,7 +20,7 @@
   <div id='headerContents'></div>
   
   <!-- Title Bar Text -->
-  <div class='titleBarContainer'><h2 style='color:white;font-weight:normal;'>Resort Information</h2>
+  <div class='titleBarContainer'><h2 style='color:white;font-weight:normal;'>Resort Operating Hours and Information</h2>
     <div id='datedisptxt'></div>
    </div> <!-- Remember to Change Page Title above!! -->
   
@@ -27,13 +31,39 @@
      <div class='prkHrsDisp' id='apHrs'><b>Adventure Park</b><br>10AM - 10PM</div>
      <div class='prkHrsDisp' id='csHrs'><b>City-Shop</b><br>11AM - 11PM</div>
     <br><br>
-    <a href=''>View Calendar</a>
+    <a href=''>Look Ahead</a>
   </div>
    
    <div class='lineBreak'></div>
    
-  <div class='container'>
-    <h2>Crowd Levels and Parking</h2>
+  <div class='container'> <!-- CROWD LEVELS AND PARKING -->
+    <div class='CLPdisp'>
+    	<h3>Attraction Closures</h3>
+        <ul id='closureDisp'>
+        	<li>Info Unavailable</li>
+        </ul>
+    </div>
+    
+    <div class='CLPdisp'>
+    	<h3>Parking Information</h3>
+        <ul id='piDisp'>
+        	<li>City-Shop Parking: Open</li>
+            <em>Hourly parking for City-Shop visitors only</em>
+            <li>Adventure Parking: Open</li>
+            <li>Jacob's Lot: Open</li>
+            <em>Busses, Oversize Vehicles, Special Events</em>
+        </ul>
+        Current Parking Rates: $5 - $30
+        
+    </div>
+    
+    <div class='CLPdisp'>
+    	<h3>Crowd Levels</h3>
+        <ul id='clDisp'>
+        	<li>Adventure Park: No Info</li>
+            <li>City-Shop: No Info</li>
+        </ul>
+    </div>
   </div>
    
    <div class='lineBreak'></div>
@@ -48,8 +78,23 @@
    
    <div class='container'>
     <h2>Ticketing and Admission Information</h2>
-    <div style='width:400px;display:inline-block;vertical-align:top;margin:10px;'>Tier:0<br>Admission: $00.00</div>
-    <div style='width:400px;display:inline-block;vertical-align:top;margin:10px;'><b>Annual Passorts</b><br>Resident: Unknown<br>Adventure: Unknown<br>Platinum: Welcome!</div>
+    <div class='CLPdisp'>
+    <h3>Day Ticketing</h3>
+    	<ul id='tkInfDisp'>
+        	<li>Ticketing Tier: 1</li>
+            <li>Standard Admission: $75</li>
+            <li>GC-VIP Admission: $199</li>
+        </ul>
+    </div>
+    
+    <div class='CLPdisp'>
+    <h3>For Annual Passholders</h3>
+    	<ul id='apDisp'>
+        	<li>Resident Passport: Blockout</li>
+            <li>Adventure Passport: Welcome</li>
+            <li>Platinum Passport: Welcome</li>
+        </ul>
+    </div>
   </div>
    
    <div class='lineBreak'></div>
