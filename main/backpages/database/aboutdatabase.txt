@@ -6,6 +6,7 @@ The data base folder is where information regarding the resort calendar and date
   -> For dates not listed, it is assumed that the date is a tier 1 date if it is a weekday (monday - friday) or a tier 2 date if it is a weekend (saturday - sunday)
 
   Park Hours:                 Ticket Pricing:
+    For Tier 0: Automatic: tier 1 for weekdays, tier 2 for weekends.
     For Tier 1: 11AM - 7PM      $65 +
     For Tier 2: 10AM - 9PM      $75 +
     For Tier 3: 10AM - 9PM      $80 +
