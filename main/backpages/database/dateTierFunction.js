@@ -128,7 +128,7 @@ const dateTierVal = [
 	// MAY ----------------------------------------------------------------------
 	" may 01 - 0 - 0 ",
 	" may 02 - 0 - 0 ",
-	" may 03 - 0 - 0 ",
+	" may 03 - 0 - 2 ",
 	" may 04 - 0 - 0 ",
 	" may 05 - 0 - 0 ",
 	" may 06 - 0 - 0 ",
@@ -395,12 +395,13 @@ const entSched = ["No Shows Scheduled",
 
 function determineTier(dateVal) // date input example: 'jan-1'
 {
+	console.clear();
 	const inA = dateVal.split("-");
 	const mnth = inA[0];
 	var dy = ("0" + inA[1]).slice(-2);
 	
 	const srch = mnth + "" + dy; //formatted as jan01
-    	consol.info("User input formatted to: "+srch);
+    	console.info("User input formatted to: "+srch);
     	//alert("Month: "+mnth+"; Day: "+dy);
 	
 		for (let i = 0; i <= dateTierVal.length; i++){
@@ -419,17 +420,17 @@ function determineTier(dateVal) // date input example: 'jan-1'
 			
 		}// end of for statement
 	
-		consol.info("DateTier output: " + dateTierFinal);
+		console.info("DateTier output: " + dateTierFinal);
 	
 		//Edit dateTierFinal depending on paramaters (see Description.txt)
         	if(dateTierFinal == 6){dateTierFinal = 1;}
 		else if(dateTierFinal == 0){
 			if(inA[1] > 0 && inA[1] < 6){
 				dateTierFinal = 1;
-				consol.info("Date Tier is Weekday 1");
+				console.info("Date Tier is Weekday 1");
 			}else{
 				dateTierFinal = 2;
-				consol.info("Date Tier is Weekday 2");
+				console.info("Date Tier is Weekday 2");
 			}
 		}
 	
@@ -440,12 +441,13 @@ function determineTier(dateVal) // date input example: 'jan-1'
 
 function determineEntertainment(dateVal)  // date input example: 'jan-1'
 {
+	console.clear();
 	const inA = dateVal.split("-");
 	const mnth = inA[0];
 	var dy = ("0" + inA[1]).slice(-2);
 	
 	const srch = mnth + "" + dy; //formatted as jan01
-    	consol.info("User input formatted to: "+srch);
+    	console.info("User input formatted to: "+srch);
     	//alert("Month: "+mnth+"; Day: "+dy);
 	
 		for (let i = 0; i <= dateTierVal.length; i++){
@@ -454,8 +456,8 @@ function determineEntertainment(dateVal)  // date input example: 'jan-1'
 				var iMonth = curVal[0].replace(/\s+/g, ''); //formatted as jan01
 			
 				if(iMonth == srch){
-					consol.info("Schedule Gathered: " + curVal[2]);
-					var showSched = entSched[curVal[2]];
+					console.info("Schedule Gathered: " + curVal[2].replace(/\s+/g, ''));
+					var showSched = entSched[curVal[2].replace(/\s+/g, '')];
 					break;
 				}
 			
