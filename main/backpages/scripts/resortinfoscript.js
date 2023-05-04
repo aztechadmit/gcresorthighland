@@ -42,6 +42,8 @@ function runResortInfo() {
   console.info("Today's Tier: "+tdayTier);
   console.info("Today's Entertainment: \n"+tdayEnt);
   
+  document.getElementById('entSchedDiv').innerHTML = tdayEnt;
+  
   doneInitiating();
   
 }// end of function resortinfo
