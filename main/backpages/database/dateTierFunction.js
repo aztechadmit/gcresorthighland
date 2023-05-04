@@ -381,7 +381,7 @@ const dateTierVal = [
 ];
 
 // SHOW SCHEDULES ----------------------------------------------------------------------------------------------------------------------------------------------------------
-const entSched = ["No Shows Scheduled", 
+const entSched = ["<p>No Shows Scheduled</p>", 
 		  "<p><b>Globe-City Marching Band</b><br>12:00PM, 2:00PM, 4:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 3:00PM, 5:00PM</p>",
 		  "<p><b>Spirit of the Holidays Spectacular</b><br>9:00PM</p> <p><b>Season of Snow Cavalcade</b><br>12:00PM, 5:00PM</p> <p><b>Dance of the Winter Fairies</b><br>1:00PM, 2:00PM, 3:00PM, 6:00PM</p>",
 		  "<p><b>Summers to Remember Spectacular</b><br>9:00PM</p>"
