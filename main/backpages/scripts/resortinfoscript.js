@@ -39,8 +39,8 @@ function runResortInfo() {
   tdayTier = determineTier(srchq);
   tdayEnt = determineEntertainment(srchq);
   
-  consol.info("Today's Tier: "+tdayTier);
-  consol.info("Today's Entertainment: \n"+tdayEnt);
+  console.info("Today's Tier: "+tdayTier);
+  console.info("Today's Entertainment: \n"+tdayEnt);
   
   doneInitiating();
   
