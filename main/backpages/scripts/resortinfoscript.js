@@ -44,6 +44,28 @@ function runResortInfo() {
   
   document.getElementById('entSchedDiv').innerHTML = tdayEnt;
   
+  const tkInfDisp1 = document.getElementById('tkInfDisp');
+        
+  //determine ticket pricing from ticket tier
+        tkInfDisp1.innerHTML = "<li>Ticketing Tier: " + tdayTier + "</li>";
+        switch(tdayTiers){
+          case 1:
+            tkInfDisp1.innerHTML += "<li>Standard Admission: $75</li> <li>GC-VIP Admission: $109</li>";
+            break;
+          case 2:
+            tkInfDisp1.innerHTML += "<li>Standard Admission: $85</li> <li>GC-VIP Admission: $199</li>";
+            break;
+          case 3:
+            tkInfDisp1.innerHTML += "<li>Standard Admission: $99</li> <li>GC-VIP Admission: $209</li>";
+            break;
+          case 4:
+            tkInfDisp1.innerHTML += "<li>Standard Admission: $109</li> <li>GC-VIP Admission: $259</li>";
+            break;
+          case 5:
+            tkInfDisp1.innerHTML += "<li>Standard Admission: $115</li> <li>GC-VIP Admission: $299</li>";
+            break;
+        }//end of switch
+  
   doneInitiating();
   
 }// end of function resortinfo
