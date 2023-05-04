@@ -10,11 +10,7 @@ resortInfoTags = [
   "<p style='color:red;'>Limited Space</p>"
 ];
 
-resortParkingRates = ["<p>$15 - $28</p>","<p>$24 - $35</p>","<p>$24 - $35</p>","<p>$30 - $50</p>","<p>$30 - $55</p>"];
-
-//const loadingSymbol = document.getElementById('loadingSymbol');
-
-// Functions:
+resortParkingRates = ["$15 - $28","$24 - $35","$24 - $35","$30 - $50","<p>$30 - $55", "$5 - $25"];
 
 const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
@@ -35,17 +31,24 @@ function runResortInfo() {
   const dayOfWeek = days[tdate.getDay()];
   
   dateDisplay.innerHTML = "<p style='margin-top:0'>"+dayOfWeek+", "+tmonth+" "+tday+" "+tyear+"</p>";
-
-  // READ INFORMATION DATABASE DOCUMENTS
-    var fs = require('fs');
-    var array = fs.readFileSync('https://aztechadmit.github.io/main/backpages/database/testSheet.txt').toString().split("\n");
-    for(i in array) {
-      alert(array[i]);
-    }
   
+  //Get the Date Tier and Entertainment Schedule
+  const srchq = monthsShortened[tdate.getMonth()]+"-"+tday;
+  console.info("The Formatted Date is: "+srchq);
   
-}// end pf function resortinfo
+  tdayTier = determineTier(srchq);
+  tdayEnt = determineEntertainment(srchq);
+  
+  consol.info("Today's Tier: "+tdayTier);
+  consol.info("Today's Entertainment: \n"+tdayEnt);
+  
+  doneInitiating();
+  
+}// end of function resortinfo
 
+function doneInitiating(){
+    finishLoading();
+}
 
 
 /*
