@@ -46,51 +46,67 @@ function runResortInfo() {
   
   const tkInfDisp1 = document.getElementById('tkInfDisp');
   const apDisplay = document.getElementById('apDisp');
+  const prkHrs = document.getElementById('apHrs');
+  const cityHrs = document.getElementById('csHrs');
         
   //determine ticket pricing from ticket tier
         tkInfDisp1.innerHTML = "<li>Ticketing Tier: " + tdayTier + "</li>";
-        switch(tdayTiers){
+        switch(tdayTier){
           case 0:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $75</li> <li>GC-VIP Admission: $109</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Adventure Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Platinum VIP Passport: <span style='color:green'>Good to Go</span></li>";
+            prkHrs.innerHTML = "<b>Adventure Park</b><br>10AM - 7PM";
+            cityHrs.innerHTML = "<b>City-Shop</b><br>11AM - 10PM";
             break;
           case 1:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $75</li> <li>GC-VIP Admission: $109</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Adventure Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Platinum VIP Passport: <span style='color:green'>Good to Go</span></li>";
+            prkHrs.innerHTML = "<b>Adventure Park</b><br>10AM - 7PM";
+            cityHrs.innerHTML = "<b>City-Shop</b><br>11AM - 10PM";
             break;
           case 2:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $85</li> <li>GC-VIP Admission: $199</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Adventure Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Platinum VIP Passport: <span style='color:green'>Good to Go</span></li>";
+            prkHrs.innerHTML = "<b>Adventure Park</b><br>10AM - 9PM";
+            cityHrs.innerHTML = "<b>City-Shop</b><br>11AM - 11PM";
             break;
           case 3:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $99</li> <li>GC-VIP Admission: $209</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:red'>Blocked Out</span></li>\
                                     <li>Adventure Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Platinum VIP Passport: <span style='color:green'>Good to Go</span></li>";
+            prkHrs.innerHTML = "<b>Adventure Park</b><br>10AM - 10PM";
+            cityHrs.innerHTML = "<b>City-Shop</b><br>11AM - 11PM";
             break;
           case 4:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $109</li> <li>GC-VIP Admission: $259</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:red'>Blocked Out</span></li>\
                                     <li>Adventure Passport: <span style='color:red'>Blocked Out</span></li>\
                                     <li>Platinum VIP Passport: <span style='color:green'>Good to Go</span></li>";
+            prkHrs.innerHTML = "<b>Adventure Park</b><br>9AM - 11PM";
+            cityHrs.innerHTML = "<b>City-Shop</b><br>11AM - 12AM";
             break;
           case 5:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $115</li> <li>GC-VIP Admission: $299</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:red'>Blocked Out</span></li>\
                                     <li>Adventure Passport: <span style='color:red'>Blocked Out</span></li>\
                                     <li>Platinum VIP Passport: <span style='color:green'>Good to Go</span></li>";
+            prkHrs.innerHTML = "<b>Adventure Park</b><br>9AM - 11PM";
+            cityHrs.innerHTML = "<b>City-Shop</b><br>10AM - 12AM";
             break;
           case 6:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $75</li> <li>GC-VIP Admission: $109</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Adventure Passport: <span style='color:green'>Good to Go</span></li>\
                                     <li>Platinum VIP Passport: <span style='color:green'>Good to Go</span></li>";
+            prkHrs.innerHTML = "<b>Adventure Park</b><br>10AM - 6PM";
+            cityHrs.innerHTML = "<b>City-Shop</b><br>11AM - 11PM";
             break;
         }//end of switch
   
