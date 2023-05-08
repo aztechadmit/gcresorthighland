@@ -424,15 +424,9 @@ function determineTier(dateVal) // date input example: 'jan-1'
 		console.info("DateTier output: " + dateTierFinal);
 	
 		//Edit dateTierFinal depending on paramaters (see Description.txt)
-        	if(dateTierFinal == 6){dateTierFinal = 1;}
+        	if(dateTierFinal == 6){console.info("Date Tier is 6 (special event)");}
 		else if(dateTierFinal == 0){
-			if(inA[1] > 0 && inA[1] < 6){
-				dateTierFinal = 1;
-				console.info("Date Tier is Weekday 1");
-			}else{
-				dateTierFinal = 2;
-				console.info("Date Tier is Weekday 2");
-			}
+			console.info("Date Tier is 0 (1 for weekdays, 2 for weekends");
 		}
 	
 		// Return the tier of the day selected
