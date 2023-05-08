@@ -7,7 +7,7 @@ The data base folder is where information regarding the resort calendar and date
 
   Park Hours:                 Ticket Pricing:
     For Tier 0: Automatic: tier 1 for weekdays, tier 2 for weekends.
-    For Tier 1: 11AM - 7PM      $65 +
+    For Tier 1: 10AM - 7PM      $65 +
     For Tier 2: 10AM - 9PM      $75 +
     For Tier 3: 10AM - 9PM      $80 +
     For Tier 4: 9AM - 10PM      $93 +
