@@ -108,6 +108,8 @@ function runResortInfo() {
             prkHrs.innerHTML = "<b>Adventure Park</b><br>10AM - 6PM";
             cityHrs.innerHTML = "<b>City-Shop</b><br>11AM - 11PM";
             break;
+          default:
+            console.info("Error with switch statement");
         }//end of switch
   
   doneInitiating();
