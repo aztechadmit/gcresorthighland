@@ -112,6 +112,10 @@ function runResortInfo() {
             console.info("Error with switch statement");
         }//end of switch
   
+  //retrieve todays special events and promotions
+  const sesa = document.getElementById('eAndSdisp');
+  sesa.innerHTML = determineSpecialEvent(srchq);
+  
   doneInitiating();
   
 }// end of function resortinfo
