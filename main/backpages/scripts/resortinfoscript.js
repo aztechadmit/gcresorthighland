@@ -51,7 +51,7 @@ function runResortInfo() {
         
   //determine ticket pricing from ticket tier
         tkInfDisp1.innerHTML = "<li>Ticketing Tier: " + tdayTier + "</li>";
-        switch(tdayTier){
+        switch(parseInt(tdayTier)){
           case 0:
             tkInfDisp1.innerHTML += "<li>Standard Admission: $75</li> <li>GC-VIP Admission: $109</li>";
             apDisplay.innerHTML = "<li>Resident Passport: <span style='color:green'>Good to Go</span></li>\
