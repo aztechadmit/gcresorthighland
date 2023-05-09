@@ -1,5 +1,23 @@
+// SHOW SCHEDULES ----------------------------------------------------------------------------------------------------------------------------------------------------------
+const entSched = ["<p>No Shows Scheduled</p>", 
+		  "<p><b>Globe-City Marching Band</b><br>12:00PM, 2:00PM, 4:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 3:00PM, 5:00PM</p>",
+		  "<p><b>Spirit of the Holidays Spectacular</b><br>9:00PM</p> <p><b>Season of Snow Cavalcade</b><br>12:00PM, 5:00PM</p> <p><b>Dance of the Winter Fairies</b><br>1:00PM, 2:00PM, 3:00PM, 6:00PM</p>",
+		  "<p><b>Summers to Remember Spectacular</b><br>9:00PM</p> <p><b>Globe-City Marching Band</b><br>11:00AM, 12:00PM, 2:00PM, 3:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 2:00PM, 5:00PM</p>",
+		  "<p><b>Fourth of July Spectacular</b><br>9:30PM</p> <p><b>Globe-City Marching Band</b><br>11:00AM, 12:00PM, 2:00PM, 3:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 2:00PM, 5:00PM</p>"
+		 ];
+
+const eventSchedule = ["<li>Discounted Oras Nou Resident Admission <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/promotions'>&#xbb;</a></li> <li>No Events Today</li>",
+		      	"<li>Globe-City's Season of Light Celebration<sup class='supers'>TM/sup> <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/events/season-of-light'>&#xbb;</a></li>",
+		      	"<li>Globe-City's SummerFest<sup class='supers'>TM/sup> <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/events/summerfest'>&#xbb;</a></li>",
+		        "<li>Globe-City's SummerFest<sup class='supers'>TM/sup> <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/events/summerfest'>&#xbb;</a></li> <li>Fourth of July Celebration!</li>",
+		        "<li>Halloween at the Globe-City Resort <a href='https://aztechadmit.github.io/gcresorthighland/blog/articles/halloween-time'>&#xbb;</a></li> <li>Sally's Halloween After-Party (7:00PM) <a href='https://aztechadmit.github.io/gcresorthighland/things-to-do/events/sallys-halloween-party'>&#xbb;</a></li>",
+		        "<li>Discounted Oras Nou Resident Admission <a href='https://aztechadmit.github.io/gcresorthighland/parktickets/promotions'>&#xbb;</a></li> <li>Reuven's Birthday Celebration! <a href='https://aztechadmit.github.io/gcresorthighland/blog/articles/happy-birthday-reuven'>&#xbb;</a></li>"
+		      ];
+
+
+// DATES AND TIERS ----------------------------------------------------------------------------------------------------------------------------------------------------------
 const dateTierVal = [
-  //Organized as Date Tier  Entertainment
+  //Organized as Date - Tier - Entertainment
 	//JANUARY ----------------------------------------------------------------------
 	" jan 01 - 3 - 0 ",
 	" jan 02 - 2 - 0 ",
@@ -380,13 +398,11 @@ const dateTierVal = [
 	" dec 31 - 0 - 0 "
 ];
 
-// SHOW SCHEDULES ----------------------------------------------------------------------------------------------------------------------------------------------------------
-const entSched = ["<p>No Shows Scheduled</p>", 
-		  "<p><b>Globe-City Marching Band</b><br>12:00PM, 2:00PM, 4:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 3:00PM, 5:00PM</p>",
-		  "<p><b>Spirit of the Holidays Spectacular</b><br>9:00PM</p> <p><b>Season of Snow Cavalcade</b><br>12:00PM, 5:00PM</p> <p><b>Dance of the Winter Fairies</b><br>1:00PM, 2:00PM, 3:00PM, 6:00PM</p>",
-		  "<p><b>Summers to Remember Spectacular</b><br>9:00PM</p> <p><b>Globe-City Marching Band</b><br>11:00AM, 12:00PM, 2:00PM, 3:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 2:00PM, 5:00PM</p>",
-		  "<p><b>Fourth of July Spectacular</b><br>9:30PM</p> <p><b>Globe-City Marching Band</b><br>11:00AM, 12:00PM, 2:00PM, 3:00PM</p> <p><b>Drummers of the Mandari</b><br>1:00PM, 2:00PM, 5:00PM</p>"
-		 ];
+
+
+
+
+
 
 
 // FUNCTIONS ----------------------------------------------------------------------------------------------------------------------------------------------------------
