@@ -124,6 +124,34 @@ function doneInitiating(){
     finishLoading();
 }
 
+//Display current crowd information
+function determineCrowds(){
+  switch(curTime){
+    case 1: //Before 9AM or after Closing
+      break;
+    case 2: //10AM
+      break;
+    case 3: //11AM
+      break;
+    case 4: //12PM - beggining of peak
+      break
+    case 5: //1PM - moderate
+      break
+    case 6: //2PM - moderate
+      break;
+    case 7: //3PM HEAVIEST CROWDS
+      break;
+    case 8: //4PM 
+      break;
+    case 9: //5PM
+      break;
+    case 10: //6PM
+      break;
+    case 11: //7PM
+      break;
+      
+  }
+}
 
 /*
 function finishLoading(){
