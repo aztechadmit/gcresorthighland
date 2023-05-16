@@ -224,27 +224,27 @@ select {width:auto; min-width:150px; height:30px; border-radius:5px; font-size:1
 		justify-content:center; align-items:center;
 		max-width:1200px; margin:auto;
 	    }
-    	.flexIconContainer div{
+    	.flexInfoContainer div{
 		width:30%; margin:1%; height:auto;
 		transition:0.5s;
 		font-size:15px;
     	}
-    	.flexIconContainer div img{
+    	.flexInfoContainer div img{
 		width:100%; height:200px; border-radius:15px;
 		object-fit:cover;
 	}
-    	.flexIconContainer div h3{
+    	.flexInfoContainer div h3{
 		color:dimgray;margin-bottom:8px;margin-top:5px;
 		font-size:18px; transition:0.6s;
 	    }
     
-   	.flexIconContainer div:hover{
+   	.flexInfoContainer div:hover{
 		scale:1.02; cursor:pointer;
 	    }
-    	.flexIconContainer div:hover h3{color:blue;}
+    	.flexInfoContainer div:hover h3{color:blue;}
     
     @media screen and (max-width:700px){
-    	.flexIconContainer{flex-flow:column; padding:0;}
-    	.flexIconContainer div{width:90%; margin:0; margin-bottom:20px;}
+    	.flexInfoContainer{flex-flow:column; padding:0;}
+    	.flexInfoContainer div{width:90%; margin:0; margin-bottom:20px;}
         
     }
