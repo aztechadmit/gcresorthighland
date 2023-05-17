@@ -228,6 +228,7 @@ select {width:auto; min-width:150px; height:30px; border-radius:5px; font-size:1
 		width:30%; margin:1%; height:auto;
 		transition:0.5s;
 		font-size:15px;
+		align-self:flex-start;
     	}
     	.flexInfoContainer div img{
 		width:100%; height:200px; border-radius:15px;
@@ -245,6 +246,6 @@ select {width:auto; min-width:150px; height:30px; border-radius:5px; font-size:1
     
     @media screen and (max-width:700px){
     	.flexInfoContainer{flex-flow:column; padding:0;}
-    	.flexInfoContainer div{width:90%; margin:0; margin-bottom:20px;}
+    	.flexInfoContainer div{width:90%; margin:0; margin-bottom:20px; align-self:center;}
         
     }
